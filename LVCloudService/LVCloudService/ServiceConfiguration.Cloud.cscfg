@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="LVCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="CloudDataService">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=mcorderstorage;AccountKey=Rxk7pUsouP1AlgSImprJOOAZB19gtqhYlKLhJ9zRCINtTuGMpbMDGPqlKujW0SaUlJJllVrpBf1zUAzCvI4dQg==" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="4da4aee0-297b-4aab-8a0a-cd66057ca00b" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

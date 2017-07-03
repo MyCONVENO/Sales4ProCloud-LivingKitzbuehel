@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f7139d1a8bbf48e08872af3d22864e2d" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Agent" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Agent_Compare" Width="1.5" PointX="7.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Article" Width="1.5" PointX="1.5" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Association" Width="1.5" PointX="8.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Association_Compare" Width="1.5" PointX="9.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.AssociationMember" Width="1.5" PointX="10.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.AssociationMember_Compare" Width="1.5" PointX="10.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Assortment" Width="1.5" PointX="12.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Assortment_Compare" Width="1.5" PointX="12.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Client" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.ContactPerson" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.ContactPerson_Compare" Width="1.5" PointX="14.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Country" Width="1.5" PointX="14.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.CustomerFavorite" Width="1.5" PointX="8.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.CustomerNote" Width="1.5" PointX="14.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.DeliveryAddress" Width="1.5" PointX="5.25" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.DeliveryAddress_Compare" Width="1.5" PointX="14.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.InvoiceAddress" Width="1.5" PointX="5.25" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.InvoiceAddress_Compare" Width="1.5" PointX="16.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Label" Width="1.5" PointX="1.5" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Label_Compare" Width="1.5" PointX="16.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Model" Width="1.5" PointX="1.5" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Model_Compare" Width="1.5" PointX="16.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Order" Width="1.5" PointX="16.75" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.OrderItem" Width="1.5" PointX="18.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.pricat" Width="1.5" PointX="20.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Price" Width="1.5" PointX="6" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Price_Compare" Width="1.5" PointX="20.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Pricelist" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Pricelist_Compare" Width="1.5" PointX="10.75" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.PushChannel" Width="1.5" PointX="20.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Season" Width="1.5" PointX="1.5" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Season_Compare" Width="1.5" PointX="12.75" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.ShoppingCart" Width="1.5" PointX="20.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.ShoppingCartItem" Width="1.5" PointX="22.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Sizerun" Width="1.5" PointX="3.75" PointY="47.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Sizerun_Compare" Width="1.5" PointX="7.75" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.SpecialDiscount" Width="1.5" PointX="24.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Stock_Compare" Width="1.5" PointX="24.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.TextSnippet" Width="1.5" PointX="9.75" PointY="28.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.User" Width="1.5" PointX="3.75" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.UserAgents" Width="1.5" PointX="8" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.UserClient" Width="1.5" PointX="11.75" PointY="28.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.UserPriceList" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Article_Compare" Width="1.5" PointX="13.75" PointY="28.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Color_Compare" Width="1.5" PointX="24.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Customer_Compare" Width="1.5" PointX="24.75" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Stock" Width="1.5" PointX="26.75" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_Agent_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_UserAgents_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_Article_0" ManuallyRouted="false" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_Season_0" ManuallyRouted="false" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_Model_0" ManuallyRouted="false" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_Price_Pricelist" ManuallyRouted="false" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_Price_Sizerun" ManuallyRouted="false" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_UserPriceList_1" ManuallyRouted="false" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_UserAgents_User" ManuallyRouted="false" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_UserPriceList_0" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_Artikel" Width="1.5" PointX="4.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_Artikelbeschreibung" Width="1.5" PointX="6.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_Kunde" Width="1.5" PointX="27.375" PointY="13.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_TempSizerun" Width="1.5" PointX="27.375" PointY="20.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_Preis" Width="1.5" PointX="8.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_TempSizerunPrice" Width="1.5" PointX="29.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_Rabatt" Width="1.5" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_Ansprechpartner" Width="1.5" PointX="29.375" PointY="9.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_Stock" Width="1.5" PointX="12.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_tempStock" Width="1.5" PointX="29.375" PointY="15.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.ProductImage" Width="1.5" PointX="14.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.ProductImage_Compare" Width="1.5" PointX="16.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_Vertreter" Width="1.5" PointX="29.375" PointY="23.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_Lieferadresse" Width="1.5" PointX="27.375" PointY="29.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Color" Width="1.5" PointX="3.75" PointY="62.875" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.Customer" Width="1.5" PointX="3" PointY="8.125" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_Customer_Agent" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_Color_0" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_Price_Color" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_ContactPerson_Customer" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_Customer_Pricelist" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_DeliveryAddress_Customer" />
+        <AssociationConnector Association="LIVINGKITZBUEHLModel.FK_InvoiceAddress_Customer" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.SeasonValue" Width="1.5" PointX="18.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LIVINGKITZBUEHLModel.source_Saisonumsatz" Width="1.5" PointX="20.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FD8BA6C-473F-4EF1-991E-426BD3D565F2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CloudDataService</RootNamespace>
+    <AssemblyName>CloudDataService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.2.16.1.0\lib\net45\CsvHelper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.7.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.OData.5.7.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Services.Client.5.7.0\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bauerfeind\MARCCloudService\packages\WindowsAzure.Storage.7.0.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient">
+      <HintPath>..\..\..\..\..\Windows Develop\STEIN\AzureCloudServiceSTEIN\DataService\DLLs\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=15.1450.0.33, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Pdf.Base, Version=15.1450.0.33, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Spatial, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Spatial.5.7.0\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CloudDataService.svc" />
+    <EmbeddedResource Include="Confirm\ConfirmResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConfirmResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\Logos\LivingKitzbuehel_Logo.png" />
+    <Content Include="CloudDataServiceV2.svc" />
+    <Content Include="ServerModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ServerModel.edmx</DependentUpon>
+      <LastGenOutput>ServerModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ServerModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ServerModel.edmx</DependentUpon>
+      <LastGenOutput>ServerModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="LVKBImportService.svc" />
+    <EmbeddedResource Include="res\ConfirmResource.de-DE.resx" />
+    <EmbeddedResource Include="res\ConfirmResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConfirmResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TestResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agent.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Agent_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Article.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Article_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Association.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssociationMember.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssociationMember_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Association_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Assortment.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Assortment_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CloudDataService.svc.cs">
+      <DependentUpon>CloudDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="CloudDataServiceV2.svc.cs">
+      <DependentUpon>CloudDataServiceV2.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Color.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Color_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\Confirm.cs" />
+    <Compile Include="Confirm\ConfirmResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfirmResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactPerson.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactPerson_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSVClasses\SaisonCSVMap.cs" />
+    <Compile Include="CSVClasses\AnsprechpartnerCSVMap.cs" />
+    <Compile Include="CSVClasses\BestandCSVMap.cs" />
+    <Compile Include="CSVClasses\LieferadresseCSVMap.cs" />
+    <Compile Include="CSVClasses\VertreterCSVMap.cs" />
+    <Compile Include="CSVClasses\RabattCSVMap.cs" />
+    <Compile Include="CSVClasses\PreisCSVMap.cs" />
+    <Compile Include="CSVClasses\KundeCSVMap.cs" />
+    <Compile Include="CSVClasses\ArtikelbeschreibungCSVMap.cs" />
+    <Compile Include="CSVClasses\ArtikelCSVMap.cs" />
+    <Compile Include="Customer.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerFavorite.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerNote.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAddress.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAddress_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Export\EDI.cs" />
+    <Compile Include="Export\LVKBExportOrder.cs" />
+    <Compile Include="Helper\BlobstorageFileHandler.cs" />
+    <Compile Include="Helper\ClassFiller.cs" />
+    <Compile Include="Helper\ClassToListObjectItem.cs" />
+    <Compile Include="Helper\DatabaseModelHelper.cs" />
+    <Compile Include="Helper\SqlBulkInsertHelper.cs" />
+    <Compile Include="Helper\UploadItemClosedOrder.cs" />
+    <Compile Include="Helper\ZipHelper.cs" />
+    <Compile Include="ICloudDataService.cs" />
+    <Compile Include="ICloudDataServiceV2.cs" />
+    <Compile Include="ImportClass\ImportAgent.cs" />
+    <Compile Include="ImportClass\ImportAssociationMember.cs" />
+    <Compile Include="ImportClass\ImportAssociation.cs" />
+    <Compile Include="ImportClass\ImportContactPerson.cs" />
+    <Compile Include="ImportClass\ImportPrice.cs" />
+    <Compile Include="ImportClass\ImportInvoiceAddress.cs" />
+    <Compile Include="ImportClass\ImportDeliveryAddress.cs" />
+    <Compile Include="ImportClass\ImportAssortment.cs" />
+    <Compile Include="ImportClass\ImportCustomer.cs" />
+    <Compile Include="ImportClass\ImportSeasonValue.cs" />
+    <Compile Include="ImportClass\ImportStock.cs" />
+    <Compile Include="ImportClass\ImportTempStock.cs" />
+    <Compile Include="ImportClass\ImportSizerun.cs" />
+    <Compile Include="ImportClass\ImportTempPriceSizerun.cs" />
+    <Compile Include="ImportClass\ImportTempSizerun.cs" />
+    <Compile Include="ImportClass\ImportColor.cs" />
+    <Compile Include="ImportClass\ImportArticle.cs" />
+    <Compile Include="ImportClass\ImportModel.cs" />
+    <Compile Include="ImportClass\ImportSeason.cs" />
+    <Compile Include="InvoiceAddress.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceAddress_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Label.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Label_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderItem.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pricat.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Price.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pricelist.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pricelist_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Price_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductImage.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductImage_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PushChannel.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="res\ConfirmResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfirmResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Season.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SeasonValue.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Season_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServerModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServerModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServerModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServerModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServerModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LVKBImportService.svc.cs">
+      <DependentUpon>LVKBImportService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ILVKBImportService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingCart.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCartItem.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sizerun.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sizerun_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_Ansprechpartner.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_Artikel.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_Artikelbeschreibung.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_Kunde.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_Lieferadresse.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_Preis.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_Rabatt.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_Saisonumsatz.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_Stock.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_TempSizerun.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_TempSizerunPrice.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_tempStock.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="source_Vertreter.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialDiscount.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stock_Compare.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TextSnippet.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserAgents.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserClient.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserPriceList.cs">
+      <DependentUpon>ServerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <EntityDeploy Include="ServerModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ServerModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ServerModel.edmx.diagram">
+      <DependentUpon>ServerModel.edmx</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3689</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3689/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

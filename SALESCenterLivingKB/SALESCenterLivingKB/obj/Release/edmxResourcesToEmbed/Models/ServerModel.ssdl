@@ -1,0 +1,1423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ServerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Agent">
+    <Key>
+      <PropertyRef Name="AgentID" />
+    </Key>
+    <Property Name="AgentID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentConfirmFax" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="AgentConfirmEmail" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="AgentRemark" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AgentCommission" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="AgentName1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentName2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentZIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentStreet" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentFax" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentEMail" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="AgentMobile" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentCountryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="ArticleID" />
+    </Key>
+    <Property Name="ArticleID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModelID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="ArticleNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="ArticleMaterial" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleOrigin" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleGroupe1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleGroupe2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleHeelTypeNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleClosingTypeNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleClosingType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleTypeNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleEASMaterial" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleEASMaterialNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleEASTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleEASTypeNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleHeelTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleCategory1" Type="nvarchar" MaxLength="50" />
+    <Property Name="ArticleCategory2" Type="nvarchar" MaxLength="50" />
+    <Property Name="ArticleCategory3" Type="nvarchar" MaxLength="50" />
+    <Property Name="ArticleImage" Type="nvarchar" MaxLength="50" />
+    <Property Name="ArticleInfoText1" Type="nvarchar" MaxLength="500" />
+    <Property Name="ArticleInfoText2" Type="nvarchar" MaxLength="50" />
+    <Property Name="BauerfeindMaterial" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="Association">
+    <Key>
+      <PropertyRef Name="AssociationID" />
+    </Key>
+    <Property Name="AssociationID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationName1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationName2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationName3" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationStreet" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationZIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationEMail" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationFax" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationPricelistID" Type="int" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="AssociationCountryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="AssociationMember">
+    <Key>
+      <PropertyRef Name="AssociationMemberID" />
+    </Key>
+    <Property Name="AssociationMemberID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationMemberNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationMemberCustomerID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationMemberAssociationID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="AssociationMemberClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="Assortment">
+    <Key>
+      <PropertyRef Name="AssortmentID" />
+    </Key>
+    <Property Name="AssortmentID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssortmentName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssortmentSizerunID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Qty01" Type="int" Nullable="false" />
+    <Property Name="Qty02" Type="int" Nullable="false" />
+    <Property Name="Qty03" Type="int" Nullable="false" />
+    <Property Name="Qty04" Type="int" Nullable="false" />
+    <Property Name="Qty05" Type="int" Nullable="false" />
+    <Property Name="Qty06" Type="int" Nullable="false" />
+    <Property Name="Qty07" Type="int" Nullable="false" />
+    <Property Name="Qty08" Type="int" Nullable="false" />
+    <Property Name="Qty09" Type="int" Nullable="false" />
+    <Property Name="Qty10" Type="int" Nullable="false" />
+    <Property Name="Qty11" Type="int" Nullable="false" />
+    <Property Name="Qty12" Type="int" Nullable="false" />
+    <Property Name="Qty13" Type="int" Nullable="false" />
+    <Property Name="Qty14" Type="int" Nullable="false" />
+    <Property Name="Qty15" Type="int" Nullable="false" />
+    <Property Name="Qty16" Type="int" Nullable="false" />
+    <Property Name="Qty17" Type="int" Nullable="false" />
+    <Property Name="Qty18" Type="int" Nullable="false" />
+    <Property Name="Qty19" Type="int" Nullable="false" />
+    <Property Name="Qty20" Type="int" Nullable="false" />
+    <Property Name="Qty21" Type="int" Nullable="false" />
+    <Property Name="Qty22" Type="int" Nullable="false" />
+    <Property Name="Qty23" Type="int" Nullable="false" />
+    <Property Name="Qty24" Type="int" Nullable="false" />
+    <Property Name="Qty25" Type="int" Nullable="false" />
+    <Property Name="Qty26" Type="int" Nullable="false" />
+    <Property Name="Qty27" Type="int" Nullable="false" />
+    <Property Name="Qty28" Type="int" Nullable="false" />
+    <Property Name="Qty29" Type="int" Nullable="false" />
+    <Property Name="Qty30" Type="int" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="AssortmentClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SizerunRangeText" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsFreeDisposition" Type="bit" Nullable="false" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ClientID" />
+    </Key>
+    <Property Name="ClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ClientName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccentColor" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccentLowColor" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccentHighColor" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="AccentColorString" Type="nvarchar" MaxLength="200" />
+    <Property Name="ImagePathString" Type="nvarchar" MaxLength="200" />
+    <Property Name="AddressName1" Type="nvarchar" MaxLength="200" />
+    <Property Name="AddressName2" Type="nvarchar" MaxLength="200" />
+    <Property Name="AddressStreet" Type="nvarchar" MaxLength="200" />
+    <Property Name="AddressZip" Type="nvarchar" MaxLength="200" />
+    <Property Name="AddressCity" Type="nvarchar" MaxLength="200" />
+    <Property Name="AddressCountryCode" Type="nvarchar" MaxLength="200" />
+    <Property Name="AddressCountryName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Addressline" Type="nvarchar" MaxLength="200" />
+    <Property Name="FooterLeftLine1" Type="nvarchar" MaxLength="200" />
+    <Property Name="FooterLeftLine2" Type="nvarchar" MaxLength="200" />
+    <Property Name="FooterLeftLine3" Type="nvarchar" MaxLength="200" />
+    <Property Name="FooterLeftLine4" Type="nvarchar" MaxLength="200" />
+    <Property Name="FooterRightLine1" Type="nvarchar" MaxLength="200" />
+    <Property Name="FooterRightLine2" Type="nvarchar" MaxLength="200" />
+    <Property Name="FooterRightLine3" Type="nvarchar" MaxLength="200" />
+    <Property Name="FooterRightLine4" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Color">
+    <Key>
+      <PropertyRef Name="ColorID" />
+    </Key>
+    <Property Name="ColorID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorArticleID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StockArticle" Type="bit" Nullable="false" />
+    <Property Name="ProductionArticle" Type="bit" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DeliveryDateStart" Type="datetime" Nullable="false" />
+    <Property Name="DeliveryDateEnd" Type="datetime" Nullable="false" />
+    <Property Name="ColorClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EASColorNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EASColorName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorText1" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorImage" Type="nvarchar" MaxLength="50" />
+    <Property Name="CollectionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorNumberText" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorNumberSearchText" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorLiningName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorLiningName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorLiningNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorLiningNumber2" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+    <Property Name="ColorText01" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText02" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText03" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText04" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText05" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText06" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText07" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText08" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText09" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText10" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader01" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader02" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader03" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader04" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader05" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader06" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader07" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader08" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader09" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader10" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ContactPerson">
+    <Key>
+      <PropertyRef Name="ContactPersonID" />
+    </Key>
+    <Property Name="ContactPersonID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ContactPersonCustomerID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ContactPersonName1" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ContactPersonName2" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ContactPersonName3" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ContactPersonFunction" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ContactPersonEmail" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ContactPersonPhone" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ContactPersonTitle" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ContactPersonClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="ContactPersonFax" Type="nvarchar" MaxLength="500" />
+    <Property Name="ContactPersonNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerName1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerName2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerName3" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerStreet" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerZIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerEmail" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="CustomerPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerFax" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerPricelistID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerDiscount" Type="float" Nullable="false" />
+    <Property Name="CustomerNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="CustomerTaxID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerValuta" Type="int" Nullable="false" />
+    <Property Name="CustomerAgentID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CustomerMobile" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerCountryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PaymentTermText" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="PaymentTermNumber" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="PricelistName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PricelistNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentName1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationMemberNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Customergroup" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Currency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="lat" Type="float" Nullable="false" />
+    <Property Name="lon" Type="float" Nullable="false" />
+    <Property Name="CustomerClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerBarrier" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="IsTestData" Type="bit" />
+    <Property Name="OpenReceivables" Type="float" />
+    <Property Name="CustomerText01" Type="nvarchar" MaxLength="200" />
+    <Property Name="CustomerText02" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText03" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText04" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText05" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText06" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText07" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText08" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText09" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader01" Type="nvarchar" MaxLength="200" />
+    <Property Name="CustomerHeader02" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader03" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader04" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader05" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader06" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader07" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader08" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader09" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DeliveryAddress">
+    <Key>
+      <PropertyRef Name="DeliveryAddressID" />
+    </Key>
+    <Property Name="DeliveryAddressID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressCustomerID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressName1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressName2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressName3" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressStreet" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressZIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressEMail" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressFax" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DeliveryAddressCountryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="InvoiceAddress">
+    <Key>
+      <PropertyRef Name="InvoiceAddressID" />
+    </Key>
+    <Property Name="InvoiceAddressID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressCustomerID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressName1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressName2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressName3" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressStreet" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressZIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressEMail" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="InvoiceAddressPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressFax" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="InvoiceAddressCountryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="InvoiceNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="Label">
+    <Key>
+      <PropertyRef Name="LabelID" />
+    </Key>
+    <Property Name="LabelID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LabelName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LabelNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="LabelClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="Model">
+    <Key>
+      <PropertyRef Name="ModelID" />
+    </Key>
+    <Property Name="ModelID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModelName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModelNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModelSeasonID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModelImage" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="ModelClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FormName" Type="nvarchar" MaxLength="50" />
+    <Property Name="FormNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductGroup" Type="nvarchar" MaxLength="50" />
+    <Property Name="Width" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoleTypeName" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="Price">
+    <Key>
+      <PropertyRef Name="PriceID" />
+    </Key>
+    <Property Name="PriceID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PriceArticleID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PriceSizerunID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PricePricelistID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BuyingPrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="SalesPrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="PriceClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="PriceColorID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="Pricelist">
+    <Key>
+      <PropertyRef Name="PricelistID" />
+    </Key>
+    <Property Name="PricelistID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PricelistName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PricelistNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Currency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="PricelistClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="Season">
+    <Key>
+      <PropertyRef Name="SeasonID" />
+    </Key>
+    <Property Name="SeasonID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SeasonName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SeasonLongName" Type="nvarchar" MaxLength="50" />
+    <Property Name="SeasonLabelID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SeasonSort" Type="int" Nullable="false" />
+    <Property Name="SeasonNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SeasonClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+    <Property Name="DeliveryDateStart" Type="datetime" />
+    <Property Name="DeliveryDateEnd" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ShoppingCart">
+    <Key>
+      <PropertyRef Name="ShoppingCartID" />
+    </Key>
+    <Property Name="ShoppingCartID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrderNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrderTypeID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrderTypeText" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sent" Type="bit" Nullable="false" />
+    <Property Name="SentDateTime" Type="datetime" Nullable="false" />
+    <Property Name="CustomerNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerName1" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerName2" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerName3" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerCity" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerZIP" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerStreet" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerCountryID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerCountryName" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerCountryCode" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerFax" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerEMail" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerMobile" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CustomerPricelistID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Customergroup" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerPaymentTerm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerDiscount" Type="float" Nullable="false" />
+    <Property Name="CustomerTaxID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerComplaintDiscount" Type="float" Nullable="false" />
+    <Property Name="CustomerValuta" Type="int" Nullable="false" />
+    <Property Name="CustomerAgentID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PaymentTermText" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="PaymentTermNumber" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="PricelistName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PricelistNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentName1" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="AgentNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="LabelID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LabelName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LabelNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SeasonID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SeasonNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SeasonName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SeasonSort" Type="int" Nullable="false" />
+    <Property Name="SeasonLabelID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliveryAddressCustomerID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressName1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressName2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressName3" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressZIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressStreet" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressCountryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressFax" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressEMail" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressMobile" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="InvoiceAddressCustomerID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressName1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressName2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressName3" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressZIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Remark1" Type="nvarchar" MaxLength="4000" Nullable="false" />
+    <Property Name="Remark2" Type="nvarchar" MaxLength="4000" Nullable="false" />
+    <Property Name="SampleOrder" Type="bit" Nullable="false" />
+    <Property Name="Currency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrderType2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationMemberNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="CustomerOrderNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ConfirmationEmail" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="SampleUnits" Type="bit" Nullable="false" />
+    <Property Name="ProcessNumber" Type="bigint" Nullable="false" />
+    <Property Name="ConfirmationStatus" Type="int" Nullable="false" />
+    <Property Name="ExtraDiscount" Type="float" Nullable="false" />
+    <Property Name="ShowPrice" Type="bit" Nullable="false" />
+    <Property Name="ShoppingCartClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeviceID" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="DeviceModel" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeviceManufracturer" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeviceName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeviceOSName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressCountryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressFax" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressEMail" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressMobile" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LabelClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SeasonClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryAddressClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ShoppingCartTitle" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PricelistID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+    <Property Name="PricelistClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsFavorite" Type="bit" Nullable="false" />
+    <Property Name="DeliveryAddressCountryID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceAddressCountryID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationName1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationName2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationName3" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationZIP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationStreet" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationCountryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationFax" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationEMail" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationMobile" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationPricelistID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationMemberID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationMemberCustomerID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationMemberAssociationID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssociationMemberClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StatusID" Type="int" Nullable="false" />
+    <Property Name="IsTestData" Type="bit" />
+    <Property Name="TextSnippets" Type="nvarchar" MaxLength="50" />
+    <Property Name="EarlyBirdDiscount" Type="float" />
+    <Property Name="PreorderDiscount" Type="float" />
+    <Property Name="ShoppingCartComplaintDiscount" Type="float" />
+    <Property Name="ShoppingCartCustomerDiscount" Type="float" />
+    <Property Name="CollectionDiscount" Type="float" />
+    <Property Name="ShoppingCartCollectionDiscount" Type="float" />
+    <Property Name="ShoppingCartEarlyBirdDiscount" Type="float" />
+    <Property Name="ShoppingCartPreorderDiscount" Type="float" />
+    <Property Name="InvoiceAddressStreet" Type="nvarchar" MaxLength="50" />
+    <Property Name="ShoppingCartQuantityDiscount" Type="float" />
+    <Property Name="QuantityDiscount" Type="float" />
+    <Property Name="CustomerText01" Type="nvarchar" MaxLength="200" />
+    <Property Name="CustomerText02" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText03" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText04" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText05" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText06" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText07" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText08" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText09" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerText10" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader01" Type="nvarchar" MaxLength="200" />
+    <Property Name="CustomerHeader02" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader03" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader04" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader05" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader06" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader07" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader08" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader09" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerHeader10" Type="nvarchar" MaxLength="50" />
+    <Property Name="SeasonLongName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ShoppingCartItem">
+    <Key>
+      <PropertyRef Name="ShoppingCartItemID" />
+    </Key>
+    <Property Name="ShoppingCartItemID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LabelID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LabelName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LabelNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="ModelID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModelName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModelSizerunID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModelNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModelSeasonID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModelImage" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="ArticleNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorArticleID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryDateStart" Type="datetime" Nullable="false" />
+    <Property Name="DeliveryDateEnd" Type="datetime" Nullable="false" />
+    <Property Name="ColorNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StockArticle" Type="bit" Nullable="false" />
+    <Property Name="ProductionArticle" Type="bit" Nullable="false" />
+    <Property Name="AssortmentID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssortmentName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssortmentSizerunID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Qty01" Type="int" Nullable="false" />
+    <Property Name="Qty02" Type="int" Nullable="false" />
+    <Property Name="Qty03" Type="int" Nullable="false" />
+    <Property Name="Qty04" Type="int" Nullable="false" />
+    <Property Name="Qty05" Type="int" Nullable="false" />
+    <Property Name="Qty06" Type="int" Nullable="false" />
+    <Property Name="Qty07" Type="int" Nullable="false" />
+    <Property Name="Qty08" Type="int" Nullable="false" />
+    <Property Name="Qty09" Type="int" Nullable="false" />
+    <Property Name="Qty10" Type="int" Nullable="false" />
+    <Property Name="Qty11" Type="int" Nullable="false" />
+    <Property Name="Qty12" Type="int" Nullable="false" />
+    <Property Name="Qty13" Type="int" Nullable="false" />
+    <Property Name="Qty14" Type="int" Nullable="false" />
+    <Property Name="Qty15" Type="int" Nullable="false" />
+    <Property Name="Qty16" Type="int" Nullable="false" />
+    <Property Name="Qty17" Type="int" Nullable="false" />
+    <Property Name="Qty18" Type="int" Nullable="false" />
+    <Property Name="Qty19" Type="int" Nullable="false" />
+    <Property Name="Qty20" Type="int" Nullable="false" />
+    <Property Name="Qty21" Type="int" Nullable="false" />
+    <Property Name="Qty22" Type="int" Nullable="false" />
+    <Property Name="Qty23" Type="int" Nullable="false" />
+    <Property Name="Qty24" Type="int" Nullable="false" />
+    <Property Name="Qty25" Type="int" Nullable="false" />
+    <Property Name="Qty26" Type="int" Nullable="false" />
+    <Property Name="Qty27" Type="int" Nullable="false" />
+    <Property Name="Qty28" Type="int" Nullable="false" />
+    <Property Name="Qty29" Type="int" Nullable="false" />
+    <Property Name="Qty30" Type="int" Nullable="false" />
+    <Property Name="SizerunID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SizerunName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SizerunNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size01" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size02" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size03" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size04" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size05" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size06" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size07" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size08" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size09" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size10" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size11" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size12" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size13" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size14" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size15" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size16" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size17" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size18" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size19" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size20" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size21" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size22" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size23" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size24" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size25" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size26" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size27" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size28" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size29" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size30" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PriceID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PriceArticleID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PricelistID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BuyingPrice" Type="float" Nullable="false" />
+    <Property Name="SalesPrice" Type="float" Nullable="false" />
+    <Property Name="Currency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ShoppingCartID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerArticleNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModifiedDeliveryDateStart" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedDeliveryDateEnd" Type="datetime" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="ShoppingCartItemDiscount" Type="float" Nullable="false" />
+    <Property Name="SampleSize" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="Remark2" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="SampleSize2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SampleSize3" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Origin" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Material" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SampleSizeNr" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SampleSizeNr2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SampleSizeNr3" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ShoppingCartItemSort" Type="bigint" Nullable="false" />
+    <Property Name="ShoppingCartItemClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeviceID" Type="nvarchar" MaxLength="200" />
+    <Property Name="DeviceModel" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeviceManufracturer" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeviceName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeviceOSName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LabelClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ModelClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleMaterial" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleOrigin" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleGroupe1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleGroupe2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleHeelTypeNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleClosingTypeNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleClosingType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleTypeNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CollectionName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleEASMaterial" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleEASMaterialNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleEASTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleEASTypeNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleHeelTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssortmentClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SizerunClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PriceClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleSizerunID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleCategory1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleCategory2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleCategory3" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleImage" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EASColorNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EASColorName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorImage" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArticleWidth" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FormName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FormNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProductGroup" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Width" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsFavorite" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BauerfeindMaterial" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorNumberText" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorNumberSearchText" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorStatus" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsFreeDisposition" Type="bit" Nullable="false" />
+    <Property Name="AssortmentQty" Type="int" Nullable="false" />
+    <Property Name="DeliveryDate" Type="datetime" Nullable="false" />
+    <Property Name="AssortmentStockQty" Type="int" Nullable="false" />
+    <Property Name="SizerunArticleID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SizerunColorID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeliveryDecadeText" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsFreeOfCharge" Type="bit" Nullable="false" />
+    <Property Name="IsTestData" Type="bit" />
+    <Property Name="ColorLiningNumber2" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorLiningName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorLiningNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorLiningName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText1" Type="nvarchar" MaxLength="50" />
+    <Property Name="SizerunPrintColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN01" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN02" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN03" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN04" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN05" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN06" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN07" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN08" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN09" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN10" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN11" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN12" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN13" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN14" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN15" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN16" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN17" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN18" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN19" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN20" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN21" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN22" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN23" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN24" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN25" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN26" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN27" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN28" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN29" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN30" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText01" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText02" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText03" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText04" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText05" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText06" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText07" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText08" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText09" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorText10" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader01" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader02" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader03" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader04" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader05" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader06" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader07" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader08" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader09" Type="nvarchar" MaxLength="50" />
+    <Property Name="ColorHeader10" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sizerun">
+    <Key>
+      <PropertyRef Name="SizerunID" />
+    </Key>
+    <Property Name="SizerunID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SizerunName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SizerunNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Size01" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size02" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size03" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size04" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size05" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size06" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size07" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size08" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size09" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size10" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size11" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size12" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size13" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size14" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size15" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size16" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size17" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size18" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size19" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size20" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size21" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size22" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size23" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size24" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size25" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size26" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size27" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size28" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size29" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Size30" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PrintColor" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SizerunClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="SizerunArticleID" Type="nvarchar" MaxLength="50" />
+    <Property Name="SizerunModelID" Type="nvarchar" MaxLength="50" />
+    <Property Name="SizerunColorID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTestData" Type="bit" />
+    <Property Name="EAN01" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN02" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN03" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN04" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN05" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN06" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN07" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN08" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN09" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN10" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN11" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN12" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN13" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN14" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN15" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN16" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN17" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN18" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN19" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN20" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN21" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN22" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN23" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN24" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN25" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN26" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN27" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN28" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN29" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN30" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SpecialDiscount">
+    <Key>
+      <PropertyRef Name="SpecialDiscountID" />
+    </Key>
+    <Property Name="SpecialDiscountID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DiscountType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="Discount" Type="float" Nullable="false" />
+    <Property Name="QtyStart" Type="int" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SpecialDiscountClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Stock">
+    <Key>
+      <PropertyRef Name="StockID" />
+      <PropertyRef Name="StockAssortmentID" />
+      <PropertyRef Name="StockQty01" />
+      <PropertyRef Name="StockQty02" />
+      <PropertyRef Name="StockQty03" />
+      <PropertyRef Name="StockQty04" />
+      <PropertyRef Name="StockQty05" />
+      <PropertyRef Name="StockQty06" />
+      <PropertyRef Name="StockQty07" />
+      <PropertyRef Name="StockQty08" />
+      <PropertyRef Name="StockQty09" />
+      <PropertyRef Name="StockQty10" />
+      <PropertyRef Name="StockQty11" />
+      <PropertyRef Name="StockQty12" />
+      <PropertyRef Name="StockQty13" />
+      <PropertyRef Name="StockQty14" />
+      <PropertyRef Name="StockQty15" />
+      <PropertyRef Name="StockQty16" />
+      <PropertyRef Name="StockQty17" />
+      <PropertyRef Name="StockQty18" />
+      <PropertyRef Name="StockQty19" />
+      <PropertyRef Name="StockQty20" />
+      <PropertyRef Name="StockQty21" />
+      <PropertyRef Name="StockQty22" />
+      <PropertyRef Name="StockQty23" />
+      <PropertyRef Name="StockQty24" />
+      <PropertyRef Name="StockQty25" />
+      <PropertyRef Name="StockQty26" />
+      <PropertyRef Name="StockQty27" />
+      <PropertyRef Name="StockQty28" />
+      <PropertyRef Name="StockQty29" />
+      <PropertyRef Name="StockQty30" />
+      <PropertyRef Name="SyncDateTime" />
+      <PropertyRef Name="IsDeleted" />
+      <PropertyRef Name="StockClientID" />
+      <PropertyRef Name="IsFreeDisposition" />
+      <PropertyRef Name="StockQtyAssortment" />
+    </Key>
+    <Property Name="StockID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StockAssortmentID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StockQty01" Type="int" Nullable="false" />
+    <Property Name="StockQty02" Type="int" Nullable="false" />
+    <Property Name="StockQty03" Type="int" Nullable="false" />
+    <Property Name="StockQty04" Type="int" Nullable="false" />
+    <Property Name="StockQty05" Type="int" Nullable="false" />
+    <Property Name="StockQty06" Type="int" Nullable="false" />
+    <Property Name="StockQty07" Type="int" Nullable="false" />
+    <Property Name="StockQty08" Type="int" Nullable="false" />
+    <Property Name="StockQty09" Type="int" Nullable="false" />
+    <Property Name="StockQty10" Type="int" Nullable="false" />
+    <Property Name="StockQty11" Type="int" Nullable="false" />
+    <Property Name="StockQty12" Type="int" Nullable="false" />
+    <Property Name="StockQty13" Type="int" Nullable="false" />
+    <Property Name="StockQty14" Type="int" Nullable="false" />
+    <Property Name="StockQty15" Type="int" Nullable="false" />
+    <Property Name="StockQty16" Type="int" Nullable="false" />
+    <Property Name="StockQty17" Type="int" Nullable="false" />
+    <Property Name="StockQty18" Type="int" Nullable="false" />
+    <Property Name="StockQty19" Type="int" Nullable="false" />
+    <Property Name="StockQty20" Type="int" Nullable="false" />
+    <Property Name="StockQty21" Type="int" Nullable="false" />
+    <Property Name="StockQty22" Type="int" Nullable="false" />
+    <Property Name="StockQty23" Type="int" Nullable="false" />
+    <Property Name="StockQty24" Type="int" Nullable="false" />
+    <Property Name="StockQty25" Type="int" Nullable="false" />
+    <Property Name="StockQty26" Type="int" Nullable="false" />
+    <Property Name="StockQty27" Type="int" Nullable="false" />
+    <Property Name="StockQty28" Type="int" Nullable="false" />
+    <Property Name="StockQty29" Type="int" Nullable="false" />
+    <Property Name="StockQty30" Type="int" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="StockClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsFreeDisposition" Type="bit" Nullable="false" />
+    <Property Name="StockQtyAssortment" Type="int" Nullable="false" />
+    <Property Name="IsTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="TextSnippet">
+    <Key>
+      <PropertyRef Name="TextSnippetID" />
+    </Key>
+    <Property Name="TextSnippetID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TextSnippetText" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name1" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name3" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Street" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ZIP" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CountryID" Type="int" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Internet" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ConfirmEmail" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="PrintColor" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CanEditPrice" Type="bit" Nullable="false" />
+    <Property Name="FairMode" Type="bit" Nullable="false" />
+    <Property Name="MaxCustomerDiscount" Type="float" Nullable="false" />
+    <Property Name="MaxComplaintDiscount" Type="float" Nullable="false" />
+    <Property Name="CommisionDecline" Type="bit" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="NextOrderNumber" Type="bigint" />
+    <Property Name="Agent1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Agent2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Agent3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Agent4" Type="nvarchar" MaxLength="50" />
+    <Property Name="DefaultPricelist" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="UseTestData" Type="bit" />
+  </EntityType>
+  <EntityType Name="UserAgents">
+    <Key>
+      <PropertyRef Name="UserAgentsID" />
+    </Key>
+    <Property Name="UserAgentsID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserAgentClientID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="SyncDateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UserClient">
+    <Key>
+      <PropertyRef Name="UserMandantID" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="UserClientClientID" />
+    </Key>
+    <Property Name="UserMandantID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserClientClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserPriceList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PricelistID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTime" Type="datetime" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="UserPricelistClientID" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Agent_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Agent" Type="Self.Agent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ClientID" />
+      </Principal>
+      <Dependent Role="Agent">
+        <PropertyRef Name="AgentClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_0">
+    <End Role="Model" Type="Self.Model" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Article" Type="Self.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Model">
+        <PropertyRef Name="ModelID" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="ModelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Color_0">
+    <End Role="Article" Type="Self.Article" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Color" Type="Self.Color" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Article">
+        <PropertyRef Name="ArticleID" />
+      </Principal>
+      <Dependent Role="Color">
+        <PropertyRef Name="ColorArticleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactPerson_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="ContactPerson" Type="Self.ContactPerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="ContactPerson">
+        <PropertyRef Name="ContactPersonCustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customer_Agent">
+    <End Role="Agent" Type="Self.Agent" Multiplicity="1" />
+    <End Role="Customer" Type="Self.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="CustomerAgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customer_Pricelist">
+    <End Role="Pricelist" Type="Self.Pricelist" Multiplicity="1" />
+    <End Role="Customer" Type="Self.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pricelist">
+        <PropertyRef Name="PricelistID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="CustomerPricelistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DeliveryAddress_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="DeliveryAddress" Type="Self.DeliveryAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="DeliveryAddress">
+        <PropertyRef Name="DeliveryAddressCustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceAddress_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="InvoiceAddress" Type="Self.InvoiceAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="InvoiceAddress">
+        <PropertyRef Name="InvoiceAddressCustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Model_0">
+    <End Role="Season" Type="Self.Season" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Model" Type="Self.Model" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Season">
+        <PropertyRef Name="SeasonID" />
+      </Principal>
+      <Dependent Role="Model">
+        <PropertyRef Name="ModelSeasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Price_Color">
+    <End Role="Color" Type="Self.Color" Multiplicity="0..1" />
+    <End Role="Price" Type="Self.Price" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Color">
+        <PropertyRef Name="ColorID" />
+      </Principal>
+      <Dependent Role="Price">
+        <PropertyRef Name="PriceColorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Price_Pricelist">
+    <End Role="Pricelist" Type="Self.Pricelist" Multiplicity="1" />
+    <End Role="Price" Type="Self.Price" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pricelist">
+        <PropertyRef Name="PricelistID" />
+      </Principal>
+      <Dependent Role="Price">
+        <PropertyRef Name="PricePricelistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Price_Sizerun">
+    <End Role="Sizerun" Type="Self.Sizerun" Multiplicity="1" />
+    <End Role="Price" Type="Self.Price" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sizerun">
+        <PropertyRef Name="SizerunID" />
+      </Principal>
+      <Dependent Role="Price">
+        <PropertyRef Name="PriceSizerunID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Season_0">
+    <End Role="Label" Type="Self.Label" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Season" Type="Self.Season" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Label">
+        <PropertyRef Name="LabelID" />
+      </Principal>
+      <Dependent Role="Season">
+        <PropertyRef Name="SeasonLabelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserAgents_Agent">
+    <End Role="Agent" Type="Self.Agent" Multiplicity="1" />
+    <End Role="UserAgents" Type="Self.UserAgents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="UserAgents">
+        <PropertyRef Name="AgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserAgents_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserAgents" Type="Self.UserAgents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="UserAgents">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPriceList_0">
+    <End Role="User" Type="Self.User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserPriceList" Type="Self.UserPriceList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="UserPriceList">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPriceList_1">
+    <End Role="Pricelist" Type="Self.Pricelist" Multiplicity="1" />
+    <End Role="UserPriceList" Type="Self.UserPriceList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pricelist">
+        <PropertyRef Name="PricelistID" />
+      </Principal>
+      <Dependent Role="UserPriceList">
+        <PropertyRef Name="PricelistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ServerModelStoreContainer">
+    <EntitySet Name="Agent" EntityType="Self.Agent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Article" EntityType="Self.Article" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Association" EntityType="Self.Association" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AssociationMember" EntityType="Self.AssociationMember" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Assortment" EntityType="Self.Assortment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactPerson" EntityType="Self.ContactPerson" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DeliveryAddress" EntityType="Self.DeliveryAddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InvoiceAddress" EntityType="Self.InvoiceAddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Label" EntityType="Self.Label" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Model" EntityType="Self.Model" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Price" EntityType="Self.Price" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pricelist" EntityType="Self.Pricelist" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Season" EntityType="Self.Season" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShoppingCart" EntityType="Self.ShoppingCart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShoppingCartItem" EntityType="Self.ShoppingCartItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sizerun" EntityType="Self.Sizerun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SpecialDiscount" EntityType="Self.SpecialDiscount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TextSnippet" EntityType="Self.TextSnippet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserAgents" EntityType="Self.UserAgents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserClient" EntityType="Self.UserClient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserPriceList" EntityType="Self.UserPriceList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stock" EntityType="Self.Stock" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Stock].[StockID] AS [StockID], 
+    [Stock].[StockAssortmentID] AS [StockAssortmentID], 
+    [Stock].[StockQty01] AS [StockQty01], 
+    [Stock].[StockQty02] AS [StockQty02], 
+    [Stock].[StockQty03] AS [StockQty03], 
+    [Stock].[StockQty04] AS [StockQty04], 
+    [Stock].[StockQty05] AS [StockQty05], 
+    [Stock].[StockQty06] AS [StockQty06], 
+    [Stock].[StockQty07] AS [StockQty07], 
+    [Stock].[StockQty08] AS [StockQty08], 
+    [Stock].[StockQty09] AS [StockQty09], 
+    [Stock].[StockQty10] AS [StockQty10], 
+    [Stock].[StockQty11] AS [StockQty11], 
+    [Stock].[StockQty12] AS [StockQty12], 
+    [Stock].[StockQty13] AS [StockQty13], 
+    [Stock].[StockQty14] AS [StockQty14], 
+    [Stock].[StockQty15] AS [StockQty15], 
+    [Stock].[StockQty16] AS [StockQty16], 
+    [Stock].[StockQty17] AS [StockQty17], 
+    [Stock].[StockQty18] AS [StockQty18], 
+    [Stock].[StockQty19] AS [StockQty19], 
+    [Stock].[StockQty20] AS [StockQty20], 
+    [Stock].[StockQty21] AS [StockQty21], 
+    [Stock].[StockQty22] AS [StockQty22], 
+    [Stock].[StockQty23] AS [StockQty23], 
+    [Stock].[StockQty24] AS [StockQty24], 
+    [Stock].[StockQty25] AS [StockQty25], 
+    [Stock].[StockQty26] AS [StockQty26], 
+    [Stock].[StockQty27] AS [StockQty27], 
+    [Stock].[StockQty28] AS [StockQty28], 
+    [Stock].[StockQty29] AS [StockQty29], 
+    [Stock].[StockQty30] AS [StockQty30], 
+    [Stock].[SyncDateTime] AS [SyncDateTime], 
+    [Stock].[IsDeleted] AS [IsDeleted], 
+    [Stock].[StockClientID] AS [StockClientID], 
+    [Stock].[IsFreeDisposition] AS [IsFreeDisposition], 
+    [Stock].[StockQtyAssortment] AS [StockQtyAssortment], 
+    [Stock].[IsTestData] AS [IsTestData]
+    FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Agent_Client" Association="Self.FK_Agent_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Agent" EntitySet="Agent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_0" Association="Self.FK_Article_0">
+      <End Role="Model" EntitySet="Model" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Color_0" Association="Self.FK_Color_0">
+      <End Role="Article" EntitySet="Article" />
+      <End Role="Color" EntitySet="Color" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactPerson_Customer" Association="Self.FK_ContactPerson_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="ContactPerson" EntitySet="ContactPerson" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customer_Agent" Association="Self.FK_Customer_Agent">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customer_Pricelist" Association="Self.FK_Customer_Pricelist">
+      <End Role="Pricelist" EntitySet="Pricelist" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DeliveryAddress_Customer" Association="Self.FK_DeliveryAddress_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="DeliveryAddress" EntitySet="DeliveryAddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceAddress_Customer" Association="Self.FK_InvoiceAddress_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="InvoiceAddress" EntitySet="InvoiceAddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Model_0" Association="Self.FK_Model_0">
+      <End Role="Season" EntitySet="Season" />
+      <End Role="Model" EntitySet="Model" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Price_Color" Association="Self.FK_Price_Color">
+      <End Role="Color" EntitySet="Color" />
+      <End Role="Price" EntitySet="Price" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Price_Pricelist" Association="Self.FK_Price_Pricelist">
+      <End Role="Pricelist" EntitySet="Pricelist" />
+      <End Role="Price" EntitySet="Price" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Price_Sizerun" Association="Self.FK_Price_Sizerun">
+      <End Role="Sizerun" EntitySet="Sizerun" />
+      <End Role="Price" EntitySet="Price" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Season_0" Association="Self.FK_Season_0">
+      <End Role="Label" EntitySet="Label" />
+      <End Role="Season" EntitySet="Season" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserAgents_Agent" Association="Self.FK_UserAgents_Agent">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="UserAgents" EntitySet="UserAgents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserAgents_User" Association="Self.FK_UserAgents_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserAgents" EntitySet="UserAgents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPriceList_0" Association="Self.FK_UserPriceList_0">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserPriceList" EntitySet="UserPriceList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPriceList_1" Association="Self.FK_UserPriceList_1">
+      <End Role="Pricelist" EntitySet="Pricelist" />
+      <End Role="UserPriceList" EntitySet="UserPriceList" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

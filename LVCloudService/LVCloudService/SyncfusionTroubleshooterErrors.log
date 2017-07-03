@@ -1,0 +1,31 @@
+Date Time : 10.11.2016 15:53:07
+
+Error Details : Object reference not set to an instance of an object.
+
+Stack details :    at Microsoft.Syncfusion_VSExtension_Troubleshooter.Syncfusion_VSExtension_TroubleshooterPackage.queryStatusMenuCommand_BeforeQueryStatus(Object sender, EventArgs e)
+
+*****************************************************************
+
+Date Time : 11.11.2016 09:48:09
+
+Error Details : Object reference not set to an instance of an object.
+
+Stack details :    at Microsoft.Syncfusion_VSExtension_Troubleshooter.Syncfusion_VSExtension_TroubleshooterPackage.queryStatusMenuCommand_BeforeQueryStatus(Object sender, EventArgs e)
+
+*****************************************************************
+
+Date Time : 11.11.2016 10:30:13
+
+Error Details : Object reference not set to an instance of an object.
+
+Stack details :    at Microsoft.Syncfusion_VSExtension_Troubleshooter.Syncfusion_VSExtension_TroubleshooterPackage.queryStatusMenuCommand_BeforeQueryStatus(Object sender, EventArgs e)
+
+*****************************************************************
+
+Date Time : 11.11.2016 10:51:31
+
+Error Details : Object reference not set to an instance of an object.
+
+Stack details :    at Microsoft.Syncfusion_VSExtension_Troubleshooter.Syncfusion_VSExtension_TroubleshooterPackage.queryStatusMenuCommand_BeforeQueryStatus(Object sender, EventArgs e)
+
+*****************************************************************

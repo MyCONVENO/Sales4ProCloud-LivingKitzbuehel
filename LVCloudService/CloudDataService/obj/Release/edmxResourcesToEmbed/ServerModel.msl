@@ -1,0 +1,2328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LIVINGKITZBUEHLModelStoreContainer" CdmEntityContainer="LIVINGKITZBUEHLEntities">
+    <EntitySetMapping Name="Agent">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Agent">
+        <MappingFragment StoreEntitySet="Agent">
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="AgentNumber" ColumnName="AgentNumber" />
+          <ScalarProperty Name="AgentConfirmFax" ColumnName="AgentConfirmFax" />
+          <ScalarProperty Name="AgentConfirmEmail" ColumnName="AgentConfirmEmail" />
+          <ScalarProperty Name="AgentRemark" ColumnName="AgentRemark" />
+          <ScalarProperty Name="AgentCommission" ColumnName="AgentCommission" />
+          <ScalarProperty Name="AgentName1" ColumnName="AgentName1" />
+          <ScalarProperty Name="AgentName2" ColumnName="AgentName2" />
+          <ScalarProperty Name="AgentCity" ColumnName="AgentCity" />
+          <ScalarProperty Name="AgentZIP" ColumnName="AgentZIP" />
+          <ScalarProperty Name="AgentStreet" ColumnName="AgentStreet" />
+          <ScalarProperty Name="AgentPhone" ColumnName="AgentPhone" />
+          <ScalarProperty Name="AgentFax" ColumnName="AgentFax" />
+          <ScalarProperty Name="AgentEMail" ColumnName="AgentEMail" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AgentMobile" ColumnName="AgentMobile" />
+          <ScalarProperty Name="AgentCountryName" ColumnName="AgentCountryName" />
+          <ScalarProperty Name="AgentCountryCode" ColumnName="AgentCountryCode" />
+          <ScalarProperty Name="AgentClientID" ColumnName="AgentClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Agent_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Agent_Compare">
+        <MappingFragment StoreEntitySet="Agent_Compare">
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="AgentNumber" ColumnName="AgentNumber" />
+          <ScalarProperty Name="AgentConfirmFax" ColumnName="AgentConfirmFax" />
+          <ScalarProperty Name="AgentConfirmEmail" ColumnName="AgentConfirmEmail" />
+          <ScalarProperty Name="AgentRemark" ColumnName="AgentRemark" />
+          <ScalarProperty Name="AgentCommission" ColumnName="AgentCommission" />
+          <ScalarProperty Name="AgentName1" ColumnName="AgentName1" />
+          <ScalarProperty Name="AgentName2" ColumnName="AgentName2" />
+          <ScalarProperty Name="AgentCity" ColumnName="AgentCity" />
+          <ScalarProperty Name="AgentZIP" ColumnName="AgentZIP" />
+          <ScalarProperty Name="AgentStreet" ColumnName="AgentStreet" />
+          <ScalarProperty Name="AgentPhone" ColumnName="AgentPhone" />
+          <ScalarProperty Name="AgentFax" ColumnName="AgentFax" />
+          <ScalarProperty Name="AgentEMail" ColumnName="AgentEMail" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AgentMobile" ColumnName="AgentMobile" />
+          <ScalarProperty Name="AgentCountryName" ColumnName="AgentCountryName" />
+          <ScalarProperty Name="AgentCountryCode" ColumnName="AgentCountryCode" />
+          <ScalarProperty Name="AgentClientID" ColumnName="AgentClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Article">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Article">
+        <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="ArticleName" ColumnName="ArticleName" />
+          <ScalarProperty Name="ArticleNumber" ColumnName="ArticleNumber" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ArticleMaterial" ColumnName="ArticleMaterial" />
+          <ScalarProperty Name="ArticleOrigin" ColumnName="ArticleOrigin" />
+          <ScalarProperty Name="ArticleClientID" ColumnName="ArticleClientID" />
+          <ScalarProperty Name="ArticleGroupe1" ColumnName="ArticleGroupe1" />
+          <ScalarProperty Name="ArticleGroupe2" ColumnName="ArticleGroupe2" />
+          <ScalarProperty Name="ArticleHeelTypeNumber" ColumnName="ArticleHeelTypeNumber" />
+          <ScalarProperty Name="ArticleClosingTypeNumber" ColumnName="ArticleClosingTypeNumber" />
+          <ScalarProperty Name="ArticleClosingType" ColumnName="ArticleClosingType" />
+          <ScalarProperty Name="ArticleTypeNumber" ColumnName="ArticleTypeNumber" />
+          <ScalarProperty Name="ArticleTypeName" ColumnName="ArticleTypeName" />
+          <ScalarProperty Name="ArticleEASMaterial" ColumnName="ArticleEASMaterial" />
+          <ScalarProperty Name="ArticleEASMaterialNumber" ColumnName="ArticleEASMaterialNumber" />
+          <ScalarProperty Name="ArticleEASTypeName" ColumnName="ArticleEASTypeName" />
+          <ScalarProperty Name="ArticleEASTypeNumber" ColumnName="ArticleEASTypeNumber" />
+          <ScalarProperty Name="ArticleHeelTypeName" ColumnName="ArticleHeelTypeName" />
+          <ScalarProperty Name="ArticleCategory1" ColumnName="ArticleCategory1" />
+          <ScalarProperty Name="ArticleCategory2" ColumnName="ArticleCategory2" />
+          <ScalarProperty Name="ArticleCategory3" ColumnName="ArticleCategory3" />
+          <ScalarProperty Name="ArticleImage" ColumnName="ArticleImage" />
+          <ScalarProperty Name="ArticleInfoText1" ColumnName="ArticleInfoText1" />
+          <ScalarProperty Name="ArticleInfoText2" ColumnName="ArticleInfoText2" />
+          <ScalarProperty Name="BauerfeindMaterial" ColumnName="BauerfeindMaterial" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Association">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Association">
+        <MappingFragment StoreEntitySet="Association">
+          <ScalarProperty Name="AssociationID" ColumnName="AssociationID" />
+          <ScalarProperty Name="AssociationName1" ColumnName="AssociationName1" />
+          <ScalarProperty Name="AssociationName2" ColumnName="AssociationName2" />
+          <ScalarProperty Name="AssociationName3" ColumnName="AssociationName3" />
+          <ScalarProperty Name="AssociationStreet" ColumnName="AssociationStreet" />
+          <ScalarProperty Name="AssociationZIP" ColumnName="AssociationZIP" />
+          <ScalarProperty Name="AssociationCity" ColumnName="AssociationCity" />
+          <ScalarProperty Name="AssociationEMail" ColumnName="AssociationEMail" />
+          <ScalarProperty Name="AssociationPhone" ColumnName="AssociationPhone" />
+          <ScalarProperty Name="AssociationFax" ColumnName="AssociationFax" />
+          <ScalarProperty Name="AssociationPricelistID" ColumnName="AssociationPricelistID" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AssociationCountryName" ColumnName="AssociationCountryName" />
+          <ScalarProperty Name="AssociationCountryCode" ColumnName="AssociationCountryCode" />
+          <ScalarProperty Name="AssociationClientID" ColumnName="AssociationClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Association_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Association_Compare">
+        <MappingFragment StoreEntitySet="Association_Compare">
+          <ScalarProperty Name="AssociationID" ColumnName="AssociationID" />
+          <ScalarProperty Name="AssociationName1" ColumnName="AssociationName1" />
+          <ScalarProperty Name="AssociationName2" ColumnName="AssociationName2" />
+          <ScalarProperty Name="AssociationName3" ColumnName="AssociationName3" />
+          <ScalarProperty Name="AssociationStreet" ColumnName="AssociationStreet" />
+          <ScalarProperty Name="AssociationZIP" ColumnName="AssociationZIP" />
+          <ScalarProperty Name="AssociationCity" ColumnName="AssociationCity" />
+          <ScalarProperty Name="AssociationEMail" ColumnName="AssociationEMail" />
+          <ScalarProperty Name="AssociationPhone" ColumnName="AssociationPhone" />
+          <ScalarProperty Name="AssociationFax" ColumnName="AssociationFax" />
+          <ScalarProperty Name="AssociationPricelistID" ColumnName="AssociationPricelistID" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AssociationCountryName" ColumnName="AssociationCountryName" />
+          <ScalarProperty Name="AssociationCountryCode" ColumnName="AssociationCountryCode" />
+          <ScalarProperty Name="AssociationClientID" ColumnName="AssociationClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AssociationMember">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.AssociationMember">
+        <MappingFragment StoreEntitySet="AssociationMember">
+          <ScalarProperty Name="AssociationMemberID" ColumnName="AssociationMemberID" />
+          <ScalarProperty Name="AssociationMemberNumber" ColumnName="AssociationMemberNumber" />
+          <ScalarProperty Name="AssociationMemberCustomerID" ColumnName="AssociationMemberCustomerID" />
+          <ScalarProperty Name="AssociationMemberAssociationID" ColumnName="AssociationMemberAssociationID" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AssociationMemberClientID" ColumnName="AssociationMemberClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AssociationMember_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.AssociationMember_Compare">
+        <MappingFragment StoreEntitySet="AssociationMember_Compare">
+          <ScalarProperty Name="AssociationMemberID" ColumnName="AssociationMemberID" />
+          <ScalarProperty Name="AssociationMemberNumber" ColumnName="AssociationMemberNumber" />
+          <ScalarProperty Name="AssociationMemberCustomerID" ColumnName="AssociationMemberCustomerID" />
+          <ScalarProperty Name="AssociationMemberAssociationID" ColumnName="AssociationMemberAssociationID" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AssociationMemberClientID" ColumnName="AssociationMemberClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Assortment">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Assortment">
+        <MappingFragment StoreEntitySet="Assortment">
+          <ScalarProperty Name="AssortmentID" ColumnName="AssortmentID" />
+          <ScalarProperty Name="AssortmentName" ColumnName="AssortmentName" />
+          <ScalarProperty Name="AssortmentSizerunID" ColumnName="AssortmentSizerunID" />
+          <ScalarProperty Name="Qty01" ColumnName="Qty01" />
+          <ScalarProperty Name="Qty02" ColumnName="Qty02" />
+          <ScalarProperty Name="Qty03" ColumnName="Qty03" />
+          <ScalarProperty Name="Qty04" ColumnName="Qty04" />
+          <ScalarProperty Name="Qty05" ColumnName="Qty05" />
+          <ScalarProperty Name="Qty06" ColumnName="Qty06" />
+          <ScalarProperty Name="Qty07" ColumnName="Qty07" />
+          <ScalarProperty Name="Qty08" ColumnName="Qty08" />
+          <ScalarProperty Name="Qty09" ColumnName="Qty09" />
+          <ScalarProperty Name="Qty10" ColumnName="Qty10" />
+          <ScalarProperty Name="Qty11" ColumnName="Qty11" />
+          <ScalarProperty Name="Qty12" ColumnName="Qty12" />
+          <ScalarProperty Name="Qty13" ColumnName="Qty13" />
+          <ScalarProperty Name="Qty14" ColumnName="Qty14" />
+          <ScalarProperty Name="Qty15" ColumnName="Qty15" />
+          <ScalarProperty Name="Qty16" ColumnName="Qty16" />
+          <ScalarProperty Name="Qty17" ColumnName="Qty17" />
+          <ScalarProperty Name="Qty18" ColumnName="Qty18" />
+          <ScalarProperty Name="Qty19" ColumnName="Qty19" />
+          <ScalarProperty Name="Qty20" ColumnName="Qty20" />
+          <ScalarProperty Name="Qty21" ColumnName="Qty21" />
+          <ScalarProperty Name="Qty22" ColumnName="Qty22" />
+          <ScalarProperty Name="Qty23" ColumnName="Qty23" />
+          <ScalarProperty Name="Qty24" ColumnName="Qty24" />
+          <ScalarProperty Name="Qty25" ColumnName="Qty25" />
+          <ScalarProperty Name="Qty26" ColumnName="Qty26" />
+          <ScalarProperty Name="Qty27" ColumnName="Qty27" />
+          <ScalarProperty Name="Qty28" ColumnName="Qty28" />
+          <ScalarProperty Name="Qty29" ColumnName="Qty29" />
+          <ScalarProperty Name="Qty30" ColumnName="Qty30" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AssortmentClientID" ColumnName="AssortmentClientID" />
+          <ScalarProperty Name="SizerunRangeText" ColumnName="SizerunRangeText" />
+          <ScalarProperty Name="IsFreeDisposition" ColumnName="IsFreeDisposition" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Assortment_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Assortment_Compare">
+        <MappingFragment StoreEntitySet="Assortment_Compare">
+          <ScalarProperty Name="AssortmentID" ColumnName="AssortmentID" />
+          <ScalarProperty Name="AssortmentName" ColumnName="AssortmentName" />
+          <ScalarProperty Name="AssortmentSizerunID" ColumnName="AssortmentSizerunID" />
+          <ScalarProperty Name="Qty01" ColumnName="Qty01" />
+          <ScalarProperty Name="Qty02" ColumnName="Qty02" />
+          <ScalarProperty Name="Qty03" ColumnName="Qty03" />
+          <ScalarProperty Name="Qty04" ColumnName="Qty04" />
+          <ScalarProperty Name="Qty05" ColumnName="Qty05" />
+          <ScalarProperty Name="Qty06" ColumnName="Qty06" />
+          <ScalarProperty Name="Qty07" ColumnName="Qty07" />
+          <ScalarProperty Name="Qty08" ColumnName="Qty08" />
+          <ScalarProperty Name="Qty09" ColumnName="Qty09" />
+          <ScalarProperty Name="Qty10" ColumnName="Qty10" />
+          <ScalarProperty Name="Qty11" ColumnName="Qty11" />
+          <ScalarProperty Name="Qty12" ColumnName="Qty12" />
+          <ScalarProperty Name="Qty13" ColumnName="Qty13" />
+          <ScalarProperty Name="Qty14" ColumnName="Qty14" />
+          <ScalarProperty Name="Qty15" ColumnName="Qty15" />
+          <ScalarProperty Name="Qty16" ColumnName="Qty16" />
+          <ScalarProperty Name="Qty17" ColumnName="Qty17" />
+          <ScalarProperty Name="Qty18" ColumnName="Qty18" />
+          <ScalarProperty Name="Qty19" ColumnName="Qty19" />
+          <ScalarProperty Name="Qty20" ColumnName="Qty20" />
+          <ScalarProperty Name="Qty21" ColumnName="Qty21" />
+          <ScalarProperty Name="Qty22" ColumnName="Qty22" />
+          <ScalarProperty Name="Qty23" ColumnName="Qty23" />
+          <ScalarProperty Name="Qty24" ColumnName="Qty24" />
+          <ScalarProperty Name="Qty25" ColumnName="Qty25" />
+          <ScalarProperty Name="Qty26" ColumnName="Qty26" />
+          <ScalarProperty Name="Qty27" ColumnName="Qty27" />
+          <ScalarProperty Name="Qty28" ColumnName="Qty28" />
+          <ScalarProperty Name="Qty29" ColumnName="Qty29" />
+          <ScalarProperty Name="Qty30" ColumnName="Qty30" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AssortmentClientID" ColumnName="AssortmentClientID" />
+          <ScalarProperty Name="SizerunRangeText" ColumnName="SizerunRangeText" />
+          <ScalarProperty Name="IsFreeDisposition" ColumnName="IsFreeDisposition" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="AccentColor" ColumnName="AccentColor" />
+          <ScalarProperty Name="AccentLowColor" ColumnName="AccentLowColor" />
+          <ScalarProperty Name="AccentHighColor" ColumnName="AccentHighColor" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AccentColorString" ColumnName="AccentColorString" />
+          <ScalarProperty Name="ImagePathString" ColumnName="ImagePathString" />
+          <ScalarProperty Name="AddressName1" ColumnName="AddressName1" />
+          <ScalarProperty Name="AddressName2" ColumnName="AddressName2" />
+          <ScalarProperty Name="AddressStreet" ColumnName="AddressStreet" />
+          <ScalarProperty Name="AddressZip" ColumnName="AddressZip" />
+          <ScalarProperty Name="AddressCity" ColumnName="AddressCity" />
+          <ScalarProperty Name="AddressCountryCode" ColumnName="AddressCountryCode" />
+          <ScalarProperty Name="AddressCountryName" ColumnName="AddressCountryName" />
+          <ScalarProperty Name="Addressline" ColumnName="Addressline" />
+          <ScalarProperty Name="FooterLeftLine1" ColumnName="FooterLeftLine1" />
+          <ScalarProperty Name="FooterLeftLine2" ColumnName="FooterLeftLine2" />
+          <ScalarProperty Name="FooterLeftLine3" ColumnName="FooterLeftLine3" />
+          <ScalarProperty Name="FooterLeftLine4" ColumnName="FooterLeftLine4" />
+          <ScalarProperty Name="FooterRightLine1" ColumnName="FooterRightLine1" />
+          <ScalarProperty Name="FooterRightLine2" ColumnName="FooterRightLine2" />
+          <ScalarProperty Name="FooterRightLine3" ColumnName="FooterRightLine3" />
+          <ScalarProperty Name="FooterRightLine4" ColumnName="FooterRightLine4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactPerson">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ContactPerson">
+        <MappingFragment StoreEntitySet="ContactPerson">
+          <ScalarProperty Name="ContactPersonID" ColumnName="ContactPersonID" />
+          <ScalarProperty Name="ContactPersonCustomerID" ColumnName="ContactPersonCustomerID" />
+          <ScalarProperty Name="ContactPersonName1" ColumnName="ContactPersonName1" />
+          <ScalarProperty Name="ContactPersonName2" ColumnName="ContactPersonName2" />
+          <ScalarProperty Name="ContactPersonName3" ColumnName="ContactPersonName3" />
+          <ScalarProperty Name="ContactPersonFunction" ColumnName="ContactPersonFunction" />
+          <ScalarProperty Name="ContactPersonEmail" ColumnName="ContactPersonEmail" />
+          <ScalarProperty Name="ContactPersonPhone" ColumnName="ContactPersonPhone" />
+          <ScalarProperty Name="ContactPersonTitle" ColumnName="ContactPersonTitle" />
+          <ScalarProperty Name="ContactPersonClientID" ColumnName="ContactPersonClientID" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ContactPersonFax" ColumnName="ContactPersonFax" />
+          <ScalarProperty Name="ContactPersonNumber" ColumnName="ContactPersonNumber" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactPerson_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ContactPerson_Compare">
+        <MappingFragment StoreEntitySet="ContactPerson_Compare">
+          <ScalarProperty Name="ContactPersonID" ColumnName="ContactPersonID" />
+          <ScalarProperty Name="ContactPersonCustomerID" ColumnName="ContactPersonCustomerID" />
+          <ScalarProperty Name="ContactPersonName1" ColumnName="ContactPersonName1" />
+          <ScalarProperty Name="ContactPersonName2" ColumnName="ContactPersonName2" />
+          <ScalarProperty Name="ContactPersonName3" ColumnName="ContactPersonName3" />
+          <ScalarProperty Name="ContactPersonFunction" ColumnName="ContactPersonFunction" />
+          <ScalarProperty Name="ContactPersonEmail" ColumnName="ContactPersonEmail" />
+          <ScalarProperty Name="ContactPersonPhone" ColumnName="ContactPersonPhone" />
+          <ScalarProperty Name="ContactPersonTitle" ColumnName="ContactPersonTitle" />
+          <ScalarProperty Name="ContactPersonClientID" ColumnName="ContactPersonClientID" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ContactPersonFax" ColumnName="ContactPersonFax" />
+          <ScalarProperty Name="ContactPersonNumber" ColumnName="ContactPersonNumber" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Country">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="CountryClientID" ColumnName="CountryClientID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerFavorite">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.CustomerFavorite">
+        <MappingFragment StoreEntitySet="CustomerFavorite">
+          <ScalarProperty Name="CustomerFavoriteID" ColumnName="CustomerFavoriteID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="IsFavorite" ColumnName="IsFavorite" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerNote">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.CustomerNote">
+        <MappingFragment StoreEntitySet="CustomerNote">
+          <ScalarProperty Name="CustomerNoteID" ColumnName="CustomerNoteID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CustomerNoteClientID" ColumnName="CustomerNoteClientID" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeliveryAddress">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.DeliveryAddress">
+        <MappingFragment StoreEntitySet="DeliveryAddress">
+          <ScalarProperty Name="DeliveryAddressID" ColumnName="DeliveryAddressID" />
+          <ScalarProperty Name="DeliveryAddressCustomerID" ColumnName="DeliveryAddressCustomerID" />
+          <ScalarProperty Name="DeliveryAddressName1" ColumnName="DeliveryAddressName1" />
+          <ScalarProperty Name="DeliveryAddressName2" ColumnName="DeliveryAddressName2" />
+          <ScalarProperty Name="DeliveryAddressName3" ColumnName="DeliveryAddressName3" />
+          <ScalarProperty Name="DeliveryAddressStreet" ColumnName="DeliveryAddressStreet" />
+          <ScalarProperty Name="DeliveryAddressZIP" ColumnName="DeliveryAddressZIP" />
+          <ScalarProperty Name="DeliveryAddressCity" ColumnName="DeliveryAddressCity" />
+          <ScalarProperty Name="DeliveryAddressEMail" ColumnName="DeliveryAddressEMail" />
+          <ScalarProperty Name="DeliveryAddressPhone" ColumnName="DeliveryAddressPhone" />
+          <ScalarProperty Name="DeliveryAddressFax" ColumnName="DeliveryAddressFax" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DeliveryAddressCountryName" ColumnName="DeliveryAddressCountryName" />
+          <ScalarProperty Name="DeliveryAddressCountryCode" ColumnName="DeliveryAddressCountryCode" />
+          <ScalarProperty Name="DeliveryNumber" ColumnName="DeliveryNumber" />
+          <ScalarProperty Name="DeliveryAddressClientID" ColumnName="DeliveryAddressClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeliveryAddress_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.DeliveryAddress_Compare">
+        <MappingFragment StoreEntitySet="DeliveryAddress_Compare">
+          <ScalarProperty Name="DeliveryAddressID" ColumnName="DeliveryAddressID" />
+          <ScalarProperty Name="DeliveryAddressCustomerID" ColumnName="DeliveryAddressCustomerID" />
+          <ScalarProperty Name="DeliveryAddressName1" ColumnName="DeliveryAddressName1" />
+          <ScalarProperty Name="DeliveryAddressName2" ColumnName="DeliveryAddressName2" />
+          <ScalarProperty Name="DeliveryAddressName3" ColumnName="DeliveryAddressName3" />
+          <ScalarProperty Name="DeliveryAddressStreet" ColumnName="DeliveryAddressStreet" />
+          <ScalarProperty Name="DeliveryAddressZIP" ColumnName="DeliveryAddressZIP" />
+          <ScalarProperty Name="DeliveryAddressCity" ColumnName="DeliveryAddressCity" />
+          <ScalarProperty Name="DeliveryAddressEMail" ColumnName="DeliveryAddressEMail" />
+          <ScalarProperty Name="DeliveryAddressPhone" ColumnName="DeliveryAddressPhone" />
+          <ScalarProperty Name="DeliveryAddressFax" ColumnName="DeliveryAddressFax" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DeliveryAddressCountryName" ColumnName="DeliveryAddressCountryName" />
+          <ScalarProperty Name="DeliveryAddressCountryCode" ColumnName="DeliveryAddressCountryCode" />
+          <ScalarProperty Name="DeliveryNumber" ColumnName="DeliveryNumber" />
+          <ScalarProperty Name="DeliveryAddressClientID" ColumnName="DeliveryAddressClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceAddress">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.InvoiceAddress">
+        <MappingFragment StoreEntitySet="InvoiceAddress">
+          <ScalarProperty Name="InvoiceAddressID" ColumnName="InvoiceAddressID" />
+          <ScalarProperty Name="InvoiceAddressCustomerID" ColumnName="InvoiceAddressCustomerID" />
+          <ScalarProperty Name="InvoiceAddressName1" ColumnName="InvoiceAddressName1" />
+          <ScalarProperty Name="InvoiceAddressName2" ColumnName="InvoiceAddressName2" />
+          <ScalarProperty Name="InvoiceAddressName3" ColumnName="InvoiceAddressName3" />
+          <ScalarProperty Name="InvoiceAddressStreet" ColumnName="InvoiceAddressStreet" />
+          <ScalarProperty Name="InvoiceAddressZIP" ColumnName="InvoiceAddressZIP" />
+          <ScalarProperty Name="InvoiceAddressCity" ColumnName="InvoiceAddressCity" />
+          <ScalarProperty Name="InvoiceAddressEMail" ColumnName="InvoiceAddressEMail" />
+          <ScalarProperty Name="InvoiceAddressPhone" ColumnName="InvoiceAddressPhone" />
+          <ScalarProperty Name="InvoiceAddressFax" ColumnName="InvoiceAddressFax" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="InvoiceAddressCountryName" ColumnName="InvoiceAddressCountryName" />
+          <ScalarProperty Name="InvoiceAddressCountryCode" ColumnName="InvoiceAddressCountryCode" />
+          <ScalarProperty Name="InvoiceAddressClientID" ColumnName="InvoiceAddressClientID" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceAddress_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.InvoiceAddress_Compare">
+        <MappingFragment StoreEntitySet="InvoiceAddress_Compare">
+          <ScalarProperty Name="InvoiceAddressID" ColumnName="InvoiceAddressID" />
+          <ScalarProperty Name="InvoiceAddressCustomerID" ColumnName="InvoiceAddressCustomerID" />
+          <ScalarProperty Name="InvoiceAddressName1" ColumnName="InvoiceAddressName1" />
+          <ScalarProperty Name="InvoiceAddressName2" ColumnName="InvoiceAddressName2" />
+          <ScalarProperty Name="InvoiceAddressName3" ColumnName="InvoiceAddressName3" />
+          <ScalarProperty Name="InvoiceAddressStreet" ColumnName="InvoiceAddressStreet" />
+          <ScalarProperty Name="InvoiceAddressZIP" ColumnName="InvoiceAddressZIP" />
+          <ScalarProperty Name="InvoiceAddressCity" ColumnName="InvoiceAddressCity" />
+          <ScalarProperty Name="InvoiceAddressEMail" ColumnName="InvoiceAddressEMail" />
+          <ScalarProperty Name="InvoiceAddressPhone" ColumnName="InvoiceAddressPhone" />
+          <ScalarProperty Name="InvoiceAddressFax" ColumnName="InvoiceAddressFax" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="InvoiceAddressCountryName" ColumnName="InvoiceAddressCountryName" />
+          <ScalarProperty Name="InvoiceAddressCountryCode" ColumnName="InvoiceAddressCountryCode" />
+          <ScalarProperty Name="InvoiceAddressClientID" ColumnName="InvoiceAddressClientID" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Label">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Label">
+        <MappingFragment StoreEntitySet="Label">
+          <ScalarProperty Name="LabelID" ColumnName="LabelID" />
+          <ScalarProperty Name="LabelName" ColumnName="LabelName" />
+          <ScalarProperty Name="LabelNumber" ColumnName="LabelNumber" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LabelClientID" ColumnName="LabelClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Label_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Label_Compare">
+        <MappingFragment StoreEntitySet="Label_Compare">
+          <ScalarProperty Name="LabelID" ColumnName="LabelID" />
+          <ScalarProperty Name="LabelName" ColumnName="LabelName" />
+          <ScalarProperty Name="LabelNumber" ColumnName="LabelNumber" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LabelClientID" ColumnName="LabelClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Model">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Model">
+        <MappingFragment StoreEntitySet="Model">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+          <ScalarProperty Name="ModelSeasonID" ColumnName="ModelSeasonID" />
+          <ScalarProperty Name="ModelImage" ColumnName="ModelImage" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModelClientID" ColumnName="ModelClientID" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="FormNumber" ColumnName="FormNumber" />
+          <ScalarProperty Name="ProductGroup" ColumnName="ProductGroup" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="SoleTypeName" ColumnName="SoleTypeName" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Model_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Model_Compare">
+        <MappingFragment StoreEntitySet="Model_Compare">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+          <ScalarProperty Name="ModelSeasonID" ColumnName="ModelSeasonID" />
+          <ScalarProperty Name="ModelImage" ColumnName="ModelImage" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModelClientID" ColumnName="ModelClientID" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="FormNumber" ColumnName="FormNumber" />
+          <ScalarProperty Name="ProductGroup" ColumnName="ProductGroup" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="SoleTypeName" ColumnName="SoleTypeName" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
+          <ScalarProperty Name="ShoppingCartTitle" ColumnName="ShoppingCartTitle" />
+          <ScalarProperty Name="ShoppingCartCreationDateTime" ColumnName="ShoppingCartCreationDateTime" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="OrderTypeID" ColumnName="OrderTypeID" />
+          <ScalarProperty Name="OrderTypeText" ColumnName="OrderTypeText" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Sent" ColumnName="Sent" />
+          <ScalarProperty Name="SentDateTime" ColumnName="SentDateTime" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="Remark1" ColumnName="Remark1" />
+          <ScalarProperty Name="Remark2" ColumnName="Remark2" />
+          <ScalarProperty Name="SampleOrder" ColumnName="SampleOrder" />
+          <ScalarProperty Name="CustomerOrderNumber" ColumnName="CustomerOrderNumber" />
+          <ScalarProperty Name="ConfirmationEmail" ColumnName="ConfirmationEmail" />
+          <ScalarProperty Name="OrderType2" ColumnName="OrderType2" />
+          <ScalarProperty Name="SampleUnits" ColumnName="SampleUnits" />
+          <ScalarProperty Name="ProcessNumber" ColumnName="ProcessNumber" />
+          <ScalarProperty Name="ExtraDiscount" ColumnName="ExtraDiscount" />
+          <ScalarProperty Name="ShowPrice" ColumnName="ShowPrice" />
+          <ScalarProperty Name="TotalPosCount" ColumnName="TotalPosCount" />
+          <ScalarProperty Name="PricelistID" ColumnName="PricelistID" />
+          <ScalarProperty Name="PricelistName" ColumnName="PricelistName" />
+          <ScalarProperty Name="PricelistNumber" ColumnName="PricelistNumber" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="PricelistClientID" ColumnName="PricelistClientID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+          <ScalarProperty Name="CustomerName1" ColumnName="CustomerName1" />
+          <ScalarProperty Name="CustomerName2" ColumnName="CustomerName2" />
+          <ScalarProperty Name="CustomerName3" ColumnName="CustomerName3" />
+          <ScalarProperty Name="CustomerCity" ColumnName="CustomerCity" />
+          <ScalarProperty Name="CustomerZIP" ColumnName="CustomerZIP" />
+          <ScalarProperty Name="CustomerStreet" ColumnName="CustomerStreet" />
+          <ScalarProperty Name="CustomerCountryID" ColumnName="CustomerCountryID" />
+          <ScalarProperty Name="CustomerCountryName" ColumnName="CustomerCountryName" />
+          <ScalarProperty Name="CustomerCountryCode" ColumnName="CustomerCountryCode" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+          <ScalarProperty Name="CustomerFax" ColumnName="CustomerFax" />
+          <ScalarProperty Name="CustomerEMail" ColumnName="CustomerEMail" />
+          <ScalarProperty Name="CustomerMobile" ColumnName="CustomerMobile" />
+          <ScalarProperty Name="CustomerPricelistID" ColumnName="CustomerPricelistID" />
+          <ScalarProperty Name="Customergroup" ColumnName="Customergroup" />
+          <ScalarProperty Name="CustomerDiscount" ColumnName="CustomerDiscount" />
+          <ScalarProperty Name="CustomerTaxID" ColumnName="CustomerTaxID" />
+          <ScalarProperty Name="CustomerComplaintDiscount" ColumnName="CustomerComplaintDiscount" />
+          <ScalarProperty Name="CustomerValuta" ColumnName="CustomerValuta" />
+          <ScalarProperty Name="CustomerAgentID" ColumnName="CustomerAgentID" />
+          <ScalarProperty Name="PaymentTermText" ColumnName="PaymentTermText" />
+          <ScalarProperty Name="PaymentTermNumber" ColumnName="PaymentTermNumber" />
+          <ScalarProperty Name="AgentName1" ColumnName="AgentName1" />
+          <ScalarProperty Name="AgentNumber" ColumnName="AgentNumber" />
+          <ScalarProperty Name="CustomerClientID" ColumnName="CustomerClientID" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="lon" ColumnName="lon" />
+          <ScalarProperty Name="CustomerBarrier" ColumnName="CustomerBarrier" />
+          <ScalarProperty Name="IsFavorite" ColumnName="IsFavorite" />
+          <ScalarProperty Name="LabelID" ColumnName="LabelID" />
+          <ScalarProperty Name="LabelName" ColumnName="LabelName" />
+          <ScalarProperty Name="LabelNumber" ColumnName="LabelNumber" />
+          <ScalarProperty Name="LabelClientID" ColumnName="LabelClientID" />
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="SeasonNumber" ColumnName="SeasonNumber" />
+          <ScalarProperty Name="SeasonName" ColumnName="SeasonName" />
+          <ScalarProperty Name="SeasonSort" ColumnName="SeasonSort" />
+          <ScalarProperty Name="SeasonLabelID" ColumnName="SeasonLabelID" />
+          <ScalarProperty Name="SeasonClientID" ColumnName="SeasonClientID" />
+          <ScalarProperty Name="DeliveryAddressID" ColumnName="DeliveryAddressID" />
+          <ScalarProperty Name="DeliveryAddressCustomerID" ColumnName="DeliveryAddressCustomerID" />
+          <ScalarProperty Name="DeliveryAddressName1" ColumnName="DeliveryAddressName1" />
+          <ScalarProperty Name="DeliveryAddressName2" ColumnName="DeliveryAddressName2" />
+          <ScalarProperty Name="DeliveryAddressName3" ColumnName="DeliveryAddressName3" />
+          <ScalarProperty Name="DeliveryAddressCity" ColumnName="DeliveryAddressCity" />
+          <ScalarProperty Name="DeliveryAddressZIP" ColumnName="DeliveryAddressZIP" />
+          <ScalarProperty Name="DeliveryAddressStreet" ColumnName="DeliveryAddressStreet" />
+          <ScalarProperty Name="DeliveryAddressCountryName" ColumnName="DeliveryAddressCountryName" />
+          <ScalarProperty Name="DeliveryAddressCountryCode" ColumnName="DeliveryAddressCountryCode" />
+          <ScalarProperty Name="DeliveryAddressPhone" ColumnName="DeliveryAddressPhone" />
+          <ScalarProperty Name="DeliveryAddressFax" ColumnName="DeliveryAddressFax" />
+          <ScalarProperty Name="DeliveryAddressEMail" ColumnName="DeliveryAddressEMail" />
+          <ScalarProperty Name="DeliveryAddressMobile" ColumnName="DeliveryAddressMobile" />
+          <ScalarProperty Name="DeliveryAddressClientID" ColumnName="DeliveryAddressClientID" />
+          <ScalarProperty Name="DeliveryAddressCountryID" ColumnName="DeliveryAddressCountryID" />
+          <ScalarProperty Name="InvoiceAddressID" ColumnName="InvoiceAddressID" />
+          <ScalarProperty Name="InvoiceAddressCustomerID" ColumnName="InvoiceAddressCustomerID" />
+          <ScalarProperty Name="InvoiceAddressName1" ColumnName="InvoiceAddressName1" />
+          <ScalarProperty Name="InvoiceAddressName2" ColumnName="InvoiceAddressName2" />
+          <ScalarProperty Name="InvoiceAddressName3" ColumnName="InvoiceAddressName3" />
+          <ScalarProperty Name="InvoiceAddressCity" ColumnName="InvoiceAddressCity" />
+          <ScalarProperty Name="InvoiceAddressZIP" ColumnName="InvoiceAddressZIP" />
+          <ScalarProperty Name="InvoiceAddressStreet" ColumnName="InvoiceAddressStreet" />
+          <ScalarProperty Name="InvoiceAddressCountryName" ColumnName="InvoiceAddressCountryName" />
+          <ScalarProperty Name="InvoiceAddressCountryCode" ColumnName="InvoiceAddressCountryCode" />
+          <ScalarProperty Name="InvoiceAddressPhone" ColumnName="InvoiceAddressPhone" />
+          <ScalarProperty Name="InvoiceAddressFax" ColumnName="InvoiceAddressFax" />
+          <ScalarProperty Name="InvoiceAddressEMail" ColumnName="InvoiceAddressEMail" />
+          <ScalarProperty Name="InvoiceAddressMobile" ColumnName="InvoiceAddressMobile" />
+          <ScalarProperty Name="InvoiceAddressClientID" ColumnName="InvoiceAddressClientID" />
+          <ScalarProperty Name="InvoiceAddressCountryID" ColumnName="InvoiceAddressCountryID" />
+          <ScalarProperty Name="AssociationID" ColumnName="AssociationID" />
+          <ScalarProperty Name="AssociationNumber" ColumnName="AssociationNumber" />
+          <ScalarProperty Name="AssociationName1" ColumnName="AssociationName1" />
+          <ScalarProperty Name="AssociationName2" ColumnName="AssociationName2" />
+          <ScalarProperty Name="AssociationName3" ColumnName="AssociationName3" />
+          <ScalarProperty Name="AssociationCity" ColumnName="AssociationCity" />
+          <ScalarProperty Name="AssociationZIP" ColumnName="AssociationZIP" />
+          <ScalarProperty Name="AssociationStreet" ColumnName="AssociationStreet" />
+          <ScalarProperty Name="AssociationCountryName" ColumnName="AssociationCountryName" />
+          <ScalarProperty Name="AssociationCountryCode" ColumnName="AssociationCountryCode" />
+          <ScalarProperty Name="AssociationPhone" ColumnName="AssociationPhone" />
+          <ScalarProperty Name="AssociationFax" ColumnName="AssociationFax" />
+          <ScalarProperty Name="AssociationEMail" ColumnName="AssociationEMail" />
+          <ScalarProperty Name="AssociationMobile" ColumnName="AssociationMobile" />
+          <ScalarProperty Name="AssociationPricelistID" ColumnName="AssociationPricelistID" />
+          <ScalarProperty Name="AssociationClientID" ColumnName="AssociationClientID" />
+          <ScalarProperty Name="AssociationMemberID" ColumnName="AssociationMemberID" />
+          <ScalarProperty Name="AssociationMemberNumber" ColumnName="AssociationMemberNumber" />
+          <ScalarProperty Name="AssociationMemberCustomerID" ColumnName="AssociationMemberCustomerID" />
+          <ScalarProperty Name="AssociationMemberAssociationID" ColumnName="AssociationMemberAssociationID" />
+          <ScalarProperty Name="AssociationMemberClientID" ColumnName="AssociationMemberClientID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderItem">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.OrderItem">
+        <MappingFragment StoreEntitySet="OrderItem">
+          <ScalarProperty Name="OrderItemID" ColumnName="OrderItemID" />
+          <ScalarProperty Name="ArticleCategory1" ColumnName="ArticleCategory1" />
+          <ScalarProperty Name="ArticleCategory2" ColumnName="ArticleCategory2" />
+          <ScalarProperty Name="ArticleCategory3" ColumnName="ArticleCategory3" />
+          <ScalarProperty Name="ArticleClientID" ColumnName="ArticleClientID" />
+          <ScalarProperty Name="ArticleClosingType" ColumnName="ArticleClosingType" />
+          <ScalarProperty Name="ArticleClosingTypeNumber" ColumnName="ArticleClosingTypeNumber" />
+          <ScalarProperty Name="ArticleCollectionName" ColumnName="ArticleCollectionName" />
+          <ScalarProperty Name="ArticleCollectionNumber" ColumnName="ArticleCollectionNumber" />
+          <ScalarProperty Name="ArticleEASMaterial" ColumnName="ArticleEASMaterial" />
+          <ScalarProperty Name="ArticleEASMaterialNumber" ColumnName="ArticleEASMaterialNumber" />
+          <ScalarProperty Name="ArticleEASTypeName" ColumnName="ArticleEASTypeName" />
+          <ScalarProperty Name="ArticleEASTypeNumber" ColumnName="ArticleEASTypeNumber" />
+          <ScalarProperty Name="ArticleGroupe1" ColumnName="ArticleGroupe1" />
+          <ScalarProperty Name="ArticleGroupe2" ColumnName="ArticleGroupe2" />
+          <ScalarProperty Name="ArticleHeelTypeName" ColumnName="ArticleHeelTypeName" />
+          <ScalarProperty Name="ArticleHeelTypeNumber" ColumnName="ArticleHeelTypeNumber" />
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="ArticleImage" ColumnName="ArticleImage" />
+          <ScalarProperty Name="ArticleInfoText1" ColumnName="ArticleInfoText1" />
+          <ScalarProperty Name="ArticleInfoText2" ColumnName="ArticleInfoText2" />
+          <ScalarProperty Name="ArticleLiningName" ColumnName="ArticleLiningName" />
+          <ScalarProperty Name="ArticleLiningName2" ColumnName="ArticleLiningName2" />
+          <ScalarProperty Name="ArticleLiningNumber" ColumnName="ArticleLiningNumber" />
+          <ScalarProperty Name="ArticleLiningNumber2" ColumnName="ArticleLiningNumber2" />
+          <ScalarProperty Name="ArticleMaterial" ColumnName="ArticleMaterial" />
+          <ScalarProperty Name="ArticleName" ColumnName="ArticleName" />
+          <ScalarProperty Name="ArticleNumber" ColumnName="ArticleNumber" />
+          <ScalarProperty Name="ArticleOrigin" ColumnName="ArticleOrigin" />
+          <ScalarProperty Name="ArticleTypeName" ColumnName="ArticleTypeName" />
+          <ScalarProperty Name="ArticleTypeNumber" ColumnName="ArticleTypeNumber" />
+          <ScalarProperty Name="AssortmentClientID" ColumnName="AssortmentClientID" />
+          <ScalarProperty Name="AssortmentID" ColumnName="AssortmentID" />
+          <ScalarProperty Name="AssortmentName" ColumnName="AssortmentName" />
+          <ScalarProperty Name="AssortmentQty" ColumnName="AssortmentQty" />
+          <ScalarProperty Name="AssortmentSizerunID" ColumnName="AssortmentSizerunID" />
+          <ScalarProperty Name="AssortmentStockQty" ColumnName="AssortmentStockQty" />
+          <ScalarProperty Name="BauerfeindMaterial" ColumnName="BauerfeindMaterial" />
+          <ScalarProperty Name="ColorArticleID" ColumnName="ColorArticleID" />
+          <ScalarProperty Name="ColorClientID" ColumnName="ColorClientID" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="ColorImage" ColumnName="ColorImage" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="ColorNumber" ColumnName="ColorNumber" />
+          <ScalarProperty Name="ColorNumberSearchText" ColumnName="ColorNumberSearchText" />
+          <ScalarProperty Name="ColorNumberText" ColumnName="ColorNumberText" />
+          <ScalarProperty Name="ColorStatus" ColumnName="ColorStatus" />
+          <ScalarProperty Name="CustomerArticleNumber" ColumnName="CustomerArticleNumber" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="DeliveryDateEnd" ColumnName="DeliveryDateEnd" />
+          <ScalarProperty Name="DeliveryDateStart" ColumnName="DeliveryDateStart" />
+          <ScalarProperty Name="EASColorName" ColumnName="EASColorName" />
+          <ScalarProperty Name="EASColorNumber" ColumnName="EASColorNumber" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="FormNumber" ColumnName="FormNumber" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsFavorite" ColumnName="IsFavorite" />
+          <ScalarProperty Name="IsFreeDisposition" ColumnName="IsFreeDisposition" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="ModelClientID" ColumnName="ModelClientID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="ModelImage" ColumnName="ModelImage" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+          <ScalarProperty Name="ModelSeasonID" ColumnName="ModelSeasonID" />
+          <ScalarProperty Name="ModifiedDeliveryDateEnd" ColumnName="ModifiedDeliveryDateEnd" />
+          <ScalarProperty Name="ModifiedDeliveryDateStart" ColumnName="ModifiedDeliveryDateStart" />
+          <ScalarProperty Name="ProductGroup" ColumnName="ProductGroup" />
+          <ScalarProperty Name="ProductionArticle" ColumnName="ProductionArticle" />
+          <ScalarProperty Name="Qty01" ColumnName="Qty01" />
+          <ScalarProperty Name="Qty02" ColumnName="Qty02" />
+          <ScalarProperty Name="Qty03" ColumnName="Qty03" />
+          <ScalarProperty Name="Qty04" ColumnName="Qty04" />
+          <ScalarProperty Name="Qty05" ColumnName="Qty05" />
+          <ScalarProperty Name="Qty06" ColumnName="Qty06" />
+          <ScalarProperty Name="Qty07" ColumnName="Qty07" />
+          <ScalarProperty Name="Qty08" ColumnName="Qty08" />
+          <ScalarProperty Name="Qty09" ColumnName="Qty09" />
+          <ScalarProperty Name="Qty10" ColumnName="Qty10" />
+          <ScalarProperty Name="Qty11" ColumnName="Qty11" />
+          <ScalarProperty Name="Qty12" ColumnName="Qty12" />
+          <ScalarProperty Name="Qty13" ColumnName="Qty13" />
+          <ScalarProperty Name="Qty14" ColumnName="Qty14" />
+          <ScalarProperty Name="Qty15" ColumnName="Qty15" />
+          <ScalarProperty Name="Qty16" ColumnName="Qty16" />
+          <ScalarProperty Name="Qty17" ColumnName="Qty17" />
+          <ScalarProperty Name="Qty18" ColumnName="Qty18" />
+          <ScalarProperty Name="Qty19" ColumnName="Qty19" />
+          <ScalarProperty Name="Qty20" ColumnName="Qty20" />
+          <ScalarProperty Name="Qty21" ColumnName="Qty21" />
+          <ScalarProperty Name="Qty22" ColumnName="Qty22" />
+          <ScalarProperty Name="Qty23" ColumnName="Qty23" />
+          <ScalarProperty Name="Qty24" ColumnName="Qty24" />
+          <ScalarProperty Name="Qty25" ColumnName="Qty25" />
+          <ScalarProperty Name="Qty26" ColumnName="Qty26" />
+          <ScalarProperty Name="Qty27" ColumnName="Qty27" />
+          <ScalarProperty Name="Qty28" ColumnName="Qty28" />
+          <ScalarProperty Name="Qty29" ColumnName="Qty29" />
+          <ScalarProperty Name="Qty30" ColumnName="Qty30" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Remark2" ColumnName="Remark2" />
+          <ScalarProperty Name="SampleSize" ColumnName="SampleSize" />
+          <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
+          <ScalarProperty Name="ShoppingCartItemClientID" ColumnName="ShoppingCartItemClientID" />
+          <ScalarProperty Name="ShoppingCartItemDiscount" ColumnName="ShoppingCartItemDiscount" />
+          <ScalarProperty Name="ShoppingCartItemID" ColumnName="ShoppingCartItemID" />
+          <ScalarProperty Name="ShoppingCartItemSort" ColumnName="ShoppingCartItemSort" />
+          <ScalarProperty Name="Size01" ColumnName="Size01" />
+          <ScalarProperty Name="Size02" ColumnName="Size02" />
+          <ScalarProperty Name="Size03" ColumnName="Size03" />
+          <ScalarProperty Name="Size04" ColumnName="Size04" />
+          <ScalarProperty Name="Size05" ColumnName="Size05" />
+          <ScalarProperty Name="Size06" ColumnName="Size06" />
+          <ScalarProperty Name="Size07" ColumnName="Size07" />
+          <ScalarProperty Name="Size08" ColumnName="Size08" />
+          <ScalarProperty Name="Size09" ColumnName="Size09" />
+          <ScalarProperty Name="Size10" ColumnName="Size10" />
+          <ScalarProperty Name="Size11" ColumnName="Size11" />
+          <ScalarProperty Name="Size12" ColumnName="Size12" />
+          <ScalarProperty Name="Size13" ColumnName="Size13" />
+          <ScalarProperty Name="Size14" ColumnName="Size14" />
+          <ScalarProperty Name="Size15" ColumnName="Size15" />
+          <ScalarProperty Name="Size16" ColumnName="Size16" />
+          <ScalarProperty Name="Size17" ColumnName="Size17" />
+          <ScalarProperty Name="Size18" ColumnName="Size18" />
+          <ScalarProperty Name="Size19" ColumnName="Size19" />
+          <ScalarProperty Name="Size20" ColumnName="Size20" />
+          <ScalarProperty Name="Size21" ColumnName="Size21" />
+          <ScalarProperty Name="Size22" ColumnName="Size22" />
+          <ScalarProperty Name="Size23" ColumnName="Size23" />
+          <ScalarProperty Name="Size24" ColumnName="Size24" />
+          <ScalarProperty Name="Size25" ColumnName="Size25" />
+          <ScalarProperty Name="Size26" ColumnName="Size26" />
+          <ScalarProperty Name="Size27" ColumnName="Size27" />
+          <ScalarProperty Name="Size28" ColumnName="Size28" />
+          <ScalarProperty Name="Size29" ColumnName="Size29" />
+          <ScalarProperty Name="Size30" ColumnName="Size30" />
+          <ScalarProperty Name="SizerunArticleID" ColumnName="SizerunArticleID" />
+          <ScalarProperty Name="SizerunClientID" ColumnName="SizerunClientID" />
+          <ScalarProperty Name="SizerunColorID" ColumnName="SizerunColorID" />
+          <ScalarProperty Name="SizerunID" ColumnName="SizerunID" />
+          <ScalarProperty Name="SizerunName" ColumnName="SizerunName" />
+          <ScalarProperty Name="SizerunNumber" ColumnName="SizerunNumber" />
+          <ScalarProperty Name="SizerunPrintColor" ColumnName="SizerunPrintColor" />
+          <ScalarProperty Name="StockArticle" ColumnName="StockArticle" />
+          <ScalarProperty Name="StockSum" ColumnName="StockSum" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pricat">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.pricat">
+        <MappingFragment StoreEntitySet="pricat">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ECCIdentNumber" ColumnName="ECCIdentNumber" />
+          <ScalarProperty Name="ECCManufacturerNumber" ColumnName="ECCManufacturerNumber" />
+          <ScalarProperty Name="ManufacturerArticleName" ColumnName="ManufacturerArticleName" />
+          <ScalarProperty Name="CatalogueOrderNumber" ColumnName="CatalogueOrderNumber" />
+          <ScalarProperty Name="EASArticleGroup" ColumnName="EASArticleGroup" />
+          <ScalarProperty Name="EASColour" ColumnName="EASColour" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="DistributionUnit" ColumnName="DistributionUnit" />
+          <ScalarProperty Name="ColourNumberOfManufacturer" ColumnName="ColourNumberOfManufacturer" />
+          <ScalarProperty Name="ColourDescription" ColumnName="ColourDescription" />
+          <ScalarProperty Name="ModelDescriptionOfManufacturer" ColumnName="ModelDescriptionOfManufacturer" />
+          <ScalarProperty Name="MaterialDescription" ColumnName="MaterialDescription" />
+          <ScalarProperty Name="BrandDescription" ColumnName="BrandDescription" />
+          <ScalarProperty Name="ModelDescription" ColumnName="ModelDescription" />
+          <ScalarProperty Name="MinimumOrderQuantity" ColumnName="MinimumOrderQuantity" />
+          <ScalarProperty Name="QuantityPerShippingUnit" ColumnName="QuantityPerShippingUnit" />
+          <ScalarProperty Name="Availability" ColumnName="Availability" />
+          <ScalarProperty Name="CountryOfOrigin" ColumnName="CountryOfOrigin" />
+          <ScalarProperty Name="DeliverableFrom" ColumnName="DeliverableFrom" />
+          <ScalarProperty Name="DeliverableUntil" ColumnName="DeliverableUntil" />
+          <ScalarProperty Name="ManufacturerSeason" ColumnName="ManufacturerSeason" />
+          <ScalarProperty Name="ListPrice" ColumnName="ListPrice" />
+          <ScalarProperty Name="RecommendedRetailPrice" ColumnName="RecommendedRetailPrice" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Price">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Price">
+        <MappingFragment StoreEntitySet="Price">
+          <ScalarProperty Name="PriceID" ColumnName="PriceID" />
+          <ScalarProperty Name="PriceArticleID" ColumnName="PriceArticleID" />
+          <ScalarProperty Name="PriceSizerunID" ColumnName="PriceSizerunID" />
+          <ScalarProperty Name="PricePricelistID" ColumnName="PricePricelistID" />
+          <ScalarProperty Name="BuyingPrice" ColumnName="BuyingPrice" />
+          <ScalarProperty Name="SalesPrice" ColumnName="SalesPrice" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="PriceClientID" ColumnName="PriceClientID" />
+          <ScalarProperty Name="PriceColorID" ColumnName="PriceColorID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Price_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Price_Compare">
+        <MappingFragment StoreEntitySet="Price_Compare">
+          <ScalarProperty Name="PriceID" ColumnName="PriceID" />
+          <ScalarProperty Name="PriceArticleID" ColumnName="PriceArticleID" />
+          <ScalarProperty Name="PriceSizerunID" ColumnName="PriceSizerunID" />
+          <ScalarProperty Name="PricePricelistID" ColumnName="PricePricelistID" />
+          <ScalarProperty Name="BuyingPrice" ColumnName="BuyingPrice" />
+          <ScalarProperty Name="SalesPrice" ColumnName="SalesPrice" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="PriceClientID" ColumnName="PriceClientID" />
+          <ScalarProperty Name="PriceColorID" ColumnName="PriceColorID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pricelist">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Pricelist">
+        <MappingFragment StoreEntitySet="Pricelist">
+          <ScalarProperty Name="PricelistID" ColumnName="PricelistID" />
+          <ScalarProperty Name="PricelistName" ColumnName="PricelistName" />
+          <ScalarProperty Name="PricelistNumber" ColumnName="PricelistNumber" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="PricelistClientID" ColumnName="PricelistClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pricelist_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Pricelist_Compare">
+        <MappingFragment StoreEntitySet="Pricelist_Compare">
+          <ScalarProperty Name="PricelistID" ColumnName="PricelistID" />
+          <ScalarProperty Name="PricelistName" ColumnName="PricelistName" />
+          <ScalarProperty Name="PricelistNumber" ColumnName="PricelistNumber" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="PricelistClientID" ColumnName="PricelistClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PushChannel">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.PushChannel">
+        <MappingFragment StoreEntitySet="PushChannel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ChannelUri" ColumnName="ChannelUri" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Season">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Season">
+        <MappingFragment StoreEntitySet="Season">
+          <ScalarProperty Name="DeliveryDateEnd" ColumnName="DeliveryDateEnd" />
+          <ScalarProperty Name="DeliveryDateStart" ColumnName="DeliveryDateStart" />
+          <ScalarProperty Name="SeasonLongName" ColumnName="SeasonLongName" />
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="SeasonName" ColumnName="SeasonName" />
+          <ScalarProperty Name="SeasonLabelID" ColumnName="SeasonLabelID" />
+          <ScalarProperty Name="SeasonSort" ColumnName="SeasonSort" />
+          <ScalarProperty Name="SeasonNumber" ColumnName="SeasonNumber" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SeasonClientID" ColumnName="SeasonClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Season_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Season_Compare">
+        <MappingFragment StoreEntitySet="Season_Compare">
+          <ScalarProperty Name="SeasonLongName" ColumnName="SeasonLongName" />
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="SeasonName" ColumnName="SeasonName" />
+          <ScalarProperty Name="SeasonLabelID" ColumnName="SeasonLabelID" />
+          <ScalarProperty Name="SeasonSort" ColumnName="SeasonSort" />
+          <ScalarProperty Name="SeasonNumber" ColumnName="SeasonNumber" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SeasonClientID" ColumnName="SeasonClientID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShoppingCart">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ShoppingCart">
+        <MappingFragment StoreEntitySet="ShoppingCart">
+          <ScalarProperty Name="AppVersion" ColumnName="AppVersion" />
+          <ScalarProperty Name="SeasonLongName" ColumnName="SeasonLongName" />
+          <ScalarProperty Name="CustomerHeader10" ColumnName="CustomerHeader10" />
+          <ScalarProperty Name="CustomerHeader09" ColumnName="CustomerHeader09" />
+          <ScalarProperty Name="CustomerHeader08" ColumnName="CustomerHeader08" />
+          <ScalarProperty Name="CustomerHeader07" ColumnName="CustomerHeader07" />
+          <ScalarProperty Name="CustomerHeader06" ColumnName="CustomerHeader06" />
+          <ScalarProperty Name="CustomerHeader05" ColumnName="CustomerHeader05" />
+          <ScalarProperty Name="CustomerHeader04" ColumnName="CustomerHeader04" />
+          <ScalarProperty Name="CustomerHeader03" ColumnName="CustomerHeader03" />
+          <ScalarProperty Name="CustomerHeader02" ColumnName="CustomerHeader02" />
+          <ScalarProperty Name="CustomerHeader01" ColumnName="CustomerHeader01" />
+          <ScalarProperty Name="CustomerText10" ColumnName="CustomerText10" />
+          <ScalarProperty Name="CustomerText09" ColumnName="CustomerText09" />
+          <ScalarProperty Name="CustomerText08" ColumnName="CustomerText08" />
+          <ScalarProperty Name="CustomerText07" ColumnName="CustomerText07" />
+          <ScalarProperty Name="CustomerText06" ColumnName="CustomerText06" />
+          <ScalarProperty Name="CustomerText05" ColumnName="CustomerText05" />
+          <ScalarProperty Name="CustomerText04" ColumnName="CustomerText04" />
+          <ScalarProperty Name="CustomerText03" ColumnName="CustomerText03" />
+          <ScalarProperty Name="CustomerText02" ColumnName="CustomerText02" />
+          <ScalarProperty Name="CustomerText01" ColumnName="CustomerText01" />
+          <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="OrderTypeID" ColumnName="OrderTypeID" />
+          <ScalarProperty Name="OrderTypeText" ColumnName="OrderTypeText" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Sent" ColumnName="Sent" />
+          <ScalarProperty Name="SentDateTime" ColumnName="SentDateTime" />
+          <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+          <ScalarProperty Name="CustomerName1" ColumnName="CustomerName1" />
+          <ScalarProperty Name="CustomerName2" ColumnName="CustomerName2" />
+          <ScalarProperty Name="CustomerName3" ColumnName="CustomerName3" />
+          <ScalarProperty Name="CustomerCity" ColumnName="CustomerCity" />
+          <ScalarProperty Name="CustomerZIP" ColumnName="CustomerZIP" />
+          <ScalarProperty Name="CustomerStreet" ColumnName="CustomerStreet" />
+          <ScalarProperty Name="CustomerCountryID" ColumnName="CustomerCountryID" />
+          <ScalarProperty Name="CustomerCountryName" ColumnName="CustomerCountryName" />
+          <ScalarProperty Name="CustomerCountryCode" ColumnName="CustomerCountryCode" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+          <ScalarProperty Name="CustomerFax" ColumnName="CustomerFax" />
+          <ScalarProperty Name="CustomerEMail" ColumnName="CustomerEMail" />
+          <ScalarProperty Name="CustomerMobile" ColumnName="CustomerMobile" />
+          <ScalarProperty Name="CustomerPricelistID" ColumnName="CustomerPricelistID" />
+          <ScalarProperty Name="Customergroup" ColumnName="Customergroup" />
+          <ScalarProperty Name="CustomerPaymentTerm" ColumnName="CustomerPaymentTerm" />
+          <ScalarProperty Name="CustomerDiscount" ColumnName="CustomerDiscount" />
+          <ScalarProperty Name="CustomerTaxID" ColumnName="CustomerTaxID" />
+          <ScalarProperty Name="CustomerComplaintDiscount" ColumnName="CustomerComplaintDiscount" />
+          <ScalarProperty Name="CustomerValuta" ColumnName="CustomerValuta" />
+          <ScalarProperty Name="CustomerAgentID" ColumnName="CustomerAgentID" />
+          <ScalarProperty Name="PaymentTermText" ColumnName="PaymentTermText" />
+          <ScalarProperty Name="PaymentTermNumber" ColumnName="PaymentTermNumber" />
+          <ScalarProperty Name="PricelistName" ColumnName="PricelistName" />
+          <ScalarProperty Name="PricelistNumber" ColumnName="PricelistNumber" />
+          <ScalarProperty Name="AgentName1" ColumnName="AgentName1" />
+          <ScalarProperty Name="AgentNumber" ColumnName="AgentNumber" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="LabelID" ColumnName="LabelID" />
+          <ScalarProperty Name="LabelName" ColumnName="LabelName" />
+          <ScalarProperty Name="LabelNumber" ColumnName="LabelNumber" />
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="SeasonNumber" ColumnName="SeasonNumber" />
+          <ScalarProperty Name="SeasonName" ColumnName="SeasonName" />
+          <ScalarProperty Name="SeasonSort" ColumnName="SeasonSort" />
+          <ScalarProperty Name="SeasonLabelID" ColumnName="SeasonLabelID" />
+          <ScalarProperty Name="DeliveryAddressID" ColumnName="DeliveryAddressID" />
+          <ScalarProperty Name="DeliveryNumber" ColumnName="DeliveryNumber" />
+          <ScalarProperty Name="DeliveryAddressCustomerID" ColumnName="DeliveryAddressCustomerID" />
+          <ScalarProperty Name="DeliveryAddressName1" ColumnName="DeliveryAddressName1" />
+          <ScalarProperty Name="DeliveryAddressName2" ColumnName="DeliveryAddressName2" />
+          <ScalarProperty Name="DeliveryAddressName3" ColumnName="DeliveryAddressName3" />
+          <ScalarProperty Name="DeliveryAddressCity" ColumnName="DeliveryAddressCity" />
+          <ScalarProperty Name="DeliveryAddressZIP" ColumnName="DeliveryAddressZIP" />
+          <ScalarProperty Name="DeliveryAddressStreet" ColumnName="DeliveryAddressStreet" />
+          <ScalarProperty Name="DeliveryAddressCountryName" ColumnName="DeliveryAddressCountryName" />
+          <ScalarProperty Name="DeliveryAddressCountryCode" ColumnName="DeliveryAddressCountryCode" />
+          <ScalarProperty Name="DeliveryAddressPhone" ColumnName="DeliveryAddressPhone" />
+          <ScalarProperty Name="DeliveryAddressFax" ColumnName="DeliveryAddressFax" />
+          <ScalarProperty Name="DeliveryAddressEMail" ColumnName="DeliveryAddressEMail" />
+          <ScalarProperty Name="DeliveryAddressMobile" ColumnName="DeliveryAddressMobile" />
+          <ScalarProperty Name="InvoiceAddressID" ColumnName="InvoiceAddressID" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="InvoiceAddressCustomerID" ColumnName="InvoiceAddressCustomerID" />
+          <ScalarProperty Name="InvoiceAddressName1" ColumnName="InvoiceAddressName1" />
+          <ScalarProperty Name="InvoiceAddressName2" ColumnName="InvoiceAddressName2" />
+          <ScalarProperty Name="InvoiceAddressName3" ColumnName="InvoiceAddressName3" />
+          <ScalarProperty Name="InvoiceAddressCity" ColumnName="InvoiceAddressCity" />
+          <ScalarProperty Name="InvoiceAddressZIP" ColumnName="InvoiceAddressZIP" />
+          <ScalarProperty Name="Remark1" ColumnName="Remark1" />
+          <ScalarProperty Name="Remark2" ColumnName="Remark2" />
+          <ScalarProperty Name="SampleOrder" ColumnName="SampleOrder" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="OrderType2" ColumnName="OrderType2" />
+          <ScalarProperty Name="AssociationMemberNumber" ColumnName="AssociationMemberNumber" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="CustomerOrderNumber" ColumnName="CustomerOrderNumber" />
+          <ScalarProperty Name="ConfirmationEmail" ColumnName="ConfirmationEmail" />
+          <ScalarProperty Name="SampleUnits" ColumnName="SampleUnits" />
+          <ScalarProperty Name="ProcessNumber" ColumnName="ProcessNumber" />
+          <ScalarProperty Name="ConfirmationStatus" ColumnName="ConfirmationStatus" />
+          <ScalarProperty Name="ExtraDiscount" ColumnName="ExtraDiscount" />
+          <ScalarProperty Name="ShowPrice" ColumnName="ShowPrice" />
+          <ScalarProperty Name="ShoppingCartClientID" ColumnName="ShoppingCartClientID" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="DeviceModel" ColumnName="DeviceModel" />
+          <ScalarProperty Name="DeviceManufracturer" ColumnName="DeviceManufracturer" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="DeviceOSName" ColumnName="DeviceOSName" />
+          <ScalarProperty Name="InvoiceAddressCountryName" ColumnName="InvoiceAddressCountryName" />
+          <ScalarProperty Name="InvoiceAddressCountryCode" ColumnName="InvoiceAddressCountryCode" />
+          <ScalarProperty Name="InvoiceAddressPhone" ColumnName="InvoiceAddressPhone" />
+          <ScalarProperty Name="InvoiceAddressFax" ColumnName="InvoiceAddressFax" />
+          <ScalarProperty Name="InvoiceAddressEMail" ColumnName="InvoiceAddressEMail" />
+          <ScalarProperty Name="InvoiceAddressMobile" ColumnName="InvoiceAddressMobile" />
+          <ScalarProperty Name="CustomerClientID" ColumnName="CustomerClientID" />
+          <ScalarProperty Name="LabelClientID" ColumnName="LabelClientID" />
+          <ScalarProperty Name="SeasonClientID" ColumnName="SeasonClientID" />
+          <ScalarProperty Name="DeliveryAddressClientID" ColumnName="DeliveryAddressClientID" />
+          <ScalarProperty Name="InvoiceAddressClientID" ColumnName="InvoiceAddressClientID" />
+          <ScalarProperty Name="ShoppingCartTitle" ColumnName="ShoppingCartTitle" />
+          <ScalarProperty Name="PricelistID" ColumnName="PricelistID" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="PricelistClientID" ColumnName="PricelistClientID" />
+          <ScalarProperty Name="IsFavorite" ColumnName="IsFavorite" />
+          <ScalarProperty Name="DeliveryAddressCountryID" ColumnName="DeliveryAddressCountryID" />
+          <ScalarProperty Name="InvoiceAddressCountryID" ColumnName="InvoiceAddressCountryID" />
+          <ScalarProperty Name="AssociationID" ColumnName="AssociationID" />
+          <ScalarProperty Name="AssociationNumber" ColumnName="AssociationNumber" />
+          <ScalarProperty Name="AssociationName1" ColumnName="AssociationName1" />
+          <ScalarProperty Name="AssociationName2" ColumnName="AssociationName2" />
+          <ScalarProperty Name="AssociationName3" ColumnName="AssociationName3" />
+          <ScalarProperty Name="AssociationCity" ColumnName="AssociationCity" />
+          <ScalarProperty Name="AssociationZIP" ColumnName="AssociationZIP" />
+          <ScalarProperty Name="AssociationStreet" ColumnName="AssociationStreet" />
+          <ScalarProperty Name="AssociationCountryName" ColumnName="AssociationCountryName" />
+          <ScalarProperty Name="AssociationCountryCode" ColumnName="AssociationCountryCode" />
+          <ScalarProperty Name="AssociationPhone" ColumnName="AssociationPhone" />
+          <ScalarProperty Name="AssociationFax" ColumnName="AssociationFax" />
+          <ScalarProperty Name="AssociationEMail" ColumnName="AssociationEMail" />
+          <ScalarProperty Name="AssociationMobile" ColumnName="AssociationMobile" />
+          <ScalarProperty Name="AssociationPricelistID" ColumnName="AssociationPricelistID" />
+          <ScalarProperty Name="AssociationClientID" ColumnName="AssociationClientID" />
+          <ScalarProperty Name="AssociationMemberID" ColumnName="AssociationMemberID" />
+          <ScalarProperty Name="AssociationMemberCustomerID" ColumnName="AssociationMemberCustomerID" />
+          <ScalarProperty Name="AssociationMemberAssociationID" ColumnName="AssociationMemberAssociationID" />
+          <ScalarProperty Name="AssociationMemberClientID" ColumnName="AssociationMemberClientID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+          <ScalarProperty Name="TextSnippets" ColumnName="TextSnippets" />
+          <ScalarProperty Name="EarlyBirdDiscount" ColumnName="EarlyBirdDiscount" />
+          <ScalarProperty Name="PreorderDiscount" ColumnName="PreorderDiscount" />
+          <ScalarProperty Name="ShoppingCartComplaintDiscount" ColumnName="ShoppingCartComplaintDiscount" />
+          <ScalarProperty Name="ShoppingCartCustomerDiscount" ColumnName="ShoppingCartCustomerDiscount" />
+          <ScalarProperty Name="CollectionDiscount" ColumnName="CollectionDiscount" />
+          <ScalarProperty Name="ShoppingCartCollectionDiscount" ColumnName="ShoppingCartCollectionDiscount" />
+          <ScalarProperty Name="ShoppingCartEarlyBirdDiscount" ColumnName="ShoppingCartEarlyBirdDiscount" />
+          <ScalarProperty Name="ShoppingCartPreorderDiscount" ColumnName="ShoppingCartPreorderDiscount" />
+          <ScalarProperty Name="InvoiceAddressStreet" ColumnName="InvoiceAddressStreet" />
+          <ScalarProperty Name="ShoppingCartQuantityDiscount" ColumnName="ShoppingCartQuantityDiscount" />
+          <ScalarProperty Name="QuantityDiscount" ColumnName="QuantityDiscount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShoppingCartItem">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ShoppingCartItem">
+        <MappingFragment StoreEntitySet="ShoppingCartItem">
+          <ScalarProperty Name="AppVersion" ColumnName="AppVersion" />
+          <ScalarProperty Name="IsSampleItem" ColumnName="IsSampleItem" />
+          <ScalarProperty Name="ColorHeader10" ColumnName="ColorHeader10" />
+          <ScalarProperty Name="ColorHeader09" ColumnName="ColorHeader09" />
+          <ScalarProperty Name="ColorHeader08" ColumnName="ColorHeader08" />
+          <ScalarProperty Name="ColorHeader07" ColumnName="ColorHeader07" />
+          <ScalarProperty Name="ColorHeader06" ColumnName="ColorHeader06" />
+          <ScalarProperty Name="ColorHeader05" ColumnName="ColorHeader05" />
+          <ScalarProperty Name="ColorHeader04" ColumnName="ColorHeader04" />
+          <ScalarProperty Name="ColorHeader03" ColumnName="ColorHeader03" />
+          <ScalarProperty Name="ColorHeader02" ColumnName="ColorHeader02" />
+          <ScalarProperty Name="ColorHeader01" ColumnName="ColorHeader01" />
+          <ScalarProperty Name="ColorText10" ColumnName="ColorText10" />
+          <ScalarProperty Name="ColorText09" ColumnName="ColorText09" />
+          <ScalarProperty Name="ColorText08" ColumnName="ColorText08" />
+          <ScalarProperty Name="ColorText07" ColumnName="ColorText07" />
+          <ScalarProperty Name="ColorText06" ColumnName="ColorText06" />
+          <ScalarProperty Name="ColorText05" ColumnName="ColorText05" />
+          <ScalarProperty Name="ColorText04" ColumnName="ColorText04" />
+          <ScalarProperty Name="ColorText03" ColumnName="ColorText03" />
+          <ScalarProperty Name="ColorText02" ColumnName="ColorText02" />
+          <ScalarProperty Name="ColorText01" ColumnName="ColorText01" />
+          <ScalarProperty Name="EAN30" ColumnName="EAN30" />
+          <ScalarProperty Name="EAN29" ColumnName="EAN29" />
+          <ScalarProperty Name="EAN28" ColumnName="EAN28" />
+          <ScalarProperty Name="EAN27" ColumnName="EAN27" />
+          <ScalarProperty Name="EAN26" ColumnName="EAN26" />
+          <ScalarProperty Name="EAN25" ColumnName="EAN25" />
+          <ScalarProperty Name="EAN24" ColumnName="EAN24" />
+          <ScalarProperty Name="EAN23" ColumnName="EAN23" />
+          <ScalarProperty Name="EAN22" ColumnName="EAN22" />
+          <ScalarProperty Name="EAN21" ColumnName="EAN21" />
+          <ScalarProperty Name="EAN20" ColumnName="EAN20" />
+          <ScalarProperty Name="EAN19" ColumnName="EAN19" />
+          <ScalarProperty Name="EAN18" ColumnName="EAN18" />
+          <ScalarProperty Name="EAN17" ColumnName="EAN17" />
+          <ScalarProperty Name="EAN16" ColumnName="EAN16" />
+          <ScalarProperty Name="EAN15" ColumnName="EAN15" />
+          <ScalarProperty Name="EAN14" ColumnName="EAN14" />
+          <ScalarProperty Name="EAN13" ColumnName="EAN13" />
+          <ScalarProperty Name="EAN12" ColumnName="EAN12" />
+          <ScalarProperty Name="EAN11" ColumnName="EAN11" />
+          <ScalarProperty Name="EAN10" ColumnName="EAN10" />
+          <ScalarProperty Name="EAN09" ColumnName="EAN09" />
+          <ScalarProperty Name="EAN08" ColumnName="EAN08" />
+          <ScalarProperty Name="EAN07" ColumnName="EAN07" />
+          <ScalarProperty Name="EAN06" ColumnName="EAN06" />
+          <ScalarProperty Name="EAN05" ColumnName="EAN05" />
+          <ScalarProperty Name="EAN04" ColumnName="EAN04" />
+          <ScalarProperty Name="EAN03" ColumnName="EAN03" />
+          <ScalarProperty Name="EAN02" ColumnName="EAN02" />
+          <ScalarProperty Name="EAN01" ColumnName="EAN01" />
+          <ScalarProperty Name="ShoppingCartItemID" ColumnName="ShoppingCartItemID" />
+          <ScalarProperty Name="LabelID" ColumnName="LabelID" />
+          <ScalarProperty Name="LabelName" ColumnName="LabelName" />
+          <ScalarProperty Name="LabelNumber" ColumnName="LabelNumber" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="ModelSizerunID" ColumnName="ModelSizerunID" />
+          <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+          <ScalarProperty Name="ModelSeasonID" ColumnName="ModelSeasonID" />
+          <ScalarProperty Name="ModelImage" ColumnName="ModelImage" />
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="ArticleName" ColumnName="ArticleName" />
+          <ScalarProperty Name="ArticleNumber" ColumnName="ArticleNumber" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="ColorArticleID" ColumnName="ColorArticleID" />
+          <ScalarProperty Name="DeliveryDateStart" ColumnName="DeliveryDateStart" />
+          <ScalarProperty Name="DeliveryDateEnd" ColumnName="DeliveryDateEnd" />
+          <ScalarProperty Name="ColorNumber" ColumnName="ColorNumber" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="StockArticle" ColumnName="StockArticle" />
+          <ScalarProperty Name="ProductionArticle" ColumnName="ProductionArticle" />
+          <ScalarProperty Name="AssortmentID" ColumnName="AssortmentID" />
+          <ScalarProperty Name="AssortmentName" ColumnName="AssortmentName" />
+          <ScalarProperty Name="AssortmentSizerunID" ColumnName="AssortmentSizerunID" />
+          <ScalarProperty Name="Qty01" ColumnName="Qty01" />
+          <ScalarProperty Name="Qty02" ColumnName="Qty02" />
+          <ScalarProperty Name="Qty03" ColumnName="Qty03" />
+          <ScalarProperty Name="Qty04" ColumnName="Qty04" />
+          <ScalarProperty Name="Qty05" ColumnName="Qty05" />
+          <ScalarProperty Name="Qty06" ColumnName="Qty06" />
+          <ScalarProperty Name="Qty07" ColumnName="Qty07" />
+          <ScalarProperty Name="Qty08" ColumnName="Qty08" />
+          <ScalarProperty Name="Qty09" ColumnName="Qty09" />
+          <ScalarProperty Name="Qty10" ColumnName="Qty10" />
+          <ScalarProperty Name="Qty11" ColumnName="Qty11" />
+          <ScalarProperty Name="Qty12" ColumnName="Qty12" />
+          <ScalarProperty Name="Qty13" ColumnName="Qty13" />
+          <ScalarProperty Name="Qty14" ColumnName="Qty14" />
+          <ScalarProperty Name="Qty15" ColumnName="Qty15" />
+          <ScalarProperty Name="Qty16" ColumnName="Qty16" />
+          <ScalarProperty Name="Qty17" ColumnName="Qty17" />
+          <ScalarProperty Name="Qty18" ColumnName="Qty18" />
+          <ScalarProperty Name="Qty19" ColumnName="Qty19" />
+          <ScalarProperty Name="Qty20" ColumnName="Qty20" />
+          <ScalarProperty Name="Qty21" ColumnName="Qty21" />
+          <ScalarProperty Name="Qty22" ColumnName="Qty22" />
+          <ScalarProperty Name="Qty23" ColumnName="Qty23" />
+          <ScalarProperty Name="Qty24" ColumnName="Qty24" />
+          <ScalarProperty Name="Qty25" ColumnName="Qty25" />
+          <ScalarProperty Name="Qty26" ColumnName="Qty26" />
+          <ScalarProperty Name="Qty27" ColumnName="Qty27" />
+          <ScalarProperty Name="Qty28" ColumnName="Qty28" />
+          <ScalarProperty Name="Qty29" ColumnName="Qty29" />
+          <ScalarProperty Name="Qty30" ColumnName="Qty30" />
+          <ScalarProperty Name="SizerunID" ColumnName="SizerunID" />
+          <ScalarProperty Name="SizerunName" ColumnName="SizerunName" />
+          <ScalarProperty Name="SizerunNumber" ColumnName="SizerunNumber" />
+          <ScalarProperty Name="Size01" ColumnName="Size01" />
+          <ScalarProperty Name="Size02" ColumnName="Size02" />
+          <ScalarProperty Name="Size03" ColumnName="Size03" />
+          <ScalarProperty Name="Size04" ColumnName="Size04" />
+          <ScalarProperty Name="Size05" ColumnName="Size05" />
+          <ScalarProperty Name="Size06" ColumnName="Size06" />
+          <ScalarProperty Name="Size07" ColumnName="Size07" />
+          <ScalarProperty Name="Size08" ColumnName="Size08" />
+          <ScalarProperty Name="Size09" ColumnName="Size09" />
+          <ScalarProperty Name="Size10" ColumnName="Size10" />
+          <ScalarProperty Name="Size11" ColumnName="Size11" />
+          <ScalarProperty Name="Size12" ColumnName="Size12" />
+          <ScalarProperty Name="Size13" ColumnName="Size13" />
+          <ScalarProperty Name="Size14" ColumnName="Size14" />
+          <ScalarProperty Name="Size15" ColumnName="Size15" />
+          <ScalarProperty Name="Size16" ColumnName="Size16" />
+          <ScalarProperty Name="Size17" ColumnName="Size17" />
+          <ScalarProperty Name="Size18" ColumnName="Size18" />
+          <ScalarProperty Name="Size19" ColumnName="Size19" />
+          <ScalarProperty Name="Size20" ColumnName="Size20" />
+          <ScalarProperty Name="Size21" ColumnName="Size21" />
+          <ScalarProperty Name="Size22" ColumnName="Size22" />
+          <ScalarProperty Name="Size23" ColumnName="Size23" />
+          <ScalarProperty Name="Size24" ColumnName="Size24" />
+          <ScalarProperty Name="Size25" ColumnName="Size25" />
+          <ScalarProperty Name="Size26" ColumnName="Size26" />
+          <ScalarProperty Name="Size27" ColumnName="Size27" />
+          <ScalarProperty Name="Size28" ColumnName="Size28" />
+          <ScalarProperty Name="Size29" ColumnName="Size29" />
+          <ScalarProperty Name="Size30" ColumnName="Size30" />
+          <ScalarProperty Name="PriceID" ColumnName="PriceID" />
+          <ScalarProperty Name="PriceArticleID" ColumnName="PriceArticleID" />
+          <ScalarProperty Name="PricelistID" ColumnName="PricelistID" />
+          <ScalarProperty Name="BuyingPrice" ColumnName="BuyingPrice" />
+          <ScalarProperty Name="SalesPrice" ColumnName="SalesPrice" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
+          <ScalarProperty Name="CustomerArticleNumber" ColumnName="CustomerArticleNumber" />
+          <ScalarProperty Name="ModifiedDeliveryDateStart" ColumnName="ModifiedDeliveryDateStart" />
+          <ScalarProperty Name="ModifiedDeliveryDateEnd" ColumnName="ModifiedDeliveryDateEnd" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="ShoppingCartItemDiscount" ColumnName="ShoppingCartItemDiscount" />
+          <ScalarProperty Name="SampleSize" ColumnName="SampleSize" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Remark2" ColumnName="Remark2" />
+          <ScalarProperty Name="SampleSize2" ColumnName="SampleSize2" />
+          <ScalarProperty Name="SampleSize3" ColumnName="SampleSize3" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="SampleSizeNr" ColumnName="SampleSizeNr" />
+          <ScalarProperty Name="SampleSizeNr2" ColumnName="SampleSizeNr2" />
+          <ScalarProperty Name="SampleSizeNr3" ColumnName="SampleSizeNr3" />
+          <ScalarProperty Name="ShoppingCartItemSort" ColumnName="ShoppingCartItemSort" />
+          <ScalarProperty Name="ShoppingCartItemClientID" ColumnName="ShoppingCartItemClientID" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="DeviceModel" ColumnName="DeviceModel" />
+          <ScalarProperty Name="DeviceManufracturer" ColumnName="DeviceManufracturer" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="DeviceOSName" ColumnName="DeviceOSName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="LabelClientID" ColumnName="LabelClientID" />
+          <ScalarProperty Name="ModelClientID" ColumnName="ModelClientID" />
+          <ScalarProperty Name="ArticleMaterial" ColumnName="ArticleMaterial" />
+          <ScalarProperty Name="ArticleOrigin" ColumnName="ArticleOrigin" />
+          <ScalarProperty Name="ArticleClientID" ColumnName="ArticleClientID" />
+          <ScalarProperty Name="ArticleGroupe1" ColumnName="ArticleGroupe1" />
+          <ScalarProperty Name="ArticleGroupe2" ColumnName="ArticleGroupe2" />
+          <ScalarProperty Name="ArticleHeelTypeNumber" ColumnName="ArticleHeelTypeNumber" />
+          <ScalarProperty Name="ArticleClosingTypeNumber" ColumnName="ArticleClosingTypeNumber" />
+          <ScalarProperty Name="ArticleClosingType" ColumnName="ArticleClosingType" />
+          <ScalarProperty Name="ArticleTypeNumber" ColumnName="ArticleTypeNumber" />
+          <ScalarProperty Name="ArticleTypeName" ColumnName="ArticleTypeName" />
+          <ScalarProperty Name="CollectionName" ColumnName="CollectionName" />
+          <ScalarProperty Name="ArticleEASMaterial" ColumnName="ArticleEASMaterial" />
+          <ScalarProperty Name="ArticleEASMaterialNumber" ColumnName="ArticleEASMaterialNumber" />
+          <ScalarProperty Name="ArticleEASTypeName" ColumnName="ArticleEASTypeName" />
+          <ScalarProperty Name="ArticleEASTypeNumber" ColumnName="ArticleEASTypeNumber" />
+          <ScalarProperty Name="ArticleHeelTypeName" ColumnName="ArticleHeelTypeName" />
+          <ScalarProperty Name="ColorClientID" ColumnName="ColorClientID" />
+          <ScalarProperty Name="AssortmentClientID" ColumnName="AssortmentClientID" />
+          <ScalarProperty Name="SizerunClientID" ColumnName="SizerunClientID" />
+          <ScalarProperty Name="PriceClientID" ColumnName="PriceClientID" />
+          <ScalarProperty Name="ArticleSizerunID" ColumnName="ArticleSizerunID" />
+          <ScalarProperty Name="ArticleCategory1" ColumnName="ArticleCategory1" />
+          <ScalarProperty Name="ArticleCategory2" ColumnName="ArticleCategory2" />
+          <ScalarProperty Name="ArticleCategory3" ColumnName="ArticleCategory3" />
+          <ScalarProperty Name="ArticleImage" ColumnName="ArticleImage" />
+          <ScalarProperty Name="EASColorNumber" ColumnName="EASColorNumber" />
+          <ScalarProperty Name="EASColorName" ColumnName="EASColorName" />
+          <ScalarProperty Name="ColorImage" ColumnName="ColorImage" />
+          <ScalarProperty Name="ArticleWidth" ColumnName="ArticleWidth" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="FormNumber" ColumnName="FormNumber" />
+          <ScalarProperty Name="ProductGroup" ColumnName="ProductGroup" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="IsFavorite" ColumnName="IsFavorite" />
+          <ScalarProperty Name="BauerfeindMaterial" ColumnName="BauerfeindMaterial" />
+          <ScalarProperty Name="ColorNumberText" ColumnName="ColorNumberText" />
+          <ScalarProperty Name="ColorNumberSearchText" ColumnName="ColorNumberSearchText" />
+          <ScalarProperty Name="ColorStatus" ColumnName="ColorStatus" />
+          <ScalarProperty Name="IsFreeDisposition" ColumnName="IsFreeDisposition" />
+          <ScalarProperty Name="AssortmentQty" ColumnName="AssortmentQty" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="AssortmentStockQty" ColumnName="AssortmentStockQty" />
+          <ScalarProperty Name="SizerunArticleID" ColumnName="SizerunArticleID" />
+          <ScalarProperty Name="SizerunColorID" ColumnName="SizerunColorID" />
+          <ScalarProperty Name="DeliveryDecadeText" ColumnName="DeliveryDecadeText" />
+          <ScalarProperty Name="IsFreeOfCharge" ColumnName="IsFreeOfCharge" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+          <ScalarProperty Name="ColorLiningNumber2" ColumnName="ColorLiningNumber2" />
+          <ScalarProperty Name="ColorLiningName2" ColumnName="ColorLiningName2" />
+          <ScalarProperty Name="ColorLiningNumber" ColumnName="ColorLiningNumber" />
+          <ScalarProperty Name="ColorLiningName" ColumnName="ColorLiningName" />
+          <ScalarProperty Name="ColorText1" ColumnName="ColorText1" />
+          <ScalarProperty Name="SizerunPrintColor" ColumnName="SizerunPrintColor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sizerun">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Sizerun">
+        <MappingFragment StoreEntitySet="Sizerun">
+          <ScalarProperty Name="EAN30" ColumnName="EAN30" />
+          <ScalarProperty Name="EAN29" ColumnName="EAN29" />
+          <ScalarProperty Name="EAN28" ColumnName="EAN28" />
+          <ScalarProperty Name="EAN27" ColumnName="EAN27" />
+          <ScalarProperty Name="EAN26" ColumnName="EAN26" />
+          <ScalarProperty Name="EAN25" ColumnName="EAN25" />
+          <ScalarProperty Name="EAN24" ColumnName="EAN24" />
+          <ScalarProperty Name="EAN23" ColumnName="EAN23" />
+          <ScalarProperty Name="EAN22" ColumnName="EAN22" />
+          <ScalarProperty Name="EAN21" ColumnName="EAN21" />
+          <ScalarProperty Name="EAN20" ColumnName="EAN20" />
+          <ScalarProperty Name="EAN19" ColumnName="EAN19" />
+          <ScalarProperty Name="EAN18" ColumnName="EAN18" />
+          <ScalarProperty Name="EAN17" ColumnName="EAN17" />
+          <ScalarProperty Name="EAN16" ColumnName="EAN16" />
+          <ScalarProperty Name="EAN15" ColumnName="EAN15" />
+          <ScalarProperty Name="EAN14" ColumnName="EAN14" />
+          <ScalarProperty Name="EAN13" ColumnName="EAN13" />
+          <ScalarProperty Name="EAN12" ColumnName="EAN12" />
+          <ScalarProperty Name="EAN11" ColumnName="EAN11" />
+          <ScalarProperty Name="EAN10" ColumnName="EAN10" />
+          <ScalarProperty Name="EAN09" ColumnName="EAN09" />
+          <ScalarProperty Name="EAN08" ColumnName="EAN08" />
+          <ScalarProperty Name="EAN07" ColumnName="EAN07" />
+          <ScalarProperty Name="EAN06" ColumnName="EAN06" />
+          <ScalarProperty Name="EAN05" ColumnName="EAN05" />
+          <ScalarProperty Name="EAN04" ColumnName="EAN04" />
+          <ScalarProperty Name="EAN03" ColumnName="EAN03" />
+          <ScalarProperty Name="EAN02" ColumnName="EAN02" />
+          <ScalarProperty Name="EAN01" ColumnName="EAN01" />
+          <ScalarProperty Name="SizerunID" ColumnName="SizerunID" />
+          <ScalarProperty Name="SizerunName" ColumnName="SizerunName" />
+          <ScalarProperty Name="SizerunNumber" ColumnName="SizerunNumber" />
+          <ScalarProperty Name="Size01" ColumnName="Size01" />
+          <ScalarProperty Name="Size02" ColumnName="Size02" />
+          <ScalarProperty Name="Size03" ColumnName="Size03" />
+          <ScalarProperty Name="Size04" ColumnName="Size04" />
+          <ScalarProperty Name="Size05" ColumnName="Size05" />
+          <ScalarProperty Name="Size06" ColumnName="Size06" />
+          <ScalarProperty Name="Size07" ColumnName="Size07" />
+          <ScalarProperty Name="Size08" ColumnName="Size08" />
+          <ScalarProperty Name="Size09" ColumnName="Size09" />
+          <ScalarProperty Name="Size10" ColumnName="Size10" />
+          <ScalarProperty Name="Size11" ColumnName="Size11" />
+          <ScalarProperty Name="Size12" ColumnName="Size12" />
+          <ScalarProperty Name="Size13" ColumnName="Size13" />
+          <ScalarProperty Name="Size14" ColumnName="Size14" />
+          <ScalarProperty Name="Size15" ColumnName="Size15" />
+          <ScalarProperty Name="Size16" ColumnName="Size16" />
+          <ScalarProperty Name="Size17" ColumnName="Size17" />
+          <ScalarProperty Name="Size18" ColumnName="Size18" />
+          <ScalarProperty Name="Size19" ColumnName="Size19" />
+          <ScalarProperty Name="Size20" ColumnName="Size20" />
+          <ScalarProperty Name="Size21" ColumnName="Size21" />
+          <ScalarProperty Name="Size22" ColumnName="Size22" />
+          <ScalarProperty Name="Size23" ColumnName="Size23" />
+          <ScalarProperty Name="Size24" ColumnName="Size24" />
+          <ScalarProperty Name="Size25" ColumnName="Size25" />
+          <ScalarProperty Name="Size26" ColumnName="Size26" />
+          <ScalarProperty Name="Size27" ColumnName="Size27" />
+          <ScalarProperty Name="Size28" ColumnName="Size28" />
+          <ScalarProperty Name="Size29" ColumnName="Size29" />
+          <ScalarProperty Name="Size30" ColumnName="Size30" />
+          <ScalarProperty Name="PrintColor" ColumnName="PrintColor" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SizerunClientID" ColumnName="SizerunClientID" />
+          <ScalarProperty Name="SizerunArticleID" ColumnName="SizerunArticleID" />
+          <ScalarProperty Name="SizerunModelID" ColumnName="SizerunModelID" />
+          <ScalarProperty Name="SizerunColorID" ColumnName="SizerunColorID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sizerun_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Sizerun_Compare">
+        <MappingFragment StoreEntitySet="Sizerun_Compare">
+          <ScalarProperty Name="EAN30" ColumnName="EAN30" />
+          <ScalarProperty Name="EAN29" ColumnName="EAN29" />
+          <ScalarProperty Name="EAN28" ColumnName="EAN28" />
+          <ScalarProperty Name="EAN27" ColumnName="EAN27" />
+          <ScalarProperty Name="EAN26" ColumnName="EAN26" />
+          <ScalarProperty Name="EAN25" ColumnName="EAN25" />
+          <ScalarProperty Name="EAN24" ColumnName="EAN24" />
+          <ScalarProperty Name="EAN23" ColumnName="EAN23" />
+          <ScalarProperty Name="EAN22" ColumnName="EAN22" />
+          <ScalarProperty Name="EAN21" ColumnName="EAN21" />
+          <ScalarProperty Name="EAN20" ColumnName="EAN20" />
+          <ScalarProperty Name="EAN19" ColumnName="EAN19" />
+          <ScalarProperty Name="EAN18" ColumnName="EAN18" />
+          <ScalarProperty Name="EAN17" ColumnName="EAN17" />
+          <ScalarProperty Name="EAN16" ColumnName="EAN16" />
+          <ScalarProperty Name="EAN15" ColumnName="EAN15" />
+          <ScalarProperty Name="EAN14" ColumnName="EAN14" />
+          <ScalarProperty Name="EAN13" ColumnName="EAN13" />
+          <ScalarProperty Name="EAN12" ColumnName="EAN12" />
+          <ScalarProperty Name="EAN11" ColumnName="EAN11" />
+          <ScalarProperty Name="EAN10" ColumnName="EAN10" />
+          <ScalarProperty Name="EAN09" ColumnName="EAN09" />
+          <ScalarProperty Name="EAN08" ColumnName="EAN08" />
+          <ScalarProperty Name="EAN07" ColumnName="EAN07" />
+          <ScalarProperty Name="EAN06" ColumnName="EAN06" />
+          <ScalarProperty Name="EAN05" ColumnName="EAN05" />
+          <ScalarProperty Name="EAN04" ColumnName="EAN04" />
+          <ScalarProperty Name="EAN03" ColumnName="EAN03" />
+          <ScalarProperty Name="EAN02" ColumnName="EAN02" />
+          <ScalarProperty Name="EAN01" ColumnName="EAN01" />
+          <ScalarProperty Name="SizerunID" ColumnName="SizerunID" />
+          <ScalarProperty Name="SizerunName" ColumnName="SizerunName" />
+          <ScalarProperty Name="SizerunNumber" ColumnName="SizerunNumber" />
+          <ScalarProperty Name="Size01" ColumnName="Size01" />
+          <ScalarProperty Name="Size02" ColumnName="Size02" />
+          <ScalarProperty Name="Size03" ColumnName="Size03" />
+          <ScalarProperty Name="Size04" ColumnName="Size04" />
+          <ScalarProperty Name="Size05" ColumnName="Size05" />
+          <ScalarProperty Name="Size06" ColumnName="Size06" />
+          <ScalarProperty Name="Size07" ColumnName="Size07" />
+          <ScalarProperty Name="Size08" ColumnName="Size08" />
+          <ScalarProperty Name="Size09" ColumnName="Size09" />
+          <ScalarProperty Name="Size10" ColumnName="Size10" />
+          <ScalarProperty Name="Size11" ColumnName="Size11" />
+          <ScalarProperty Name="Size12" ColumnName="Size12" />
+          <ScalarProperty Name="Size13" ColumnName="Size13" />
+          <ScalarProperty Name="Size14" ColumnName="Size14" />
+          <ScalarProperty Name="Size15" ColumnName="Size15" />
+          <ScalarProperty Name="Size16" ColumnName="Size16" />
+          <ScalarProperty Name="Size17" ColumnName="Size17" />
+          <ScalarProperty Name="Size18" ColumnName="Size18" />
+          <ScalarProperty Name="Size19" ColumnName="Size19" />
+          <ScalarProperty Name="Size20" ColumnName="Size20" />
+          <ScalarProperty Name="Size21" ColumnName="Size21" />
+          <ScalarProperty Name="Size22" ColumnName="Size22" />
+          <ScalarProperty Name="Size23" ColumnName="Size23" />
+          <ScalarProperty Name="Size24" ColumnName="Size24" />
+          <ScalarProperty Name="Size25" ColumnName="Size25" />
+          <ScalarProperty Name="Size26" ColumnName="Size26" />
+          <ScalarProperty Name="Size27" ColumnName="Size27" />
+          <ScalarProperty Name="Size28" ColumnName="Size28" />
+          <ScalarProperty Name="Size29" ColumnName="Size29" />
+          <ScalarProperty Name="Size30" ColumnName="Size30" />
+          <ScalarProperty Name="PrintColor" ColumnName="PrintColor" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SizerunClientID" ColumnName="SizerunClientID" />
+          <ScalarProperty Name="SizerunArticleID" ColumnName="SizerunArticleID" />
+          <ScalarProperty Name="SizerunModelID" ColumnName="SizerunModelID" />
+          <ScalarProperty Name="SizerunColorID" ColumnName="SizerunColorID" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpecialDiscount">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.SpecialDiscount">
+        <MappingFragment StoreEntitySet="SpecialDiscount">
+          <ScalarProperty Name="SpecialDiscountID" ColumnName="SpecialDiscountID" />
+          <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="QtyStart" ColumnName="QtyStart" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SpecialDiscountClientID" ColumnName="SpecialDiscountClientID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stock_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Stock_Compare">
+        <MappingFragment StoreEntitySet="Stock_Compare">
+          <ScalarProperty Name="StockID" ColumnName="StockID" />
+          <ScalarProperty Name="StockAssortmentID" ColumnName="StockAssortmentID" />
+          <ScalarProperty Name="StockQty01" ColumnName="StockQty01" />
+          <ScalarProperty Name="StockQty02" ColumnName="StockQty02" />
+          <ScalarProperty Name="StockQty03" ColumnName="StockQty03" />
+          <ScalarProperty Name="StockQty04" ColumnName="StockQty04" />
+          <ScalarProperty Name="StockQty05" ColumnName="StockQty05" />
+          <ScalarProperty Name="StockQty06" ColumnName="StockQty06" />
+          <ScalarProperty Name="StockQty07" ColumnName="StockQty07" />
+          <ScalarProperty Name="StockQty08" ColumnName="StockQty08" />
+          <ScalarProperty Name="StockQty09" ColumnName="StockQty09" />
+          <ScalarProperty Name="StockQty10" ColumnName="StockQty10" />
+          <ScalarProperty Name="StockQty11" ColumnName="StockQty11" />
+          <ScalarProperty Name="StockQty12" ColumnName="StockQty12" />
+          <ScalarProperty Name="StockQty13" ColumnName="StockQty13" />
+          <ScalarProperty Name="StockQty14" ColumnName="StockQty14" />
+          <ScalarProperty Name="StockQty15" ColumnName="StockQty15" />
+          <ScalarProperty Name="StockQty16" ColumnName="StockQty16" />
+          <ScalarProperty Name="StockQty17" ColumnName="StockQty17" />
+          <ScalarProperty Name="StockQty18" ColumnName="StockQty18" />
+          <ScalarProperty Name="StockQty19" ColumnName="StockQty19" />
+          <ScalarProperty Name="StockQty20" ColumnName="StockQty20" />
+          <ScalarProperty Name="StockQty21" ColumnName="StockQty21" />
+          <ScalarProperty Name="StockQty22" ColumnName="StockQty22" />
+          <ScalarProperty Name="StockQty23" ColumnName="StockQty23" />
+          <ScalarProperty Name="StockQty24" ColumnName="StockQty24" />
+          <ScalarProperty Name="StockQty25" ColumnName="StockQty25" />
+          <ScalarProperty Name="StockQty26" ColumnName="StockQty26" />
+          <ScalarProperty Name="StockQty27" ColumnName="StockQty27" />
+          <ScalarProperty Name="StockQty28" ColumnName="StockQty28" />
+          <ScalarProperty Name="StockQty29" ColumnName="StockQty29" />
+          <ScalarProperty Name="StockQty30" ColumnName="StockQty30" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="StockClientID" ColumnName="StockClientID" />
+          <ScalarProperty Name="IsFreeDisposition" ColumnName="IsFreeDisposition" />
+          <ScalarProperty Name="StockQtyAssortment" ColumnName="StockQtyAssortment" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TextSnippet">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.TextSnippet">
+        <MappingFragment StoreEntitySet="TextSnippet">
+          <ScalarProperty Name="TextSnippetID" ColumnName="TextSnippetID" />
+          <ScalarProperty Name="TextSnippetText" ColumnName="TextSnippetText" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserNumber" ColumnName="UserNumber" />
+          <ScalarProperty Name="Name1" ColumnName="Name1" />
+          <ScalarProperty Name="Name2" ColumnName="Name2" />
+          <ScalarProperty Name="Name3" ColumnName="Name3" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Internet" ColumnName="Internet" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ConfirmEmail" ColumnName="ConfirmEmail" />
+          <ScalarProperty Name="PrintColor" ColumnName="PrintColor" />
+          <ScalarProperty Name="CanEditPrice" ColumnName="CanEditPrice" />
+          <ScalarProperty Name="FairMode" ColumnName="FairMode" />
+          <ScalarProperty Name="MaxCustomerDiscount" ColumnName="MaxCustomerDiscount" />
+          <ScalarProperty Name="MaxComplaintDiscount" ColumnName="MaxComplaintDiscount" />
+          <ScalarProperty Name="CommisionDecline" ColumnName="CommisionDecline" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="NextOrderNumber" ColumnName="NextOrderNumber" />
+          <ScalarProperty Name="Agent1" ColumnName="Agent1" />
+          <ScalarProperty Name="Agent2" ColumnName="Agent2" />
+          <ScalarProperty Name="Agent3" ColumnName="Agent3" />
+          <ScalarProperty Name="Agent4" ColumnName="Agent4" />
+          <ScalarProperty Name="DefaultPricelist" ColumnName="DefaultPricelist" />
+          <ScalarProperty Name="UserClientID" ColumnName="UserClientID" />
+          <ScalarProperty Name="UseTestData" ColumnName="UseTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAgents">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.UserAgents">
+        <MappingFragment StoreEntitySet="UserAgents">
+          <ScalarProperty Name="UserAgentsID" ColumnName="UserAgentsID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="UserAgentClientID" ColumnName="UserAgentClientID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserClient">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.UserClient">
+        <MappingFragment StoreEntitySet="UserClient">
+          <ScalarProperty Name="UserMandantID" ColumnName="UserMandantID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserClientClientID" ColumnName="UserClientClientID" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPriceList">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.UserPriceList">
+        <MappingFragment StoreEntitySet="UserPriceList">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PricelistID" ColumnName="PricelistID" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="UserPricelistClientID" ColumnName="UserPricelistClientID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Article_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Article_Compare">
+        <MappingFragment StoreEntitySet="Article_Compare">
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="ArticleName" ColumnName="ArticleName" />
+          <ScalarProperty Name="ArticleNumber" ColumnName="ArticleNumber" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ArticleMaterial" ColumnName="ArticleMaterial" />
+          <ScalarProperty Name="ArticleOrigin" ColumnName="ArticleOrigin" />
+          <ScalarProperty Name="ArticleClientID" ColumnName="ArticleClientID" />
+          <ScalarProperty Name="ArticleGroupe1" ColumnName="ArticleGroupe1" />
+          <ScalarProperty Name="ArticleGroupe2" ColumnName="ArticleGroupe2" />
+          <ScalarProperty Name="ArticleHeelTypeNumber" ColumnName="ArticleHeelTypeNumber" />
+          <ScalarProperty Name="ArticleClosingTypeNumber" ColumnName="ArticleClosingTypeNumber" />
+          <ScalarProperty Name="ArticleClosingType" ColumnName="ArticleClosingType" />
+          <ScalarProperty Name="ArticleTypeNumber" ColumnName="ArticleTypeNumber" />
+          <ScalarProperty Name="ArticleTypeName" ColumnName="ArticleTypeName" />
+          <ScalarProperty Name="ArticleEASMaterial" ColumnName="ArticleEASMaterial" />
+          <ScalarProperty Name="ArticleEASMaterialNumber" ColumnName="ArticleEASMaterialNumber" />
+          <ScalarProperty Name="ArticleEASTypeName" ColumnName="ArticleEASTypeName" />
+          <ScalarProperty Name="ArticleEASTypeNumber" ColumnName="ArticleEASTypeNumber" />
+          <ScalarProperty Name="ArticleHeelTypeName" ColumnName="ArticleHeelTypeName" />
+          <ScalarProperty Name="ArticleCategory1" ColumnName="ArticleCategory1" />
+          <ScalarProperty Name="ArticleCategory2" ColumnName="ArticleCategory2" />
+          <ScalarProperty Name="ArticleCategory3" ColumnName="ArticleCategory3" />
+          <ScalarProperty Name="ArticleImage" ColumnName="ArticleImage" />
+          <ScalarProperty Name="ArticleInfoText1" ColumnName="ArticleInfoText1" />
+          <ScalarProperty Name="ArticleInfoText2" ColumnName="ArticleInfoText2" />
+          <ScalarProperty Name="BauerfeindMaterial" ColumnName="BauerfeindMaterial" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Color_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Color_Compare">
+        <MappingFragment StoreEntitySet="Color_Compare">
+          <ScalarProperty Name="ColorHeader10" ColumnName="ColorHeader10" />
+          <ScalarProperty Name="ColorHeader09" ColumnName="ColorHeader09" />
+          <ScalarProperty Name="ColorHeader08" ColumnName="ColorHeader08" />
+          <ScalarProperty Name="ColorHeader07" ColumnName="ColorHeader07" />
+          <ScalarProperty Name="ColorHeader06" ColumnName="ColorHeader06" />
+          <ScalarProperty Name="ColorHeader05" ColumnName="ColorHeader05" />
+          <ScalarProperty Name="ColorHeader04" ColumnName="ColorHeader04" />
+          <ScalarProperty Name="ColorHeader03" ColumnName="ColorHeader03" />
+          <ScalarProperty Name="ColorHeader02" ColumnName="ColorHeader02" />
+          <ScalarProperty Name="ColorHeader01" ColumnName="ColorHeader01" />
+          <ScalarProperty Name="ColorText10" ColumnName="ColorText10" />
+          <ScalarProperty Name="ColorText09" ColumnName="ColorText09" />
+          <ScalarProperty Name="ColorText08" ColumnName="ColorText08" />
+          <ScalarProperty Name="ColorText07" ColumnName="ColorText07" />
+          <ScalarProperty Name="ColorText06" ColumnName="ColorText06" />
+          <ScalarProperty Name="ColorText05" ColumnName="ColorText05" />
+          <ScalarProperty Name="ColorText04" ColumnName="ColorText04" />
+          <ScalarProperty Name="ColorText03" ColumnName="ColorText03" />
+          <ScalarProperty Name="ColorText02" ColumnName="ColorText02" />
+          <ScalarProperty Name="ColorText01" ColumnName="ColorText01" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="ColorArticleID" ColumnName="ColorArticleID" />
+          <ScalarProperty Name="ColorNumber" ColumnName="ColorNumber" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="StockArticle" ColumnName="StockArticle" />
+          <ScalarProperty Name="ProductionArticle" ColumnName="ProductionArticle" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DeliveryDateStart" ColumnName="DeliveryDateStart" />
+          <ScalarProperty Name="DeliveryDateEnd" ColumnName="DeliveryDateEnd" />
+          <ScalarProperty Name="ColorClientID" ColumnName="ColorClientID" />
+          <ScalarProperty Name="EASColorNumber" ColumnName="EASColorNumber" />
+          <ScalarProperty Name="EASColorName" ColumnName="EASColorName" />
+          <ScalarProperty Name="ColorText1" ColumnName="ColorText1" />
+          <ScalarProperty Name="ColorImage" ColumnName="ColorImage" />
+          <ScalarProperty Name="CollectionName" ColumnName="CollectionName" />
+          <ScalarProperty Name="ColorNumberText" ColumnName="ColorNumberText" />
+          <ScalarProperty Name="ColorNumberSearchText" ColumnName="ColorNumberSearchText" />
+          <ScalarProperty Name="ColorStatus" ColumnName="ColorStatus" />
+          <ScalarProperty Name="ColorLiningName" ColumnName="ColorLiningName" />
+          <ScalarProperty Name="ColorLiningName2" ColumnName="ColorLiningName2" />
+          <ScalarProperty Name="ColorLiningNumber" ColumnName="ColorLiningNumber" />
+          <ScalarProperty Name="ColorLiningNumber2" ColumnName="ColorLiningNumber2" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Customer_Compare">
+        <MappingFragment StoreEntitySet="Customer_Compare">
+          <ScalarProperty Name="CustomerHeader09" ColumnName="CustomerHeader09" />
+          <ScalarProperty Name="CustomerHeader08" ColumnName="CustomerHeader08" />
+          <ScalarProperty Name="CustomerHeader07" ColumnName="CustomerHeader07" />
+          <ScalarProperty Name="CustomerHeader06" ColumnName="CustomerHeader06" />
+          <ScalarProperty Name="CustomerHeader05" ColumnName="CustomerHeader05" />
+          <ScalarProperty Name="CustomerHeader04" ColumnName="CustomerHeader04" />
+          <ScalarProperty Name="CustomerHeader03" ColumnName="CustomerHeader03" />
+          <ScalarProperty Name="CustomerHeader02" ColumnName="CustomerHeader02" />
+          <ScalarProperty Name="CustomerHeader01" ColumnName="CustomerHeader01" />
+          <ScalarProperty Name="CustomerText09" ColumnName="CustomerText09" />
+          <ScalarProperty Name="CustomerText08" ColumnName="CustomerText08" />
+          <ScalarProperty Name="CustomerText07" ColumnName="CustomerText07" />
+          <ScalarProperty Name="CustomerText06" ColumnName="CustomerText06" />
+          <ScalarProperty Name="CustomerText05" ColumnName="CustomerText05" />
+          <ScalarProperty Name="CustomerText04" ColumnName="CustomerText04" />
+          <ScalarProperty Name="CustomerText03" ColumnName="CustomerText03" />
+          <ScalarProperty Name="CustomerText02" ColumnName="CustomerText02" />
+          <ScalarProperty Name="CustomerText01" ColumnName="CustomerText01" />
+          <ScalarProperty Name="OpenReceivables" ColumnName="OpenReceivables" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName1" ColumnName="CustomerName1" />
+          <ScalarProperty Name="CustomerName2" ColumnName="CustomerName2" />
+          <ScalarProperty Name="CustomerName3" ColumnName="CustomerName3" />
+          <ScalarProperty Name="CustomerStreet" ColumnName="CustomerStreet" />
+          <ScalarProperty Name="CustomerZIP" ColumnName="CustomerZIP" />
+          <ScalarProperty Name="CustomerCity" ColumnName="CustomerCity" />
+          <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+          <ScalarProperty Name="CustomerFax" ColumnName="CustomerFax" />
+          <ScalarProperty Name="CustomerPricelistID" ColumnName="CustomerPricelistID" />
+          <ScalarProperty Name="CustomerDiscount" ColumnName="CustomerDiscount" />
+          <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="CustomerTaxID" ColumnName="CustomerTaxID" />
+          <ScalarProperty Name="CustomerValuta" ColumnName="CustomerValuta" />
+          <ScalarProperty Name="CustomerAgentID" ColumnName="CustomerAgentID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CustomerMobile" ColumnName="CustomerMobile" />
+          <ScalarProperty Name="CustomerCountryName" ColumnName="CustomerCountryName" />
+          <ScalarProperty Name="CustomerCountryCode" ColumnName="CustomerCountryCode" />
+          <ScalarProperty Name="PaymentTermText" ColumnName="PaymentTermText" />
+          <ScalarProperty Name="PaymentTermNumber" ColumnName="PaymentTermNumber" />
+          <ScalarProperty Name="PricelistName" ColumnName="PricelistName" />
+          <ScalarProperty Name="PricelistNumber" ColumnName="PricelistNumber" />
+          <ScalarProperty Name="AgentName1" ColumnName="AgentName1" />
+          <ScalarProperty Name="AgentNumber" ColumnName="AgentNumber" />
+          <ScalarProperty Name="AssociationMemberNumber" ColumnName="AssociationMemberNumber" />
+          <ScalarProperty Name="Customergroup" ColumnName="Customergroup" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="lon" ColumnName="lon" />
+          <ScalarProperty Name="CustomerClientID" ColumnName="CustomerClientID" />
+          <ScalarProperty Name="CustomerBarrier" ColumnName="CustomerBarrier" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stock">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Stock">
+        <MappingFragment StoreEntitySet="Stock">
+          <ScalarProperty Name="StockID" ColumnName="StockID" />
+          <ScalarProperty Name="StockAssortmentID" ColumnName="StockAssortmentID" />
+          <ScalarProperty Name="StockQty01" ColumnName="StockQty01" />
+          <ScalarProperty Name="StockQty02" ColumnName="StockQty02" />
+          <ScalarProperty Name="StockQty03" ColumnName="StockQty03" />
+          <ScalarProperty Name="StockQty04" ColumnName="StockQty04" />
+          <ScalarProperty Name="StockQty05" ColumnName="StockQty05" />
+          <ScalarProperty Name="StockQty06" ColumnName="StockQty06" />
+          <ScalarProperty Name="StockQty07" ColumnName="StockQty07" />
+          <ScalarProperty Name="StockQty08" ColumnName="StockQty08" />
+          <ScalarProperty Name="StockQty09" ColumnName="StockQty09" />
+          <ScalarProperty Name="StockQty10" ColumnName="StockQty10" />
+          <ScalarProperty Name="StockQty11" ColumnName="StockQty11" />
+          <ScalarProperty Name="StockQty12" ColumnName="StockQty12" />
+          <ScalarProperty Name="StockQty13" ColumnName="StockQty13" />
+          <ScalarProperty Name="StockQty14" ColumnName="StockQty14" />
+          <ScalarProperty Name="StockQty15" ColumnName="StockQty15" />
+          <ScalarProperty Name="StockQty16" ColumnName="StockQty16" />
+          <ScalarProperty Name="StockQty17" ColumnName="StockQty17" />
+          <ScalarProperty Name="StockQty18" ColumnName="StockQty18" />
+          <ScalarProperty Name="StockQty19" ColumnName="StockQty19" />
+          <ScalarProperty Name="StockQty20" ColumnName="StockQty20" />
+          <ScalarProperty Name="StockQty21" ColumnName="StockQty21" />
+          <ScalarProperty Name="StockQty22" ColumnName="StockQty22" />
+          <ScalarProperty Name="StockQty23" ColumnName="StockQty23" />
+          <ScalarProperty Name="StockQty24" ColumnName="StockQty24" />
+          <ScalarProperty Name="StockQty25" ColumnName="StockQty25" />
+          <ScalarProperty Name="StockQty26" ColumnName="StockQty26" />
+          <ScalarProperty Name="StockQty27" ColumnName="StockQty27" />
+          <ScalarProperty Name="StockQty28" ColumnName="StockQty28" />
+          <ScalarProperty Name="StockQty29" ColumnName="StockQty29" />
+          <ScalarProperty Name="StockQty30" ColumnName="StockQty30" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="StockClientID" ColumnName="StockClientID" />
+          <ScalarProperty Name="IsFreeDisposition" ColumnName="IsFreeDisposition" />
+          <ScalarProperty Name="StockQtyAssortment" ColumnName="StockQtyAssortment" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_Artikel">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Artikel">
+        <MappingFragment StoreEntitySet="source_Artikel">
+          <ScalarProperty Name="Gewicht" ColumnName="Gewicht" />
+          <ScalarProperty Name="lieferbareGrBis" ColumnName="lieferbareGrBis" />
+          <ScalarProperty Name="lieferbareGrVon" ColumnName="lieferbareGrVon" />
+          <ScalarProperty Name="Groessenskala" ColumnName="Groessenskala" />
+          <ScalarProperty Name="Artikelsaison" ColumnName="Artikelsaison" />
+          <ScalarProperty Name="Kollektion" ColumnName="Kollektion" />
+          <ScalarProperty Name="Produktgruppe" ColumnName="Produktgruppe" />
+          <ScalarProperty Name="Produktbereich" ColumnName="Produktbereich" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="Groesse" ColumnName="Groesse" />
+          <ScalarProperty Name="Farbe" ColumnName="Farbe" />
+          <ScalarProperty Name="Artikelbez2" ColumnName="Artikelbez2" />
+          <ScalarProperty Name="Artikelbez1" ColumnName="Artikelbez1" />
+          <ScalarProperty Name="Matchcode" ColumnName="Matchcode" />
+          <ScalarProperty Name="Farbnr" ColumnName="Farbnr" />
+          <ScalarProperty Name="Artikelnr" ColumnName="Artikelnr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_Artikelbeschreibung">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Artikelbeschreibung">
+        <MappingFragment StoreEntitySet="source_Artikelbeschreibung">
+          <ScalarProperty Name="Artikelbeschreibung" ColumnName="Artikelbeschreibung" />
+          <ScalarProperty Name="Artikelsaison" ColumnName="Artikelsaison" />
+          <ScalarProperty Name="Artikelnr" ColumnName="Artikelnr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_Kunde">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Kunde">
+        <MappingFragment StoreEntitySet="source_Kunde">
+          <ScalarProperty Name="Forderungen" ColumnName="Forderungen" />
+          <ScalarProperty Name="EKV_KTO" ColumnName="EKV_KTO" />
+          <ScalarProperty Name="EKV" ColumnName="EKV" />
+          <ScalarProperty Name="Bonitaet" ColumnName="Bonitaet" />
+          <ScalarProperty Name="Rechnungsempfaenger" ColumnName="Rechnungsempfaenger" />
+          <ScalarProperty Name="Steuerschluessel" ColumnName="Steuerschluessel" />
+          <ScalarProperty Name="Mwst_KZ" ColumnName="Mwst_KZ" />
+          <ScalarProperty Name="Preislistennr" ColumnName="Preislistennr" />
+          <ScalarProperty Name="UID_Nummer" ColumnName="UID_Nummer" />
+          <ScalarProperty Name="Vertrerternr" ColumnName="Vertrerternr" />
+          <ScalarProperty Name="Kundentyp" ColumnName="Kundentyp" />
+          <ScalarProperty Name="Bonitaetsstufe" ColumnName="Bonitaetsstufe" />
+          <ScalarProperty Name="homepage" ColumnName="homepage" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Zahlungsart" ColumnName="Zahlungsart" />
+          <ScalarProperty Name="Zahlungsbed" ColumnName="Zahlungsbed" />
+          <ScalarProperty Name="Land" ColumnName="Land" />
+          <ScalarProperty Name="Ort" ColumnName="Ort" />
+          <ScalarProperty Name="Plz" ColumnName="Plz" />
+          <ScalarProperty Name="Strasse" ColumnName="Strasse" />
+          <ScalarProperty Name="Name3" ColumnName="Name3" />
+          <ScalarProperty Name="Name2" ColumnName="Name2" />
+          <ScalarProperty Name="Name1" ColumnName="Name1" />
+          <ScalarProperty Name="Kundennr" ColumnName="Kundennr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_TempSizerun">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_TempSizerun">
+        <MappingFragment StoreEntitySet="source_TempSizerun">
+          <ScalarProperty Name="Skala" ColumnName="Skala" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="Size30" ColumnName="Size30" />
+          <ScalarProperty Name="Size29" ColumnName="Size29" />
+          <ScalarProperty Name="Size28" ColumnName="Size28" />
+          <ScalarProperty Name="Size27" ColumnName="Size27" />
+          <ScalarProperty Name="Size26" ColumnName="Size26" />
+          <ScalarProperty Name="Size25" ColumnName="Size25" />
+          <ScalarProperty Name="Size24" ColumnName="Size24" />
+          <ScalarProperty Name="Size23" ColumnName="Size23" />
+          <ScalarProperty Name="Size22" ColumnName="Size22" />
+          <ScalarProperty Name="Size21" ColumnName="Size21" />
+          <ScalarProperty Name="Size20" ColumnName="Size20" />
+          <ScalarProperty Name="Size19" ColumnName="Size19" />
+          <ScalarProperty Name="Size18" ColumnName="Size18" />
+          <ScalarProperty Name="Size17" ColumnName="Size17" />
+          <ScalarProperty Name="Size16" ColumnName="Size16" />
+          <ScalarProperty Name="Size15" ColumnName="Size15" />
+          <ScalarProperty Name="Size14" ColumnName="Size14" />
+          <ScalarProperty Name="Size13" ColumnName="Size13" />
+          <ScalarProperty Name="Size12" ColumnName="Size12" />
+          <ScalarProperty Name="Size11" ColumnName="Size11" />
+          <ScalarProperty Name="Size10" ColumnName="Size10" />
+          <ScalarProperty Name="Size09" ColumnName="Size09" />
+          <ScalarProperty Name="Size08" ColumnName="Size08" />
+          <ScalarProperty Name="Size07" ColumnName="Size07" />
+          <ScalarProperty Name="Size06" ColumnName="Size06" />
+          <ScalarProperty Name="Size05" ColumnName="Size05" />
+          <ScalarProperty Name="Size04" ColumnName="Size04" />
+          <ScalarProperty Name="Size03" ColumnName="Size03" />
+          <ScalarProperty Name="Size02" ColumnName="Size02" />
+          <ScalarProperty Name="Size01" ColumnName="Size01" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_Preis">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Preis">
+        <MappingFragment StoreEntitySet="source_Preis">
+          <ScalarProperty Name="ArtikelnrFarbnr" ColumnName="ArtikelnrFarbnr" />
+          <ScalarProperty Name="Groesse" ColumnName="Groesse" />
+          <ScalarProperty Name="EmpfVK" ColumnName="EmpfVK" />
+          <ScalarProperty Name="HEK" ColumnName="HEK" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="Waehrung" ColumnName="Waehrung" />
+          <ScalarProperty Name="Saison" ColumnName="Saison" />
+          <ScalarProperty Name="Preislistenr" ColumnName="Preislistenr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_TempSizerunPrice">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_TempSizerunPrice">
+        <MappingFragment StoreEntitySet="source_TempSizerunPrice">
+          <ScalarProperty Name="EAN30" ColumnName="EAN30" />
+          <ScalarProperty Name="EAN29" ColumnName="EAN29" />
+          <ScalarProperty Name="EAN28" ColumnName="EAN28" />
+          <ScalarProperty Name="EAN27" ColumnName="EAN27" />
+          <ScalarProperty Name="EAN26" ColumnName="EAN26" />
+          <ScalarProperty Name="EAN25" ColumnName="EAN25" />
+          <ScalarProperty Name="EAN24" ColumnName="EAN24" />
+          <ScalarProperty Name="EAN23" ColumnName="EAN23" />
+          <ScalarProperty Name="EAN22" ColumnName="EAN22" />
+          <ScalarProperty Name="EAN21" ColumnName="EAN21" />
+          <ScalarProperty Name="EAN20" ColumnName="EAN20" />
+          <ScalarProperty Name="EAN19" ColumnName="EAN19" />
+          <ScalarProperty Name="EAN18" ColumnName="EAN18" />
+          <ScalarProperty Name="EAN17" ColumnName="EAN17" />
+          <ScalarProperty Name="EAN16" ColumnName="EAN16" />
+          <ScalarProperty Name="EAN15" ColumnName="EAN15" />
+          <ScalarProperty Name="EAN14" ColumnName="EAN14" />
+          <ScalarProperty Name="EAN13" ColumnName="EAN13" />
+          <ScalarProperty Name="EAN12" ColumnName="EAN12" />
+          <ScalarProperty Name="EAN11" ColumnName="EAN11" />
+          <ScalarProperty Name="EAN10" ColumnName="EAN10" />
+          <ScalarProperty Name="EAN09" ColumnName="EAN09" />
+          <ScalarProperty Name="EAN08" ColumnName="EAN08" />
+          <ScalarProperty Name="EAN07" ColumnName="EAN07" />
+          <ScalarProperty Name="EAN06" ColumnName="EAN06" />
+          <ScalarProperty Name="EAN05" ColumnName="EAN05" />
+          <ScalarProperty Name="EAN04" ColumnName="EAN04" />
+          <ScalarProperty Name="EAN03" ColumnName="EAN03" />
+          <ScalarProperty Name="EAN02" ColumnName="EAN02" />
+          <ScalarProperty Name="EAN01" ColumnName="EAN01" />
+          <ScalarProperty Name="Preislistenr" ColumnName="Preislistenr" />
+          <ScalarProperty Name="EmpfVK" ColumnName="EmpfVK" />
+          <ScalarProperty Name="HEK" ColumnName="HEK" />
+          <ScalarProperty Name="Size30" ColumnName="Size30" />
+          <ScalarProperty Name="Size29" ColumnName="Size29" />
+          <ScalarProperty Name="Size28" ColumnName="Size28" />
+          <ScalarProperty Name="Size27" ColumnName="Size27" />
+          <ScalarProperty Name="Size26" ColumnName="Size26" />
+          <ScalarProperty Name="Size25" ColumnName="Size25" />
+          <ScalarProperty Name="Size24" ColumnName="Size24" />
+          <ScalarProperty Name="Size23" ColumnName="Size23" />
+          <ScalarProperty Name="Size22" ColumnName="Size22" />
+          <ScalarProperty Name="Size21" ColumnName="Size21" />
+          <ScalarProperty Name="Size20" ColumnName="Size20" />
+          <ScalarProperty Name="Size19" ColumnName="Size19" />
+          <ScalarProperty Name="Size18" ColumnName="Size18" />
+          <ScalarProperty Name="Size17" ColumnName="Size17" />
+          <ScalarProperty Name="Size16" ColumnName="Size16" />
+          <ScalarProperty Name="Size15" ColumnName="Size15" />
+          <ScalarProperty Name="Size14" ColumnName="Size14" />
+          <ScalarProperty Name="Size13" ColumnName="Size13" />
+          <ScalarProperty Name="Size12" ColumnName="Size12" />
+          <ScalarProperty Name="Size11" ColumnName="Size11" />
+          <ScalarProperty Name="Size10" ColumnName="Size10" />
+          <ScalarProperty Name="Size09" ColumnName="Size09" />
+          <ScalarProperty Name="Size08" ColumnName="Size08" />
+          <ScalarProperty Name="Size07" ColumnName="Size07" />
+          <ScalarProperty Name="Size06" ColumnName="Size06" />
+          <ScalarProperty Name="Size05" ColumnName="Size05" />
+          <ScalarProperty Name="Size04" ColumnName="Size04" />
+          <ScalarProperty Name="Size03" ColumnName="Size03" />
+          <ScalarProperty Name="Size02" ColumnName="Size02" />
+          <ScalarProperty Name="Size01" ColumnName="Size01" />
+          <ScalarProperty Name="Saison" ColumnName="Saison" />
+          <ScalarProperty Name="Farbnr" ColumnName="Farbnr" />
+          <ScalarProperty Name="Artikelnr" ColumnName="Artikelnr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_Rabatt">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Rabatt">
+        <MappingFragment StoreEntitySet="source_Rabatt">
+          <ScalarProperty Name="Ebene" ColumnName="Ebene" />
+          <ScalarProperty Name="Wertstellung" ColumnName="Wertstellung" />
+          <ScalarProperty Name="Berechenart" ColumnName="Berechenart" />
+          <ScalarProperty Name="Wert" ColumnName="Wert" />
+          <ScalarProperty Name="Rabattart" ColumnName="Rabattart" />
+          <ScalarProperty Name="Match" ColumnName="Match" />
+          <ScalarProperty Name="Kundennr" ColumnName="Kundennr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_Ansprechpartner">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Ansprechpartner">
+        <MappingFragment StoreEntitySet="source_Ansprechpartner">
+          <ScalarProperty Name="ASP_Email" ColumnName="ASP_Email" />
+          <ScalarProperty Name="ASP_Bemerkung" ColumnName="ASP_Bemerkung" />
+          <ScalarProperty Name="ASP_Fax" ColumnName="ASP_Fax" />
+          <ScalarProperty Name="ASP_Mobiltelefon" ColumnName="ASP_Mobiltelefon" />
+          <ScalarProperty Name="ASP_Telefon" ColumnName="ASP_Telefon" />
+          <ScalarProperty Name="ASP_Name2" ColumnName="ASP_Name2" />
+          <ScalarProperty Name="ASP_Name1" ColumnName="ASP_Name1" />
+          <ScalarProperty Name="ASP_Vorname" ColumnName="ASP_Vorname" />
+          <ScalarProperty Name="ASP_Bereich" ColumnName="ASP_Bereich" />
+          <ScalarProperty Name="ASP_Nr" ColumnName="ASP_Nr" />
+          <ScalarProperty Name="Kundennr" ColumnName="Kundennr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_Stock">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Stock">
+        <MappingFragment StoreEntitySet="source_Stock">
+          <ScalarProperty Name="Freilagerbestand" ColumnName="Freilagerbestand" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="Lagernr" ColumnName="Lagernr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_tempStock">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_tempStock">
+        <MappingFragment StoreEntitySet="source_tempStock">
+          <ScalarProperty Name="AssortmentID" ColumnName="AssortmentID" />
+          <ScalarProperty Name="Qty30" ColumnName="Qty30" />
+          <ScalarProperty Name="Qty29" ColumnName="Qty29" />
+          <ScalarProperty Name="Qty28" ColumnName="Qty28" />
+          <ScalarProperty Name="Qty27" ColumnName="Qty27" />
+          <ScalarProperty Name="Qty26" ColumnName="Qty26" />
+          <ScalarProperty Name="Qty25" ColumnName="Qty25" />
+          <ScalarProperty Name="Qty24" ColumnName="Qty24" />
+          <ScalarProperty Name="Qty23" ColumnName="Qty23" />
+          <ScalarProperty Name="Qty22" ColumnName="Qty22" />
+          <ScalarProperty Name="Qty21" ColumnName="Qty21" />
+          <ScalarProperty Name="Qty20" ColumnName="Qty20" />
+          <ScalarProperty Name="Qty19" ColumnName="Qty19" />
+          <ScalarProperty Name="Qty18" ColumnName="Qty18" />
+          <ScalarProperty Name="Qty17" ColumnName="Qty17" />
+          <ScalarProperty Name="Qty16" ColumnName="Qty16" />
+          <ScalarProperty Name="Qty15" ColumnName="Qty15" />
+          <ScalarProperty Name="Qty14" ColumnName="Qty14" />
+          <ScalarProperty Name="Qty13" ColumnName="Qty13" />
+          <ScalarProperty Name="Qty12" ColumnName="Qty12" />
+          <ScalarProperty Name="Qty11" ColumnName="Qty11" />
+          <ScalarProperty Name="Qty10" ColumnName="Qty10" />
+          <ScalarProperty Name="Qty09" ColumnName="Qty09" />
+          <ScalarProperty Name="Qty08" ColumnName="Qty08" />
+          <ScalarProperty Name="Qty07" ColumnName="Qty07" />
+          <ScalarProperty Name="Qty06" ColumnName="Qty06" />
+          <ScalarProperty Name="Qty05" ColumnName="Qty05" />
+          <ScalarProperty Name="Qty04" ColumnName="Qty04" />
+          <ScalarProperty Name="Qty03" ColumnName="Qty03" />
+          <ScalarProperty Name="Qty02" ColumnName="Qty02" />
+          <ScalarProperty Name="Qty01" ColumnName="Qty01" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductImage">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ProductImage">
+        <MappingFragment StoreEntitySet="ProductImage">
+          <ScalarProperty Name="ImageDateTime" ColumnName="ImageDateTime" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="ProductImageID" ColumnName="ProductImageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductImage_Compare">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ProductImage_Compare">
+        <MappingFragment StoreEntitySet="ProductImage_Compare">
+          <ScalarProperty Name="ImageDateTime" ColumnName="ImageDateTime" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="ProductImageID" ColumnName="ProductImageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_Vertreter">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Vertreter">
+        <MappingFragment StoreEntitySet="source_Vertreter">
+          <ScalarProperty Name="VertreterNr" ColumnName="VertreterNr" />
+          <ScalarProperty Name="Steuernr" ColumnName="Steuernr" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Kundennr" ColumnName="Kundennr" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobil" ColumnName="Mobil" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Ort" ColumnName="Ort" />
+          <ScalarProperty Name="Plz" ColumnName="Plz" />
+          <ScalarProperty Name="Land" ColumnName="Land" />
+          <ScalarProperty Name="Strasse" ColumnName="Strasse" />
+          <ScalarProperty Name="Name3" ColumnName="Name3" />
+          <ScalarProperty Name="Name2" ColumnName="Name2" />
+          <ScalarProperty Name="Name1" ColumnName="Name1" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_Lieferadresse">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Lieferadresse">
+        <MappingFragment StoreEntitySet="source_Lieferadresse">
+          <ScalarProperty Name="Warenempfaengernr" ColumnName="Warenempfaengernr" />
+          <ScalarProperty Name="UKAdresse" ColumnName="UKAdresse" />
+          <ScalarProperty Name="Abladestelle" ColumnName="Abladestelle" />
+          <ScalarProperty Name="Sendungsenpfaenger" ColumnName="Sendungsenpfaenger" />
+          <ScalarProperty Name="Bundesstaat" ColumnName="Bundesstaat" />
+          <ScalarProperty Name="Filiale" ColumnName="Filiale" />
+          <ScalarProperty Name="ILN" ColumnName="ILN" />
+          <ScalarProperty Name="Bemerkung" ColumnName="Bemerkung" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Land" ColumnName="Land" />
+          <ScalarProperty Name="Ort" ColumnName="Ort" />
+          <ScalarProperty Name="Plz" ColumnName="Plz" />
+          <ScalarProperty Name="Strasse" ColumnName="Strasse" />
+          <ScalarProperty Name="Name3" ColumnName="Name3" />
+          <ScalarProperty Name="Name2" ColumnName="Name2" />
+          <ScalarProperty Name="Name1" ColumnName="Name1" />
+          <ScalarProperty Name="Matchcode" ColumnName="Matchcode" />
+          <ScalarProperty Name="Lieferort" ColumnName="Lieferort" />
+          <ScalarProperty Name="Kundennr" ColumnName="Kundennr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Color">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Color">
+        <MappingFragment StoreEntitySet="Color">
+          <ScalarProperty Name="ColorHeader10" ColumnName="ColorHeader10" />
+          <ScalarProperty Name="ColorHeader09" ColumnName="ColorHeader09" />
+          <ScalarProperty Name="ColorHeader08" ColumnName="ColorHeader08" />
+          <ScalarProperty Name="ColorHeader07" ColumnName="ColorHeader07" />
+          <ScalarProperty Name="ColorHeader06" ColumnName="ColorHeader06" />
+          <ScalarProperty Name="ColorHeader05" ColumnName="ColorHeader05" />
+          <ScalarProperty Name="ColorHeader04" ColumnName="ColorHeader04" />
+          <ScalarProperty Name="ColorHeader03" ColumnName="ColorHeader03" />
+          <ScalarProperty Name="ColorHeader02" ColumnName="ColorHeader02" />
+          <ScalarProperty Name="ColorHeader01" ColumnName="ColorHeader01" />
+          <ScalarProperty Name="ColorText10" ColumnName="ColorText10" />
+          <ScalarProperty Name="ColorText09" ColumnName="ColorText09" />
+          <ScalarProperty Name="ColorText08" ColumnName="ColorText08" />
+          <ScalarProperty Name="ColorText07" ColumnName="ColorText07" />
+          <ScalarProperty Name="ColorText06" ColumnName="ColorText06" />
+          <ScalarProperty Name="ColorText05" ColumnName="ColorText05" />
+          <ScalarProperty Name="ColorText04" ColumnName="ColorText04" />
+          <ScalarProperty Name="ColorText03" ColumnName="ColorText03" />
+          <ScalarProperty Name="ColorText02" ColumnName="ColorText02" />
+          <ScalarProperty Name="ColorText01" ColumnName="ColorText01" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+          <ScalarProperty Name="ColorLiningNumber2" ColumnName="ColorLiningNumber2" />
+          <ScalarProperty Name="ColorLiningNumber" ColumnName="ColorLiningNumber" />
+          <ScalarProperty Name="ColorLiningName2" ColumnName="ColorLiningName2" />
+          <ScalarProperty Name="ColorLiningName" ColumnName="ColorLiningName" />
+          <ScalarProperty Name="ColorStatus" ColumnName="ColorStatus" />
+          <ScalarProperty Name="ColorNumberSearchText" ColumnName="ColorNumberSearchText" />
+          <ScalarProperty Name="ColorNumberText" ColumnName="ColorNumberText" />
+          <ScalarProperty Name="CollectionName" ColumnName="CollectionName" />
+          <ScalarProperty Name="ColorImage" ColumnName="ColorImage" />
+          <ScalarProperty Name="ColorText1" ColumnName="ColorText1" />
+          <ScalarProperty Name="EASColorName" ColumnName="EASColorName" />
+          <ScalarProperty Name="EASColorNumber" ColumnName="EASColorNumber" />
+          <ScalarProperty Name="ColorClientID" ColumnName="ColorClientID" />
+          <ScalarProperty Name="DeliveryDateEnd" ColumnName="DeliveryDateEnd" />
+          <ScalarProperty Name="DeliveryDateStart" ColumnName="DeliveryDateStart" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="ProductionArticle" ColumnName="ProductionArticle" />
+          <ScalarProperty Name="StockArticle" ColumnName="StockArticle" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="ColorNumber" ColumnName="ColorNumber" />
+          <ScalarProperty Name="ColorArticleID" ColumnName="ColorArticleID" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CustomerHeader09" ColumnName="CustomerHeader09" />
+          <ScalarProperty Name="CustomerHeader08" ColumnName="CustomerHeader08" />
+          <ScalarProperty Name="CustomerHeader07" ColumnName="CustomerHeader07" />
+          <ScalarProperty Name="CustomerHeader06" ColumnName="CustomerHeader06" />
+          <ScalarProperty Name="CustomerHeader05" ColumnName="CustomerHeader05" />
+          <ScalarProperty Name="CustomerHeader04" ColumnName="CustomerHeader04" />
+          <ScalarProperty Name="CustomerHeader03" ColumnName="CustomerHeader03" />
+          <ScalarProperty Name="CustomerHeader02" ColumnName="CustomerHeader02" />
+          <ScalarProperty Name="CustomerHeader01" ColumnName="CustomerHeader01" />
+          <ScalarProperty Name="CustomerText09" ColumnName="CustomerText09" />
+          <ScalarProperty Name="CustomerText08" ColumnName="CustomerText08" />
+          <ScalarProperty Name="CustomerText07" ColumnName="CustomerText07" />
+          <ScalarProperty Name="CustomerText06" ColumnName="CustomerText06" />
+          <ScalarProperty Name="CustomerText05" ColumnName="CustomerText05" />
+          <ScalarProperty Name="CustomerText04" ColumnName="CustomerText04" />
+          <ScalarProperty Name="CustomerText03" ColumnName="CustomerText03" />
+          <ScalarProperty Name="CustomerText02" ColumnName="CustomerText02" />
+          <ScalarProperty Name="CustomerText01" ColumnName="CustomerText01" />
+          <ScalarProperty Name="OpenReceivables" ColumnName="OpenReceivables" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+          <ScalarProperty Name="CustomerBarrier" ColumnName="CustomerBarrier" />
+          <ScalarProperty Name="CustomerClientID" ColumnName="CustomerClientID" />
+          <ScalarProperty Name="lon" ColumnName="lon" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="Customergroup" ColumnName="Customergroup" />
+          <ScalarProperty Name="AssociationMemberNumber" ColumnName="AssociationMemberNumber" />
+          <ScalarProperty Name="AgentNumber" ColumnName="AgentNumber" />
+          <ScalarProperty Name="AgentName1" ColumnName="AgentName1" />
+          <ScalarProperty Name="PricelistNumber" ColumnName="PricelistNumber" />
+          <ScalarProperty Name="PricelistName" ColumnName="PricelistName" />
+          <ScalarProperty Name="PaymentTermNumber" ColumnName="PaymentTermNumber" />
+          <ScalarProperty Name="PaymentTermText" ColumnName="PaymentTermText" />
+          <ScalarProperty Name="CustomerCountryCode" ColumnName="CustomerCountryCode" />
+          <ScalarProperty Name="CustomerCountryName" ColumnName="CustomerCountryName" />
+          <ScalarProperty Name="CustomerMobile" ColumnName="CustomerMobile" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CustomerAgentID" ColumnName="CustomerAgentID" />
+          <ScalarProperty Name="CustomerValuta" ColumnName="CustomerValuta" />
+          <ScalarProperty Name="CustomerTaxID" ColumnName="CustomerTaxID" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+          <ScalarProperty Name="CustomerDiscount" ColumnName="CustomerDiscount" />
+          <ScalarProperty Name="CustomerPricelistID" ColumnName="CustomerPricelistID" />
+          <ScalarProperty Name="CustomerFax" ColumnName="CustomerFax" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+          <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+          <ScalarProperty Name="CustomerCity" ColumnName="CustomerCity" />
+          <ScalarProperty Name="CustomerZIP" ColumnName="CustomerZIP" />
+          <ScalarProperty Name="CustomerStreet" ColumnName="CustomerStreet" />
+          <ScalarProperty Name="CustomerName3" ColumnName="CustomerName3" />
+          <ScalarProperty Name="CustomerName2" ColumnName="CustomerName2" />
+          <ScalarProperty Name="CustomerName1" ColumnName="CustomerName1" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SeasonValue">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.SeasonValue">
+        <MappingFragment StoreEntitySet="SeasonValue">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ValuePreOrder" ColumnName="ValuePreOrder" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="QtyPreOrder" ColumnName="QtyPreOrder" />
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="SeasonValueID" ColumnName="SeasonValueID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="source_Saisonumsatz">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Saisonumsatz">
+        <MappingFragment StoreEntitySet="source_Saisonumsatz">
+          <ScalarProperty Name="UmsatzGesamt" ColumnName="UmsatzGesamt" />
+          <ScalarProperty Name="MengeGesamt" ColumnName="MengeGesamt" />
+          <ScalarProperty Name="UmsatzVO" ColumnName="UmsatzVO" />
+          <ScalarProperty Name="MengeVO" ColumnName="MengeVO" />
+          <ScalarProperty Name="Kundennr" ColumnName="Kundennr" />
+          <ScalarProperty Name="Saison" ColumnName="Saison" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

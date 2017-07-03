@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2ddc8892f1824eb79de95b7dbbb2fe37" Name="Diagram1">
+        <EntityTypeShape EntityType="ServerModel.Agent" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Article" Width="1.5" PointX="1.5" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Association" Width="1.5" PointX="7.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.AssociationMember" Width="1.5" PointX="8.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Assortment" Width="1.5" PointX="10.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Client" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Color" Width="1.5" PointX="3.75" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.ContactPerson" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Customer" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.DeliveryAddress" Width="1.5" PointX="5.25" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.InvoiceAddress" Width="1.5" PointX="5.25" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Label" Width="1.5" PointX="1.5" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Model" Width="1.5" PointX="1.5" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Price" Width="1.5" PointX="6" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Pricelist" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Season" Width="1.5" PointX="1.5" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.ShoppingCart" Width="1.5" PointX="10.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.ShoppingCartItem" Width="1.5" PointX="12.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Sizerun" Width="1.5" PointX="3.75" PointY="50.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.SpecialDiscount" Width="1.5" PointX="14.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.TextSnippet" Width="1.5" PointX="14.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.User" Width="1.5" PointX="3.75" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.UserAgents" Width="1.5" PointX="8" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.UserClient" Width="1.5" PointX="14.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.UserPriceList" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServerModel.Stock" Width="1.5" PointX="14.75" PointY="14.25" IsExpanded="true" />
+        <AssociationConnector Association="ServerModel.FK_Agent_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_Customer_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_UserAgents_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_Article_0" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_Color_0" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_Price_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_ContactPerson_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_Customer_Pricelist" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_DeliveryAddress_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_InvoiceAddress_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_Season_0" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_Model_0" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_Price_Pricelist" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_Price_Sizerun" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_UserPriceList_1" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_UserAgents_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ServerModel.FK_UserPriceList_0" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
