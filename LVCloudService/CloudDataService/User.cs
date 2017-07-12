@@ -51,6 +51,7 @@ namespace CloudDataService
         public string DefaultPricelist { get; set; }
         public string UserClientID { get; set; }
         public Nullable<bool> UseTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual ICollection<UserAgents> UserAgents { get; set; }
         public virtual ICollection<UserPriceList> UserPriceList { get; set; }

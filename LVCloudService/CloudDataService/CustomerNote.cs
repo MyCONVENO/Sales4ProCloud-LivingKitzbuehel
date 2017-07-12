@@ -22,5 +22,6 @@ namespace CloudDataService
         public bool IsDeleted { get; set; }
         public string CustomerNoteClientID { get; set; }
         public byte[] Image { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

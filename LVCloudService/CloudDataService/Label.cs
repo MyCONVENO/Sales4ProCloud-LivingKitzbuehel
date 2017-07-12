@@ -26,6 +26,7 @@ namespace CloudDataService
         public bool IsDeleted { get; set; }
         public string LabelClientID { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual ICollection<Season> Season { get; set; }
     }

@@ -45,6 +45,7 @@ namespace CloudDataService
         public string FooterRightLine2 { get; set; }
         public string FooterRightLine3 { get; set; }
         public string FooterRightLine4 { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual ICollection<Agent> Agent { get; set; }
     }

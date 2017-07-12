@@ -31,6 +31,7 @@ namespace CloudDataService
         public string SeasonLongName { get; set; }
         public Nullable<System.DateTime> DeliveryDateStart { get; set; }
         public Nullable<System.DateTime> DeliveryDateEnd { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual Label Label { get; set; }
         public virtual ICollection<Model> Model { get; set; }

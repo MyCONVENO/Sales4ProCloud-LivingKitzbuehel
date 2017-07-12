@@ -1,12 +1,21 @@
 ﻿using CloudDataService.Helper;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Infrastructure;
+using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Web;
 
 namespace CloudDataService
 {
@@ -16,7 +25,7 @@ namespace CloudDataService
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
     public class CloudDataServiceV2 : ICloudDataServiceV2
     {
-        BlobstorageFileHandler blobhandler = new BlobstorageFileHandler("myconvenocoredata", "7STxKhoKsGQt2sed2JGb4gWtSIvzYj2SJ/PIFLW3AL2ch0FyTCJ1QAvEYBOyQo64iQZIa2z/NcwDTKGn/660vQ==", "syncdata-bauerfeind");
+        BlobstorageFileHandler blobhandler = new BlobstorageFileHandler("myconvenocoredata", "7STxKhoKsGQt2sed2JGb4gWtSIvzYj2SJ/PIFLW3AL2ch0FyTCJ1QAvEYBOyQo64iQZIa2z/NcwDTKGn/660vQ==", "syncdata-livingkb");
         LIVINGKITZBUEHLEntities currentData = getData();
         long initDatetimeTicks = new DateTime(2000, 1, 1).Ticks;
         DateTime minDatetimeTicks = new DateTime(2000, 2, 1);
@@ -46,7 +55,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -86,7 +95,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -127,7 +136,7 @@ namespace CloudDataService
                          && a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -166,7 +175,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -197,7 +206,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.UserID == UserID && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -236,7 +245,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -276,7 +285,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -315,7 +324,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -354,7 +363,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -381,7 +390,7 @@ namespace CloudDataService
         #region Assortment
         IQueryable<Assortment> GetAssortmentTable(long SyncDateTimeSortStart, DateTime SyncDateTime, string UserID)
         {
-            MARCEntities serverdata = getData();
+            LIVINGKITZBUEHLEntities serverdata = getData();
 
             IQueryable<Assortment> result = null;
 
@@ -436,7 +445,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -476,7 +485,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -518,7 +527,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -559,7 +568,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -599,7 +608,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -635,7 +644,7 @@ namespace CloudDataService
             if (SyncDateTime < minDatetimeTicks)
                 result = result.Where(r => r.IsDeleted == false);
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -675,7 +684,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -703,11 +712,11 @@ namespace CloudDataService
         #region Pricelist
         IQueryable<Pricelist> GetPricelistTable(long SyncDateTimeSortStart, DateTime SyncDateTime, string UserID)
         {
-
+            return this.currentData.Pricelist;
             if (SyncDateTime < minDatetimeTicks)
             {
                 var pls = (from a in this.currentData.UserPriceList
-                           where a.UserID == UserID && a.IsDeleted == false
+                           where a.IsDeleted == false
                            select new
                            {
                                Currency = a.Pricelist.Currency,
@@ -733,7 +742,7 @@ namespace CloudDataService
                         PricelistID = p.PricelistID,
                         PricelistName = p.PricelistName,
                         PricelistNumber = p.PricelistNumber,
-                        SyncDateTimeTicks = p.SyncDateTimeTicks.Value.Ticks
+                        SyncDateTime = p.SyncDateTimeTicks.Value
                     });
                 }
 
@@ -743,7 +752,6 @@ namespace CloudDataService
             else
             {
                 var pls = (from a in this.currentData.UserPriceList
-                           where a.UserID == UserID
                            select new
                            {
                                Currency = a.Pricelist.Currency,
@@ -767,7 +775,7 @@ namespace CloudDataService
                         PricelistID = p.PricelistID,
                         PricelistName = p.PricelistName,
                         PricelistNumber = p.PricelistNumber,
-                        SyncDateTimeTicks = p.SyncDateTimeTicks.Value.Ticks
+                        SyncDateTime = p.SyncDateTimeTicks.Value
                     });
                 }
 
@@ -812,7 +820,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -852,7 +860,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -893,7 +901,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -933,7 +941,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.UserID == UserID && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -973,7 +981,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.UserID == UserID && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -1013,7 +1021,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.UserID == UserID && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -1359,7 +1367,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -1399,7 +1407,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -1439,7 +1447,7 @@ namespace CloudDataService
                          where a.SyncDateTime > SyncDateTime && a.UserID == UserID && a.SyncDateTimeSort > SyncDateTimeSortStart
                          select a;
 
-            return result.OrderBy(r => r.SyncDateTimeTicks);
+            return result.OrderBy(r => r.SyncDateTimeSort);
         }
 
 
@@ -1688,11 +1696,11 @@ namespace CloudDataService
                 if (existingCF != null)
                 {
                     existingCF.IsFavorite = uploadCustomerFavorite.IsFavorite;
-                    existingCF.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                    existingCF.SyncDateTime = DateTime.UtcNow;
                 }
                 else
                 {
-                    uploadCustomerFavorite.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                    uploadCustomerFavorite.SyncDateTime = DateTime.UtcNow;
                     currentData.CustomerFavorite.Add(uploadCustomerFavorite);
                 }
 
@@ -1729,12 +1737,12 @@ namespace CloudDataService
 
                 if (existingCF != null)
                 {
-                    uploadCustomerFavorite.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                    uploadCustomerFavorite.SyncDateTime = DateTime.UtcNow;
                     ClassFiller.PasteData(uploadCustomerFavorite, existingCF);
                 }
                 else
                 {
-                    uploadCustomerFavorite.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                    uploadCustomerFavorite.SyncDateTime = DateTime.UtcNow;
                     currentData.CustomerNote.Add(uploadCustomerFavorite);
                 }
 
@@ -1773,13 +1781,13 @@ namespace CloudDataService
                 {
                     if (existingCF.StatusID >= 10)
                     {
-                        existingCF.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                        existingCF.SyncDateTime = DateTime.UtcNow;
                         ClassFiller.PasteData(uploadShoppingCart, existingCF);
                     }
                 }
                 else
                 {
-                    uploadShoppingCart.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                    uploadShoppingCart.SyncDateTime = DateTime.UtcNow;
                     currentData.ShoppingCart.Add(uploadShoppingCart);
                 }
 
@@ -1815,7 +1823,7 @@ namespace CloudDataService
 
                 var existingCF = currentData.ShoppingCart.FirstOrDefault(dbcn => dbcn.ShoppingCartID == uploadShoppingCart.ShoppingCart.ShoppingCartID);
 
-                uploadShoppingCart.ShoppingCart.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                uploadShoppingCart.ShoppingCart.SyncDateTime = DateTime.UtcNow;
                 uploadShoppingCart.ShoppingCart.Sent = true;
                 uploadShoppingCart.ShoppingCart.StatusID = 0;
 
@@ -1840,12 +1848,12 @@ namespace CloudDataService
 
                     if (existingSCItem != null)
                     {
-                        sci.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                        sci.SyncDateTime = DateTime.UtcNow;
                         ClassFiller.PasteData(sci, existingSCItem);
                     }
                     else
                     {
-                        sci.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                        sci.SyncDateTime = DateTime.UtcNow;
                         ShoppingCartItem newItem = new ShoppingCartItem();
                         ClassFiller.PasteData(sci, newItem);
                         currentData.ShoppingCartItem.Add(newItem);
@@ -1857,7 +1865,7 @@ namespace CloudDataService
                 //Check alle Daten auf dem aktuellen Stand.
                 ShoppingCart existingCart = currentData.ShoppingCart.FirstOrDefault(dbcn => dbcn.ShoppingCartID == uploadShoppingCart.ShoppingCart.ShoppingCartID);
 
-                List<ShoppingCartItem> existingItems = currentData.ShoppingCartItem.Where(i => i.ShoppingCartID == uploadShoppingCart.ShoppingCart.ShoppingCartID && i.IsDeleted == false && i.SyncDateTimeTicks < existingCart.SyncDateTimeTicks).ToList();
+                List<ShoppingCartItem> existingItems = currentData.ShoppingCartItem.Where(i => i.ShoppingCartID == uploadShoppingCart.ShoppingCart.ShoppingCartID && i.IsDeleted == false && i.SyncDateTime < existingCart.SyncDateTime).ToList();
 
                 if (existingItems.Any())
                 {
@@ -1905,7 +1913,7 @@ namespace CloudDataService
                 {
                     if (shoppingCart.StatusID >= 10)
                     {
-                        existingSCItem.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                        existingSCItem.SyncDateTime = DateTime.UtcNow;
                         ClassFiller.PasteData(uploadShoppingCartItem, existingSCItem);
                     }
                 }
@@ -1913,7 +1921,7 @@ namespace CloudDataService
                 {
                     if (shoppingCart.StatusID >= 10)
                     {
-                        uploadShoppingCartItem.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                        uploadShoppingCartItem.SyncDateTime = DateTime.UtcNow;
                         ShoppingCartItem newItem = new ShoppingCartItem();
                         ClassFiller.PasteData(uploadShoppingCartItem, newItem);
                         currentData.ShoppingCartItem.Add(newItem);
@@ -1977,41 +1985,41 @@ namespace CloudDataService
         {
             try
             {
-                long ordersSyncDateTime = DateTime.UtcNow.AddMinutes(-10).Ticks;
+                //DateTime ordersSyncDateTime = DateTime.UtcNow.AddMinutes(-10);
 
-                var orders = from order in this.currentData.ShoppingCart
-                             where order.IsDeleted == false && order.StatusID == 0
-                             && order.CustomerID != "-1" && order.Sent == true && order.SyncDateTimeTicks < ordersSyncDateTime
-                             && (order.ShoppingCartClientID == "1")
-                             select order;
+                //var orders = from order in this.currentData.ShoppingCart
+                //             where order.IsDeleted == false && order.StatusID == 0
+                //             && order.CustomerID != "-1" && order.Sent == true && order.SyncDateTime < ordersSyncDateTime
+                //             && (order.ShoppingCartClientID == "1")
+                //             select order;
 
-                foreach (var order in orders)
-                {
-                    var user = this.currentData.User.FirstOrDefault(u => u.UserID == order.UserID);
-                    if (user != null && user.UserNumber.CompareTo("610") >= 0)
-                    {
-                        byte[] idoc = GetIdocFromOrder(order.ShoppingCartID);
+                //foreach (var order in orders)
+                //{
+                //    var user = this.currentData.User.FirstOrDefault(u => u.UserID == order.UserID);
+                //    if (user != null && user.UserNumber.CompareTo("610") >= 0)
+                //    {
+                //        byte[] idoc = GetIdocFromOrder(order.ShoppingCartID);
 
-                        if (idoc != null)
-                        {
-                            string destination = string.Empty;
+                //        if (idoc != null)
+                //        {
+                //            string destination = string.Empty;
 
-                            destination = order.ShoppingCartClientID == "1" ? "EXPORT/BERKEMANN/" : "EXPORT/SOLIDUS/";
+                //            destination = order.ShoppingCartClientID == "1" ? "EXPORT/BERKEMANN/" : "EXPORT/SOLIDUS/";
 
-                            blobhandler.UploadFile(new MemoryStream(idoc), destination + order.OrderNumber + ".xml");
+                //            blobhandler.UploadFile(new MemoryStream(idoc), destination + order.OrderNumber + ".xml");
 
-                            order.StatusID = -4;
-                            order.SentDateTime = DateTime.UtcNow;
-                        }
-                    }
-                    else
-                    {
-                        order.StatusID = -4;
-                        order.SentDateTime = DateTime.UtcNow;
-                    }
-                }
+                //            order.StatusID = -4;
+                //            order.SentDateTime = DateTime.UtcNow;
+                //        }
+                //    }
+                //    else
+                //    {
+                //        order.StatusID = -4;
+                //        order.SentDateTime = DateTime.UtcNow;
+                //    }
+                //}
 
-                this.currentData.SaveChanges();
+                //this.currentData.SaveChanges();
             }
             catch { }
         }
@@ -2556,7 +2564,7 @@ namespace CloudDataService
 
         public void UpdateGeoData()
         {
-            MARCEntities serverdata = getData();
+            LIVINGKITZBUEHLEntities serverdata = getData();
             try
             {
                 int counter = 0;
@@ -2575,7 +2583,7 @@ namespace CloudDataService
 
                     c.lat = geo.Lat;
                     c.lon = geo.Lon;
-                    c.SyncDateTimeTicks = DateTime.UtcNow.Ticks;
+                    c.SyncDateTime = DateTime.UtcNow;
 
                     if (counter % 100 == 0)
                     {

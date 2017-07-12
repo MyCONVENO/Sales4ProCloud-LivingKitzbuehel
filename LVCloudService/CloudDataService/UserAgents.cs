@@ -20,6 +20,7 @@ namespace CloudDataService
         public string UserAgentClientID { get; set; }
         public Nullable<bool> IsDeleted { get; set; }
         public Nullable<System.DateTime> SyncDateTime { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual Agent Agent { get; set; }
         public virtual User User { get; set; }

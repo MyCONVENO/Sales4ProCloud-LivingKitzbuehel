@@ -36,6 +36,11 @@ namespace CloudDataService.Helper
                         proptype = typeof(double);
                     }
 
+                    if (prop.PropertyType == typeof(int?))
+                    {
+                        proptype = typeof(int);
+                    }
+
                     dt.Columns.Add(prop.Name, proptype);
                     tableMap.Add(prop.Name, prop.Name);
                 }
@@ -116,6 +121,8 @@ namespace CloudDataService.Helper
             if (type == typeof(double?))
                 return true;
             if (type == typeof(bool?))
+                return true;
+            if (type == typeof(int?))
                 return true;
 
             return false;

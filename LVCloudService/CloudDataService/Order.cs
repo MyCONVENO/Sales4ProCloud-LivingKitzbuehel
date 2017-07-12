@@ -139,5 +139,6 @@ namespace CloudDataService
         public long IsDeleted { get; set; }
         public long IsModified { get; set; }
         public System.DateTime SyncDateTime { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

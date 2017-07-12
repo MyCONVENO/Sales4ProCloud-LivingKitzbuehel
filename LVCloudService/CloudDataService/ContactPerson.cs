@@ -29,6 +29,7 @@ namespace CloudDataService
         public string ContactPersonFax { get; set; }
         public string ContactPersonNumber { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual Customer Customer { get; set; }
     }

@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Meine Projekte\MyCONVENO\LivingKitzbuehl\LVCloudService\CloudDataService\ServerModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\email\Source\Repos\MyCONVENO\Sales4ProCloud-LivingKitzbuehel\LVCloudService\CloudDataService\ServerModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

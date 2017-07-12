@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Agent">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Agent">
         <MappingFragment StoreEntitySet="Agent">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="AgentID" ColumnName="AgentID" />
           <ScalarProperty Name="AgentNumber" ColumnName="AgentNumber" />
           <ScalarProperty Name="AgentConfirmFax" ColumnName="AgentConfirmFax" />
@@ -58,6 +59,7 @@
     <EntitySetMapping Name="Article">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Article">
         <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
           <ScalarProperty Name="ModelID" ColumnName="ModelID" />
           <ScalarProperty Name="ArticleName" ColumnName="ArticleName" />
@@ -93,6 +95,7 @@
     <EntitySetMapping Name="Association">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Association">
         <MappingFragment StoreEntitySet="Association">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="AssociationID" ColumnName="AssociationID" />
           <ScalarProperty Name="AssociationName1" ColumnName="AssociationName1" />
           <ScalarProperty Name="AssociationName2" ColumnName="AssociationName2" />
@@ -139,6 +142,7 @@
     <EntitySetMapping Name="AssociationMember">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.AssociationMember">
         <MappingFragment StoreEntitySet="AssociationMember">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="AssociationMemberID" ColumnName="AssociationMemberID" />
           <ScalarProperty Name="AssociationMemberNumber" ColumnName="AssociationMemberNumber" />
           <ScalarProperty Name="AssociationMemberCustomerID" ColumnName="AssociationMemberCustomerID" />
@@ -167,6 +171,7 @@
     <EntitySetMapping Name="Assortment">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Assortment">
         <MappingFragment StoreEntitySet="Assortment">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="AssortmentID" ColumnName="AssortmentID" />
           <ScalarProperty Name="AssortmentName" ColumnName="AssortmentName" />
           <ScalarProperty Name="AssortmentSizerunID" ColumnName="AssortmentSizerunID" />
@@ -257,6 +262,7 @@
     <EntitySetMapping Name="Client">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Client">
         <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="ClientID" ColumnName="ClientID" />
           <ScalarProperty Name="ClientName" ColumnName="ClientName" />
           <ScalarProperty Name="AccentColor" ColumnName="AccentColor" />
@@ -289,6 +295,7 @@
     <EntitySetMapping Name="ContactPerson">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ContactPerson">
         <MappingFragment StoreEntitySet="ContactPerson">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="ContactPersonID" ColumnName="ContactPersonID" />
           <ScalarProperty Name="ContactPersonCustomerID" ColumnName="ContactPersonCustomerID" />
           <ScalarProperty Name="ContactPersonName1" ColumnName="ContactPersonName1" />
@@ -331,6 +338,7 @@
     <EntitySetMapping Name="Country">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Country">
         <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="CountryID" ColumnName="CountryID" />
           <ScalarProperty Name="CountryName" ColumnName="CountryName" />
           <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
@@ -344,6 +352,7 @@
     <EntitySetMapping Name="CustomerFavorite">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.CustomerFavorite">
         <MappingFragment StoreEntitySet="CustomerFavorite">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="CustomerFavoriteID" ColumnName="CustomerFavoriteID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
@@ -356,6 +365,7 @@
     <EntitySetMapping Name="CustomerNote">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.CustomerNote">
         <MappingFragment StoreEntitySet="CustomerNote">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="CustomerNoteID" ColumnName="CustomerNoteID" />
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="Created" ColumnName="Created" />
@@ -370,6 +380,7 @@
     <EntitySetMapping Name="DeliveryAddress">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.DeliveryAddress">
         <MappingFragment StoreEntitySet="DeliveryAddress">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="DeliveryAddressID" ColumnName="DeliveryAddressID" />
           <ScalarProperty Name="DeliveryAddressCustomerID" ColumnName="DeliveryAddressCustomerID" />
           <ScalarProperty Name="DeliveryAddressName1" ColumnName="DeliveryAddressName1" />
@@ -418,6 +429,7 @@
     <EntitySetMapping Name="InvoiceAddress">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.InvoiceAddress">
         <MappingFragment StoreEntitySet="InvoiceAddress">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="InvoiceAddressID" ColumnName="InvoiceAddressID" />
           <ScalarProperty Name="InvoiceAddressCustomerID" ColumnName="InvoiceAddressCustomerID" />
           <ScalarProperty Name="InvoiceAddressName1" ColumnName="InvoiceAddressName1" />
@@ -466,6 +478,7 @@
     <EntitySetMapping Name="Label">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Label">
         <MappingFragment StoreEntitySet="Label">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="LabelID" ColumnName="LabelID" />
           <ScalarProperty Name="LabelName" ColumnName="LabelName" />
           <ScalarProperty Name="LabelNumber" ColumnName="LabelNumber" />
@@ -492,6 +505,7 @@
     <EntitySetMapping Name="Model">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Model">
         <MappingFragment StoreEntitySet="Model">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="ModelID" ColumnName="ModelID" />
           <ScalarProperty Name="ModelName" ColumnName="ModelName" />
           <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
@@ -532,6 +546,7 @@
     <EntitySetMapping Name="Order">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Order">
         <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />
           <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
           <ScalarProperty Name="ShoppingCartTitle" ColumnName="ShoppingCartTitle" />
@@ -663,6 +678,7 @@
     <EntitySetMapping Name="OrderItem">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.OrderItem">
         <MappingFragment StoreEntitySet="OrderItem">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="OrderItemID" ColumnName="OrderItemID" />
           <ScalarProperty Name="ArticleCategory1" ColumnName="ArticleCategory1" />
           <ScalarProperty Name="ArticleCategory2" ColumnName="ArticleCategory2" />
@@ -849,6 +865,7 @@
     <EntitySetMapping Name="Price">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Price">
         <MappingFragment StoreEntitySet="Price">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="PriceID" ColumnName="PriceID" />
           <ScalarProperty Name="PriceArticleID" ColumnName="PriceArticleID" />
           <ScalarProperty Name="PriceSizerunID" ColumnName="PriceSizerunID" />
@@ -883,6 +900,7 @@
     <EntitySetMapping Name="Pricelist">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Pricelist">
         <MappingFragment StoreEntitySet="Pricelist">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="PricelistID" ColumnName="PricelistID" />
           <ScalarProperty Name="PricelistName" ColumnName="PricelistName" />
           <ScalarProperty Name="PricelistNumber" ColumnName="PricelistNumber" />
@@ -922,6 +940,7 @@
     <EntitySetMapping Name="Season">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Season">
         <MappingFragment StoreEntitySet="Season">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="DeliveryDateEnd" ColumnName="DeliveryDateEnd" />
           <ScalarProperty Name="DeliveryDateStart" ColumnName="DeliveryDateStart" />
           <ScalarProperty Name="SeasonLongName" ColumnName="SeasonLongName" />
@@ -956,6 +975,7 @@
     <EntitySetMapping Name="ShoppingCart">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ShoppingCart">
         <MappingFragment StoreEntitySet="ShoppingCart">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="AppVersion" ColumnName="AppVersion" />
           <ScalarProperty Name="SeasonLongName" ColumnName="SeasonLongName" />
           <ScalarProperty Name="CustomerHeader10" ColumnName="CustomerHeader10" />
@@ -1126,6 +1146,7 @@
     <EntitySetMapping Name="ShoppingCartItem">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ShoppingCartItem">
         <MappingFragment StoreEntitySet="ShoppingCartItem">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="AppVersion" ColumnName="AppVersion" />
           <ScalarProperty Name="IsSampleItem" ColumnName="IsSampleItem" />
           <ScalarProperty Name="ColorHeader10" ColumnName="ColorHeader10" />
@@ -1358,6 +1379,7 @@
     <EntitySetMapping Name="Sizerun">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Sizerun">
         <MappingFragment StoreEntitySet="Sizerun">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="EAN30" ColumnName="EAN30" />
           <ScalarProperty Name="EAN29" ColumnName="EAN29" />
           <ScalarProperty Name="EAN28" ColumnName="EAN28" />
@@ -1512,6 +1534,7 @@
     <EntitySetMapping Name="SpecialDiscount">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.SpecialDiscount">
         <MappingFragment StoreEntitySet="SpecialDiscount">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="SpecialDiscountID" ColumnName="SpecialDiscountID" />
           <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
           <ScalarProperty Name="StartDate" ColumnName="StartDate" />
@@ -1571,6 +1594,7 @@
     <EntitySetMapping Name="TextSnippet">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.TextSnippet">
         <MappingFragment StoreEntitySet="TextSnippet">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="TextSnippetID" ColumnName="TextSnippetID" />
           <ScalarProperty Name="TextSnippetText" ColumnName="TextSnippetText" />
           <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
@@ -1581,6 +1605,7 @@
     <EntitySetMapping Name="User">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.User">
         <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="UserNumber" ColumnName="UserNumber" />
           <ScalarProperty Name="Name1" ColumnName="Name1" />
@@ -1618,6 +1643,7 @@
     <EntitySetMapping Name="UserAgents">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.UserAgents">
         <MappingFragment StoreEntitySet="UserAgents">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="UserAgentsID" ColumnName="UserAgentsID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="AgentID" ColumnName="AgentID" />
@@ -1630,6 +1656,7 @@
     <EntitySetMapping Name="UserClient">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.UserClient">
         <MappingFragment StoreEntitySet="UserClient">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="UserMandantID" ColumnName="UserMandantID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="UserClientClientID" ColumnName="UserClientClientID" />
@@ -1791,50 +1818,6 @@
           <ScalarProperty Name="lon" ColumnName="lon" />
           <ScalarProperty Name="CustomerClientID" ColumnName="CustomerClientID" />
           <ScalarProperty Name="CustomerBarrier" ColumnName="CustomerBarrier" />
-          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Stock">
-      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Stock">
-        <MappingFragment StoreEntitySet="Stock">
-          <ScalarProperty Name="StockID" ColumnName="StockID" />
-          <ScalarProperty Name="StockAssortmentID" ColumnName="StockAssortmentID" />
-          <ScalarProperty Name="StockQty01" ColumnName="StockQty01" />
-          <ScalarProperty Name="StockQty02" ColumnName="StockQty02" />
-          <ScalarProperty Name="StockQty03" ColumnName="StockQty03" />
-          <ScalarProperty Name="StockQty04" ColumnName="StockQty04" />
-          <ScalarProperty Name="StockQty05" ColumnName="StockQty05" />
-          <ScalarProperty Name="StockQty06" ColumnName="StockQty06" />
-          <ScalarProperty Name="StockQty07" ColumnName="StockQty07" />
-          <ScalarProperty Name="StockQty08" ColumnName="StockQty08" />
-          <ScalarProperty Name="StockQty09" ColumnName="StockQty09" />
-          <ScalarProperty Name="StockQty10" ColumnName="StockQty10" />
-          <ScalarProperty Name="StockQty11" ColumnName="StockQty11" />
-          <ScalarProperty Name="StockQty12" ColumnName="StockQty12" />
-          <ScalarProperty Name="StockQty13" ColumnName="StockQty13" />
-          <ScalarProperty Name="StockQty14" ColumnName="StockQty14" />
-          <ScalarProperty Name="StockQty15" ColumnName="StockQty15" />
-          <ScalarProperty Name="StockQty16" ColumnName="StockQty16" />
-          <ScalarProperty Name="StockQty17" ColumnName="StockQty17" />
-          <ScalarProperty Name="StockQty18" ColumnName="StockQty18" />
-          <ScalarProperty Name="StockQty19" ColumnName="StockQty19" />
-          <ScalarProperty Name="StockQty20" ColumnName="StockQty20" />
-          <ScalarProperty Name="StockQty21" ColumnName="StockQty21" />
-          <ScalarProperty Name="StockQty22" ColumnName="StockQty22" />
-          <ScalarProperty Name="StockQty23" ColumnName="StockQty23" />
-          <ScalarProperty Name="StockQty24" ColumnName="StockQty24" />
-          <ScalarProperty Name="StockQty25" ColumnName="StockQty25" />
-          <ScalarProperty Name="StockQty26" ColumnName="StockQty26" />
-          <ScalarProperty Name="StockQty27" ColumnName="StockQty27" />
-          <ScalarProperty Name="StockQty28" ColumnName="StockQty28" />
-          <ScalarProperty Name="StockQty29" ColumnName="StockQty29" />
-          <ScalarProperty Name="StockQty30" ColumnName="StockQty30" />
-          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
-          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
-          <ScalarProperty Name="StockClientID" ColumnName="StockClientID" />
-          <ScalarProperty Name="IsFreeDisposition" ColumnName="IsFreeDisposition" />
-          <ScalarProperty Name="StockQtyAssortment" ColumnName="StockQtyAssortment" />
           <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -2067,6 +2050,8 @@
     <EntitySetMapping Name="source_Stock">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Stock">
         <MappingFragment StoreEntitySet="source_Stock">
+          <ScalarProperty Name="FreiVerfuegbarerBestand" ColumnName="FreiVerfuegbarerBestand" />
+          <ScalarProperty Name="Artikelsaison" ColumnName="Artikelsaison" />
           <ScalarProperty Name="Freilagerbestand" ColumnName="Freilagerbestand" />
           <ScalarProperty Name="EAN" ColumnName="EAN" />
           <ScalarProperty Name="Lagernr" ColumnName="Lagernr" />
@@ -2115,6 +2100,8 @@
     <EntitySetMapping Name="ProductImage">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ProductImage">
         <MappingFragment StoreEntitySet="ProductImage">
+          <ScalarProperty Name="DownloadUri" ColumnName="DownloadUri" />
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="ImageDateTime" ColumnName="ImageDateTime" />
           <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
@@ -2189,6 +2176,7 @@
     <EntitySetMapping Name="Color">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Color">
         <MappingFragment StoreEntitySet="Color">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="ColorHeader10" ColumnName="ColorHeader10" />
           <ScalarProperty Name="ColorHeader09" ColumnName="ColorHeader09" />
           <ScalarProperty Name="ColorHeader08" ColumnName="ColorHeader08" />
@@ -2239,6 +2227,7 @@
     <EntitySetMapping Name="Customer">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Customer">
         <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="CustomerHeader09" ColumnName="CustomerHeader09" />
           <ScalarProperty Name="CustomerHeader08" ColumnName="CustomerHeader08" />
           <ScalarProperty Name="CustomerHeader07" ColumnName="CustomerHeader07" />
@@ -2299,6 +2288,7 @@
     <EntitySetMapping Name="SeasonValue">
       <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.SeasonValue">
         <MappingFragment StoreEntitySet="SeasonValue">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
           <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
           <ScalarProperty Name="Value" ColumnName="Value" />
@@ -2321,6 +2311,51 @@
           <ScalarProperty Name="Kundennr" ColumnName="Kundennr" />
           <ScalarProperty Name="Saison" ColumnName="Saison" />
           <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stock">
+      <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Stock">
+        <MappingFragment StoreEntitySet="Stock">
+          <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
+          <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+          <ScalarProperty Name="StockQtyAssortment" ColumnName="StockQtyAssortment" />
+          <ScalarProperty Name="IsFreeDisposition" ColumnName="IsFreeDisposition" />
+          <ScalarProperty Name="StockClientID" ColumnName="StockClientID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+          <ScalarProperty Name="StockQty30" ColumnName="StockQty30" />
+          <ScalarProperty Name="StockQty29" ColumnName="StockQty29" />
+          <ScalarProperty Name="StockQty28" ColumnName="StockQty28" />
+          <ScalarProperty Name="StockQty27" ColumnName="StockQty27" />
+          <ScalarProperty Name="StockQty26" ColumnName="StockQty26" />
+          <ScalarProperty Name="StockQty25" ColumnName="StockQty25" />
+          <ScalarProperty Name="StockQty24" ColumnName="StockQty24" />
+          <ScalarProperty Name="StockQty23" ColumnName="StockQty23" />
+          <ScalarProperty Name="StockQty22" ColumnName="StockQty22" />
+          <ScalarProperty Name="StockQty21" ColumnName="StockQty21" />
+          <ScalarProperty Name="StockQty20" ColumnName="StockQty20" />
+          <ScalarProperty Name="StockQty19" ColumnName="StockQty19" />
+          <ScalarProperty Name="StockQty18" ColumnName="StockQty18" />
+          <ScalarProperty Name="StockQty17" ColumnName="StockQty17" />
+          <ScalarProperty Name="StockQty16" ColumnName="StockQty16" />
+          <ScalarProperty Name="StockQty15" ColumnName="StockQty15" />
+          <ScalarProperty Name="StockQty14" ColumnName="StockQty14" />
+          <ScalarProperty Name="StockQty13" ColumnName="StockQty13" />
+          <ScalarProperty Name="StockQty12" ColumnName="StockQty12" />
+          <ScalarProperty Name="StockQty11" ColumnName="StockQty11" />
+          <ScalarProperty Name="StockQty10" ColumnName="StockQty10" />
+          <ScalarProperty Name="StockQty09" ColumnName="StockQty09" />
+          <ScalarProperty Name="StockQty08" ColumnName="StockQty08" />
+          <ScalarProperty Name="StockQty07" ColumnName="StockQty07" />
+          <ScalarProperty Name="StockQty06" ColumnName="StockQty06" />
+          <ScalarProperty Name="StockQty05" ColumnName="StockQty05" />
+          <ScalarProperty Name="StockQty04" ColumnName="StockQty04" />
+          <ScalarProperty Name="StockQty03" ColumnName="StockQty03" />
+          <ScalarProperty Name="StockQty02" ColumnName="StockQty02" />
+          <ScalarProperty Name="StockQty01" ColumnName="StockQty01" />
+          <ScalarProperty Name="StockAssortmentID" ColumnName="StockAssortmentID" />
+          <ScalarProperty Name="StockID" ColumnName="StockID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

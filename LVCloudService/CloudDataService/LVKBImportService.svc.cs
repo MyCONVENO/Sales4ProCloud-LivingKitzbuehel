@@ -1241,7 +1241,7 @@ namespace CloudDataService
         public string ImportStock()
         {
 
-            string sourceTempStockQuery = "SELECT        Sizerun.SizerunID, source_Stock.EAN, source_Stock.Freilagerbestand, Assortment.AssortmentID, CASE WHEN EAN = Sizerun.EAN01 THEN 1 WHEN EAN = Sizerun.EAN02 THEN 2 WHEN EAN = Sizerun.EAN03 THEN 3 WHEN EAN = Sizerun.EAN04 THEN 4 WHEN EAN = Sizerun.EAN05 THEN 5 WHEN EAN = Sizerun.EAN06 THEN 6 WHEN EAN = Sizerun.EAN07 THEN 7 WHEN EAN = Sizerun.EAN08 THEN 8 WHEN EAN = Sizerun.EAN09 THEN 9 WHEN EAN = Sizerun.EAN10 THEN 10 WHEN EAN = Sizerun.EAN11 THEN 11 WHEN EAN = Sizerun.EAN12 THEN 12 WHEN EAN = Sizerun.EAN13 THEN 13 WHEN EAN = Sizerun.EAN14 THEN 14 WHEN EAN = Sizerun.EAN15 THEN 15 WHEN EAN = Sizerun.EAN16 THEN 16 WHEN EAN = Sizerun.EAN17 THEN 17 WHEN EAN = Sizerun.EAN18 THEN 18 WHEN EAN = Sizerun.EAN19 THEN 19 WHEN EAN = Sizerun.EAN20 THEN 20 WHEN EAN = Sizerun.EAN21 THEN 21 WHEN EAN = Sizerun.EAN22 THEN 22 WHEN EAN = Sizerun.EAN23 THEN 23 WHEN EAN = Sizerun.EAN24 THEN 24 WHEN EAN = Sizerun.EAN25 THEN 25 WHEN EAN = Sizerun.EAN26 THEN 26 WHEN EAN = Sizerun.EAN27 THEN 27 WHEN EAN = Sizerun.EAN28 THEN 28 WHEN EAN = Sizerun.EAN29 THEN 29 WHEN EAN = Sizerun.EAN30 THEN 30 END AS SizeIndex FROM            source_Stock INNER JOIN Sizerun ON source_Stock.EAN = Sizerun.EAN01 OR source_Stock.EAN = Sizerun.EAN02 OR source_Stock.EAN = Sizerun.EAN03 OR source_Stock.EAN = Sizerun.EAN04 OR source_Stock.EAN = Sizerun.EAN05 OR source_Stock.EAN = Sizerun.EAN06 OR source_Stock.EAN = Sizerun.EAN07 OR source_Stock.EAN = Sizerun.EAN08 OR source_Stock.EAN = Sizerun.EAN09 OR source_Stock.EAN = Sizerun.EAN10 OR source_Stock.EAN = Sizerun.EAN11 OR source_Stock.EAN = Sizerun.EAN12 OR source_Stock.EAN = Sizerun.EAN13 OR source_Stock.EAN = Sizerun.EAN14 OR source_Stock.EAN = Sizerun.EAN15 OR source_Stock.EAN = Sizerun.EAN16 OR source_Stock.EAN = Sizerun.EAN17 OR source_Stock.EAN = Sizerun.EAN18 OR source_Stock.EAN = Sizerun.EAN19 OR source_Stock.EAN = Sizerun.EAN20 OR source_Stock.EAN = Sizerun.EAN21 OR source_Stock.EAN = Sizerun.EAN22 OR source_Stock.EAN = Sizerun.EAN23 OR source_Stock.EAN = Sizerun.EAN24 OR source_Stock.EAN = Sizerun.EAN25 OR source_Stock.EAN = Sizerun.EAN26 OR source_Stock.EAN = Sizerun.EAN27 OR source_Stock.EAN = Sizerun.EAN28 OR source_Stock.EAN = Sizerun.EAN29 OR source_Stock.EAN = Sizerun.EAN30 INNER JOIN Assortment ON Sizerun.SizerunID = Assortment.AssortmentSizerunID WHERE(source_Stock.Freilagerbestand > 0) AND(Sizerun.IsDeleted = 0) AND(Assortment.IsDeleted = 0)";
+            string sourceTempStockQuery = "SELECT Sizerun.SizerunID, source_Stock.EAN, source_Stock.Freilagerbestand, Assortment.AssortmentID,  CASE WHEN EAN = Sizerun.EAN01 THEN 1 WHEN EAN = Sizerun.EAN02 THEN 2 WHEN EAN = Sizerun.EAN03 THEN 3 WHEN EAN = Sizerun.EAN04 THEN 4 WHEN EAN = Sizerun.EAN05 THEN 5 WHEN EAN = Sizerun.EAN06 THEN 6 WHEN EAN = Sizerun.EAN07 THEN 7 WHEN EAN = Sizerun.EAN08 THEN 8 WHEN EAN = Sizerun.EAN09 THEN 9 WHEN EAN = Sizerun.EAN10 THEN 10 WHEN EAN = Sizerun.EAN11 THEN 11 WHEN EAN = Sizerun.EAN12 THEN 12 WHEN EAN = Sizerun.EAN13 THEN 13 WHEN EAN = Sizerun.EAN14 THEN 14 WHEN EAN = Sizerun.EAN15 THEN 15 WHEN EAN = Sizerun.EAN16 THEN 16 WHEN EAN = Sizerun.EAN17 THEN 17 WHEN EAN = Sizerun.EAN18 THEN 18 WHEN EAN = Sizerun.EAN19 THEN 19 WHEN EAN = Sizerun.EAN20 THEN 20 WHEN EAN = Sizerun.EAN21 THEN 21 WHEN EAN = Sizerun.EAN22 THEN 22 WHEN EAN = Sizerun.EAN23 THEN 23 WHEN EAN = Sizerun.EAN24 THEN 24 WHEN EAN = Sizerun.EAN25 THEN 25 WHEN EAN = Sizerun.EAN26 THEN 26 WHEN EAN = Sizerun.EAN27 THEN 27 WHEN EAN = Sizerun.EAN28 THEN 28 WHEN EAN = Sizerun.EAN29 THEN 29 WHEN EAN = Sizerun.EAN30 THEN 30 END AS SizeIndex, source_Stock.Artikelsaison, source_Stock.FreiVerfuegbarerBestand FROM  source_Stock INNER JOIN Sizerun ON source_Stock.EAN = Sizerun.EAN01 OR source_Stock.EAN = Sizerun.EAN02 OR source_Stock.EAN = Sizerun.EAN03 OR source_Stock.EAN = Sizerun.EAN04 OR source_Stock.EAN = Sizerun.EAN05 OR source_Stock.EAN = Sizerun.EAN06 OR source_Stock.EAN = Sizerun.EAN07 OR source_Stock.EAN = Sizerun.EAN08 OR source_Stock.EAN = Sizerun.EAN09 OR source_Stock.EAN = Sizerun.EAN10 OR source_Stock.EAN = Sizerun.EAN11 OR source_Stock.EAN = Sizerun.EAN12 OR source_Stock.EAN = Sizerun.EAN13 OR source_Stock.EAN = Sizerun.EAN14 OR source_Stock.EAN = Sizerun.EAN15 OR source_Stock.EAN = Sizerun.EAN16 OR source_Stock.EAN = Sizerun.EAN17 OR source_Stock.EAN = Sizerun.EAN18 OR source_Stock.EAN = Sizerun.EAN19 OR source_Stock.EAN = Sizerun.EAN20 OR source_Stock.EAN = Sizerun.EAN21 OR source_Stock.EAN = Sizerun.EAN22 OR source_Stock.EAN = Sizerun.EAN23 OR source_Stock.EAN = Sizerun.EAN24 OR source_Stock.EAN = Sizerun.EAN25 OR source_Stock.EAN = Sizerun.EAN26 OR source_Stock.EAN = Sizerun.EAN27 OR source_Stock.EAN = Sizerun.EAN28 OR source_Stock.EAN = Sizerun.EAN29 OR source_Stock.EAN = Sizerun.EAN30 INNER JOIN Assortment ON Sizerun.SizerunID = Assortment.AssortmentSizerunID WHERE(source_Stock.Freilagerbestand > 0 OR (source_Stock.Artikelsaison = '217' and source_Stock.FreiVerfuegbarerBestand > 0)) AND (Sizerun.IsDeleted = 0) AND(Assortment.IsDeleted = 0)";
 
             var tempStocks = dataModel.Database.SqlQuery<ImportTempStock>(sourceTempStockQuery).ToList();
 
@@ -1261,38 +1261,46 @@ namespace CloudDataService
 
                 foreach (var s in m)
                 {
+
+                    int bestand = s.Freilagerbestand;
+
+                    if(s.Artikelsaison == "217")
+                    {
+                        bestand = s.FreiVerfuegbarerBestand;
+                    }
+
                     switch (s.SizeIndex)
                     {
-                        case 1: newStock.Qty01 = s.Freilagerbestand; break;
-                        case 2: newStock.Qty02 = s.Freilagerbestand; break;
-                        case 3: newStock.Qty03 = s.Freilagerbestand; break;
-                        case 4: newStock.Qty04 = s.Freilagerbestand; break;
-                        case 5: newStock.Qty05 = s.Freilagerbestand; break;
-                        case 6: newStock.Qty06 = s.Freilagerbestand; break;
-                        case 7: newStock.Qty07 = s.Freilagerbestand; break;
-                        case 8: newStock.Qty08 = s.Freilagerbestand; break;
-                        case 9: newStock.Qty09 = s.Freilagerbestand; break;
-                        case 10: newStock.Qty10 = s.Freilagerbestand; break;
-                        case 11: newStock.Qty11 = s.Freilagerbestand; break;
-                        case 12: newStock.Qty12 = s.Freilagerbestand; break;
-                        case 13: newStock.Qty13 = s.Freilagerbestand; break;
-                        case 14: newStock.Qty14 = s.Freilagerbestand; break;
-                        case 15: newStock.Qty15 = s.Freilagerbestand; break;
-                        case 16: newStock.Qty16 = s.Freilagerbestand; break;
-                        case 17: newStock.Qty17 = s.Freilagerbestand; break;
-                        case 18: newStock.Qty18 = s.Freilagerbestand; break;
-                        case 19: newStock.Qty19 = s.Freilagerbestand; break;
-                        case 20: newStock.Qty20 = s.Freilagerbestand; break;
-                        case 21: newStock.Qty21 = s.Freilagerbestand; break;
-                        case 22: newStock.Qty22 = s.Freilagerbestand; break;
-                        case 23: newStock.Qty23 = s.Freilagerbestand; break;
-                        case 24: newStock.Qty24 = s.Freilagerbestand; break;
-                        case 25: newStock.Qty25 = s.Freilagerbestand; break;
-                        case 26: newStock.Qty26 = s.Freilagerbestand; break;
-                        case 27: newStock.Qty27 = s.Freilagerbestand; break;
-                        case 28: newStock.Qty28 = s.Freilagerbestand; break;
-                        case 29: newStock.Qty29 = s.Freilagerbestand; break;
-                        case 30: newStock.Qty30 = s.Freilagerbestand; break;
+                        case 1: newStock.Qty01 = bestand; break;
+                        case 2: newStock.Qty02 = bestand; break;
+                        case 3: newStock.Qty03 = bestand; break;
+                        case 4: newStock.Qty04 = bestand; break;
+                        case 5: newStock.Qty05 = bestand; break;
+                        case 6: newStock.Qty06 = bestand; break;
+                        case 7: newStock.Qty07 = bestand; break;
+                        case 8: newStock.Qty08 = bestand; break;
+                        case 9: newStock.Qty09 = bestand; break;
+                        case 10: newStock.Qty10 = bestand; break;
+                        case 11: newStock.Qty11 = bestand; break;
+                        case 12: newStock.Qty12 = bestand; break;
+                        case 13: newStock.Qty13 = bestand; break;
+                        case 14: newStock.Qty14 = bestand; break;
+                        case 15: newStock.Qty15 = bestand; break;
+                        case 16: newStock.Qty16 = bestand; break;
+                        case 17: newStock.Qty17 = bestand; break;
+                        case 18: newStock.Qty18 = bestand; break;
+                        case 19: newStock.Qty19 = bestand; break;
+                        case 20: newStock.Qty20 = bestand; break;
+                        case 21: newStock.Qty21 = bestand; break;
+                        case 22: newStock.Qty22 = bestand; break;
+                        case 23: newStock.Qty23 = bestand; break;
+                        case 24: newStock.Qty24 = bestand; break;
+                        case 25: newStock.Qty25 = bestand; break;
+                        case 26: newStock.Qty26 = bestand; break;
+                        case 27: newStock.Qty27 = bestand; break;
+                        case 28: newStock.Qty28 = bestand; break;
+                        case 29: newStock.Qty29 = bestand; break;
+                        case 30: newStock.Qty30 = bestand; break;
                     }
                 }
 

@@ -240,5 +240,6 @@ namespace CloudDataService
         public string ColorHeader10 { get; set; }
         public Nullable<bool> IsSampleItem { get; set; }
         public string AppVersion { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

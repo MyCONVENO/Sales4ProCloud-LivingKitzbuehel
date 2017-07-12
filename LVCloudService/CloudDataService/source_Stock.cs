@@ -18,5 +18,7 @@ namespace CloudDataService
         public string Lagernr { get; set; }
         public string EAN { get; set; }
         public int Freilagerbestand { get; set; }
+        public string Artikelsaison { get; set; }
+        public Nullable<int> FreiVerfuegbarerBestand { get; set; }
     }
 }

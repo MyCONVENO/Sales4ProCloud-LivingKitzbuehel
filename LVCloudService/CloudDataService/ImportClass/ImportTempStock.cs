@@ -12,5 +12,7 @@ namespace CloudDataService.ImportClass
         public int Freilagerbestand { get; set; }
         public string AssortmentID { get; set; }
         public int SizeIndex { get; set; }
+        public int FreiVerfuegbarerBestand { get; set; }
+        public string Artikelsaison { get; set; }
     }
 }

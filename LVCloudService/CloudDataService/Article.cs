@@ -48,6 +48,7 @@ namespace CloudDataService
         public string ArticleInfoText2 { get; set; }
         public string BauerfeindMaterial { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual Model Model { get; set; }
         public virtual ICollection<Color> Color { get; set; }

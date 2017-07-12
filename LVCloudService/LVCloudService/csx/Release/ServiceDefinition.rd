@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LVCloudService" generation="1" functional="0" release="0" Id="59cf810f-6f1b-4ff7-a6b1-e8c06dffc486" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LVCloudService" generation="1" functional="0" release="0" Id="b068f3a5-d085-463a-a944-7061b597c0c8" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="LVCloudServiceGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -52,7 +52,7 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="CloudDataService" generation="1" functional="0" release="0" software="D:\Meine Projekte\MyCONVENO\LivingKitzbuehl\LVCloudService\LVCloudService\csx\Release\roles\CloudDataService" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="CloudDataService" generation="1" functional="0" release="0" software="C:\Users\email\Source\Repos\MyCONVENO\Sales4ProCloud-LivingKitzbuehel\LVCloudService\LVCloudService\csx\Release\roles\CloudDataService" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
             </componentports>
@@ -81,9 +81,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="4b657197-6395-49a2-b727-c1e3aafa26e9" ref="Microsoft.RedDog.Contract\ServiceContract\LVCloudServiceContract@ServiceDefinition">
+    <implementation Id="1d42d850-de15-4917-b002-1fb837ce68ca" ref="Microsoft.RedDog.Contract\ServiceContract\LVCloudServiceContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="86341ab2-f23e-45f7-9318-f266c9cedcd4" ref="Microsoft.RedDog.Contract\Interface\CloudDataService:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="6eee300d-2aa7-423f-9fb5-471535c13be6" ref="Microsoft.RedDog.Contract\Interface\CloudDataService:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/LVCloudService/LVCloudServiceGroup/CloudDataService:Endpoint1" />
           </inPort>

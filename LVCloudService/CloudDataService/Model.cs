@@ -33,6 +33,7 @@ namespace CloudDataService
         public string Width { get; set; }
         public string SoleTypeName { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual ICollection<Article> Article { get; set; }
         public virtual Season Season { get; set; }

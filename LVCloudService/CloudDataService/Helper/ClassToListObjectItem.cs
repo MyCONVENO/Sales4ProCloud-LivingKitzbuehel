@@ -45,6 +45,8 @@ namespace CloudDataService.Helper
                 return true;
             if (type == typeof(bool?))
                 return true;
+            if (type == typeof(int?))
+                return true;
 
             return false;
         }

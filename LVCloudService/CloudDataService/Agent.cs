@@ -41,6 +41,7 @@ namespace CloudDataService
         public string AgentCountryCode { get; set; }
         public string AgentClientID { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual Client Client { get; set; }
         public virtual ICollection<UserAgents> UserAgents { get; set; }

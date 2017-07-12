@@ -23,5 +23,6 @@ namespace CloudDataService
         public decimal Value { get; set; }
         public System.DateTime SyncDateTime { get; set; }
         public bool IsDeleted { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

@@ -30,6 +30,7 @@
           <Property Name="AgentCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="AgentClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Agent_Compare">
           <Key>
@@ -86,10 +87,11 @@
           <Property Name="ArticleCategory2" Type="nvarchar" MaxLength="50" />
           <Property Name="ArticleCategory3" Type="nvarchar" MaxLength="50" />
           <Property Name="ArticleImage" Type="nvarchar" MaxLength="50" />
-          <Property Name="ArticleInfoText1" Type="nvarchar" MaxLength="500" />
+          <Property Name="ArticleInfoText1" Type="nvarchar" MaxLength="4000" />
           <Property Name="ArticleInfoText2" Type="nvarchar" MaxLength="50" />
           <Property Name="BauerfeindMaterial" Type="nvarchar" MaxLength="50" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -142,7 +144,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
           <Property Name="ArticleCategory2" Type="nvarchar" MaxLength="50" />
           <Property Name="ArticleCategory3" Type="nvarchar" MaxLength="50" />
           <Property Name="ArticleImage" Type="nvarchar" MaxLength="50" />
-          <Property Name="ArticleInfoText1" Type="nvarchar" MaxLength="500" />
+          <Property Name="ArticleInfoText1" Type="nvarchar" MaxLength="4000" />
           <Property Name="ArticleInfoText2" Type="nvarchar" MaxLength="50" />
           <Property Name="BauerfeindMaterial" Type="nvarchar" MaxLength="50" />
           <Property Name="IsTestData" Type="bit" />
@@ -168,6 +170,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
           <Property Name="AssociationCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="AssociationClientID" Type="nvarchar" MaxLength="50" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Association_Compare">
           <Key>
@@ -203,6 +206,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
           <Property Name="AssociationMemberClientID" Type="nvarchar" MaxLength="50" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="AssociationMember_Compare">
           <Key>
@@ -260,6 +264,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
           <Property Name="SizerunRangeText" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="IsFreeDisposition" Type="bit" Nullable="false" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Assortment_Compare">
           <Key>
@@ -335,6 +340,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
           <Property Name="FooterRightLine2" Type="nvarchar" MaxLength="200" />
           <Property Name="FooterRightLine3" Type="nvarchar" MaxLength="200" />
           <Property Name="FooterRightLine4" Type="nvarchar" MaxLength="200" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Color">
           <Key>
@@ -384,6 +390,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
           <Property Name="ColorHeader08" Type="nvarchar" MaxLength="50" />
           <Property Name="ColorHeader09" Type="nvarchar" MaxLength="50" />
           <Property Name="ColorHeader10" Type="nvarchar" MaxLength="50" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Color_Compare' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -467,6 +474,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Color_Compare' does not have a
           <Property Name="ContactPersonFax" Type="nvarchar" MaxLength="500" />
           <Property Name="ContactPersonNumber" Type="nvarchar" MaxLength="50" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="ContactPerson_Compare">
           <Key>
@@ -499,6 +507,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Color_Compare' does not have a
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
           <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Customer">
           <Key>
@@ -558,6 +567,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Color_Compare' does not have a
           <Property Name="CustomerHeader07" Type="nvarchar" MaxLength="50" />
           <Property Name="CustomerHeader08" Type="nvarchar" MaxLength="50" />
           <Property Name="CustomerHeader09" Type="nvarchar" MaxLength="50" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -663,6 +673,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
           <Property Name="IsFavorite" Type="bit" Nullable="false" />
           <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="CustomerNote">
           <Key>
@@ -676,6 +687,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
           <Property Name="CustomerNoteClientID" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Image" Type="image" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="DeliveryAddress">
           <Key>
@@ -699,6 +711,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
           <Property Name="DeliveryNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="DeliveryAddressClientID" Type="nvarchar" MaxLength="50" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="DeliveryAddress_Compare">
           <Key>
@@ -745,6 +758,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
           <Property Name="InvoiceAddressClientID" Type="nvarchar" MaxLength="50" />
           <Property Name="InvoiceNumber" Type="nvarchar" MaxLength="50" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="InvoiceAddress_Compare">
           <Key>
@@ -780,6 +794,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
           <Property Name="LabelClientID" Type="nvarchar" MaxLength="50" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Label_Compare">
           <Key>
@@ -811,6 +826,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
           <Property Name="Width" Type="nvarchar" MaxLength="50" />
           <Property Name="SoleTypeName" Type="nvarchar" MaxLength="50" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Model_Compare">
           <Key>
@@ -960,6 +976,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
           <Property Name="IsDeleted" Type="bigint" Nullable="false" />
           <Property Name="IsModified" Type="bigint" Nullable="false" />
           <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="OrderItem">
           <Key>
@@ -1113,6 +1130,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
           <Property Name="StockSum" Type="bigint" Nullable="false" />
           <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
           <Property Name="Width" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="pricat">
           <Key>
@@ -1161,6 +1179,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
           <Property Name="PriceClientID" Type="nvarchar" MaxLength="50" />
           <Property Name="PriceColorID" Type="nvarchar" MaxLength="50" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Price_Compare">
           <Key>
@@ -1191,6 +1210,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
           <Property Name="PricelistClientID" Type="nvarchar" MaxLength="50" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Pricelist_Compare">
           <Key>
@@ -1216,6 +1236,8 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
           <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
           <Property Name="ImageDateTime" Type="datetime" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DownloadUri" Type="nvarchar" MaxLength="2000" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -1259,6 +1281,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
           <Property Name="IsTestData" Type="bit" />
           <Property Name="DeliveryDateStart" Type="datetime" />
           <Property Name="DeliveryDateEnd" Type="datetime" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Season_Compare">
           <Key>
@@ -1288,6 +1311,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
           <Property Name="Value" Type="decimal" Precision="18" Scale="2" Nullable="false" />
           <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="ShoppingCart">
           <Key>
@@ -1457,6 +1481,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
           <Property Name="CustomerHeader10" Type="nvarchar" MaxLength="50" />
           <Property Name="SeasonLongName" Type="nvarchar" MaxLength="50" />
           <Property Name="AppVersion" Type="nvarchar" MaxLength="50" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="ShoppingCartItem">
           <Key>
@@ -1688,6 +1713,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
           <Property Name="ColorHeader10" Type="nvarchar" MaxLength="50" />
           <Property Name="IsSampleItem" Type="bit" />
           <Property Name="AppVersion" Type="nvarchar" MaxLength="50" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Sizerun">
           <Key>
@@ -1764,6 +1790,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
           <Property Name="EAN28" Type="nvarchar" MaxLength="50" />
           <Property Name="EAN29" Type="nvarchar" MaxLength="50" />
           <Property Name="EAN30" Type="nvarchar" MaxLength="50" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Sizerun_Compare">
           <Key>
@@ -1995,6 +2022,8 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
           <Property Name="Lagernr" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="EAN" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Freilagerbestand" Type="int" Nullable="false" />
+          <Property Name="Artikelsaison" Type="nvarchar" MaxLength="50" />
+          <Property Name="FreiVerfuegbarerBestand" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.source_TempSizerun' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -2244,48 +2273,11 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.source_tempStock' does not hav
           <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
           <Property Name="SpecialDiscountClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Stock">
           <Key>
             <PropertyRef Name="StockID" />
-            <PropertyRef Name="StockAssortmentID" />
-            <PropertyRef Name="StockQty01" />
-            <PropertyRef Name="StockQty02" />
-            <PropertyRef Name="StockQty03" />
-            <PropertyRef Name="StockQty04" />
-            <PropertyRef Name="StockQty05" />
-            <PropertyRef Name="StockQty06" />
-            <PropertyRef Name="StockQty07" />
-            <PropertyRef Name="StockQty08" />
-            <PropertyRef Name="StockQty09" />
-            <PropertyRef Name="StockQty10" />
-            <PropertyRef Name="StockQty11" />
-            <PropertyRef Name="StockQty12" />
-            <PropertyRef Name="StockQty13" />
-            <PropertyRef Name="StockQty14" />
-            <PropertyRef Name="StockQty15" />
-            <PropertyRef Name="StockQty16" />
-            <PropertyRef Name="StockQty17" />
-            <PropertyRef Name="StockQty18" />
-            <PropertyRef Name="StockQty19" />
-            <PropertyRef Name="StockQty20" />
-            <PropertyRef Name="StockQty21" />
-            <PropertyRef Name="StockQty22" />
-            <PropertyRef Name="StockQty23" />
-            <PropertyRef Name="StockQty24" />
-            <PropertyRef Name="StockQty25" />
-            <PropertyRef Name="StockQty26" />
-            <PropertyRef Name="StockQty27" />
-            <PropertyRef Name="StockQty28" />
-            <PropertyRef Name="StockQty29" />
-            <PropertyRef Name="StockQty30" />
-            <PropertyRef Name="SyncDateTime" />
-            <PropertyRef Name="IsDeleted" />
-            <PropertyRef Name="StockClientID" />
-            <PropertyRef Name="IsFreeDisposition" />
-            <PropertyRef Name="StockQtyAssortment" />
           </Key>
           <Property Name="StockID" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="StockAssortmentID" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -2325,6 +2317,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
           <Property Name="IsFreeDisposition" Type="bit" Nullable="false" />
           <Property Name="StockQtyAssortment" Type="int" Nullable="false" />
           <Property Name="IsTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Stock_Compare">
           <Key>
@@ -2377,6 +2370,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
           <Property Name="TextSnippetText" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -2413,6 +2407,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
           <Property Name="DefaultPricelist" Type="nvarchar" MaxLength="50" />
           <Property Name="UserClientID" Type="nvarchar" MaxLength="50" />
           <Property Name="UseTestData" Type="bit" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="UserAgents">
           <Key>
@@ -2424,6 +2419,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
           <Property Name="UserAgentClientID" Type="nvarchar" MaxLength="50" />
           <Property Name="IsDeleted" Type="bit" />
           <Property Name="SyncDateTime" Type="datetime" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="UserClient">
           <Key>
@@ -2436,6 +2432,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
           <Property Name="UserClientClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="UserPriceList">
           <Key>
@@ -2716,6 +2713,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
           <EntitySet Name="source_TempSizerunPrice" EntityType="Self.source_TempSizerunPrice" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="source_Vertreter" EntityType="Self.source_Vertreter" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SpecialDiscount" EntityType="Self.SpecialDiscount" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Stock" EntityType="Self.Stock" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Stock_Compare" EntityType="Self.Stock_Compare" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TextSnippet" EntityType="Self.TextSnippet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
@@ -2944,48 +2942,6 @@ FROM [dbo].[source_TempSizerun] AS [source_TempSizerun]</DefiningQuery>
 [source_tempStock].[AssortmentID] AS [AssortmentID]
 FROM [dbo].[source_tempStock] AS [source_tempStock]</DefiningQuery>
           </EntitySet>
-          <EntitySet Name="Stock" EntityType="Self.Stock" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-[Stock].[StockID] AS [StockID], 
-[Stock].[StockAssortmentID] AS [StockAssortmentID], 
-[Stock].[StockQty01] AS [StockQty01], 
-[Stock].[StockQty02] AS [StockQty02], 
-[Stock].[StockQty03] AS [StockQty03], 
-[Stock].[StockQty04] AS [StockQty04], 
-[Stock].[StockQty05] AS [StockQty05], 
-[Stock].[StockQty06] AS [StockQty06], 
-[Stock].[StockQty07] AS [StockQty07], 
-[Stock].[StockQty08] AS [StockQty08], 
-[Stock].[StockQty09] AS [StockQty09], 
-[Stock].[StockQty10] AS [StockQty10], 
-[Stock].[StockQty11] AS [StockQty11], 
-[Stock].[StockQty12] AS [StockQty12], 
-[Stock].[StockQty13] AS [StockQty13], 
-[Stock].[StockQty14] AS [StockQty14], 
-[Stock].[StockQty15] AS [StockQty15], 
-[Stock].[StockQty16] AS [StockQty16], 
-[Stock].[StockQty17] AS [StockQty17], 
-[Stock].[StockQty18] AS [StockQty18], 
-[Stock].[StockQty19] AS [StockQty19], 
-[Stock].[StockQty20] AS [StockQty20], 
-[Stock].[StockQty21] AS [StockQty21], 
-[Stock].[StockQty22] AS [StockQty22], 
-[Stock].[StockQty23] AS [StockQty23], 
-[Stock].[StockQty24] AS [StockQty24], 
-[Stock].[StockQty25] AS [StockQty25], 
-[Stock].[StockQty26] AS [StockQty26], 
-[Stock].[StockQty27] AS [StockQty27], 
-[Stock].[StockQty28] AS [StockQty28], 
-[Stock].[StockQty29] AS [StockQty29], 
-[Stock].[StockQty30] AS [StockQty30], 
-[Stock].[SyncDateTime] AS [SyncDateTime], 
-[Stock].[IsDeleted] AS [IsDeleted], 
-[Stock].[StockClientID] AS [StockClientID], 
-[Stock].[IsFreeDisposition] AS [IsFreeDisposition], 
-[Stock].[StockQtyAssortment] AS [StockQtyAssortment], 
-[Stock].[IsTestData] AS [IsTestData]
-FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="FK_Agent_Client" Association="Self.FK_Agent_Client">
             <End Role="Client" EntitySet="Client" />
             <End Role="Agent" EntitySet="Agent" />
@@ -3087,6 +3043,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <NavigationProperty Name="Client" Relationship="Self.FK_Agent_Client" FromRole="Agent" ToRole="Client" />
           <NavigationProperty Name="UserAgents" Relationship="Self.FK_UserAgents_Agent" FromRole="Agent" ToRole="UserAgents" />
           <NavigationProperty Name="Customer" Relationship="LIVINGKITZBUEHLModel.FK_Customer_Agent" FromRole="Agent" ToRole="Customer" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Agent_Compare">
           <Key>
@@ -3143,12 +3100,13 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="ArticleCategory2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ArticleCategory3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ArticleImage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="ArticleInfoText1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ArticleInfoText1" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
           <Property Name="ArticleInfoText2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="BauerfeindMaterial" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsTestData" Type="Boolean" />
           <NavigationProperty Name="Model" Relationship="Self.FK_Article_0" FromRole="Article" ToRole="Model" />
           <NavigationProperty Name="Color" Relationship="LIVINGKITZBUEHLModel.FK_Color_0" FromRole="Article" ToRole="Color" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Association">
           <Key>
@@ -3171,6 +3129,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="AssociationCountryCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="AssociationClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsTestData" Type="Boolean" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Association_Compare">
           <Key>
@@ -3206,6 +3165,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <Property Name="AssociationMemberClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsTestData" Type="Boolean" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="AssociationMember_Compare">
           <Key>
@@ -3263,6 +3223,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="SizerunRangeText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="IsFreeDisposition" Type="Boolean" Nullable="false" />
           <Property Name="IsTestData" Type="Boolean" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Assortment_Compare">
           <Key>
@@ -3339,6 +3300,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="FooterRightLine3" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="FooterRightLine4" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Agent" Relationship="Self.FK_Agent_Client" FromRole="Client" ToRole="Agent" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="ContactPerson">
           <Key>
@@ -3360,6 +3322,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="ContactPersonNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsTestData" Type="Boolean" />
           <NavigationProperty Name="Customer" Relationship="LIVINGKITZBUEHLModel.FK_ContactPerson_Customer" FromRole="ContactPerson" ToRole="Customer" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="ContactPerson_Compare">
           <Key>
@@ -3392,6 +3355,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="IsTestData" Type="Boolean" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="CustomerFavorite">
           <Key>
@@ -3403,6 +3367,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="IsFavorite" Type="Boolean" Nullable="false" />
           <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="IsTestData" Type="Boolean" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="CustomerNote">
           <Key>
@@ -3416,6 +3381,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <Property Name="CustomerNoteClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="DeliveryAddress">
           <Key>
@@ -3440,6 +3406,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="DeliveryAddressClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsTestData" Type="Boolean" />
           <NavigationProperty Name="Customer" Relationship="LIVINGKITZBUEHLModel.FK_DeliveryAddress_Customer" FromRole="DeliveryAddress" ToRole="Customer" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="DeliveryAddress_Compare">
           <Key>
@@ -3487,6 +3454,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="InvoiceNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsTestData" Type="Boolean" />
           <NavigationProperty Name="Customer" Relationship="LIVINGKITZBUEHLModel.FK_InvoiceAddress_Customer" FromRole="InvoiceAddress" ToRole="Customer" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="InvoiceAddress_Compare">
           <Key>
@@ -3523,6 +3491,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="LabelClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsTestData" Type="Boolean" />
           <NavigationProperty Name="Season" Relationship="Self.FK_Season_0" FromRole="Label" ToRole="Season" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Label_Compare">
           <Key>
@@ -3556,6 +3525,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="IsTestData" Type="Boolean" />
           <NavigationProperty Name="Article" Relationship="Self.FK_Article_0" FromRole="Model" ToRole="Article" />
           <NavigationProperty Name="Season" Relationship="Self.FK_Model_0" FromRole="Model" ToRole="Season" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Model_Compare">
           <Key>
@@ -3705,6 +3675,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="IsDeleted" Type="Int64" Nullable="false" />
           <Property Name="IsModified" Type="Int64" Nullable="false" />
           <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="OrderItem">
           <Key>
@@ -3858,6 +3829,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="StockSum" Type="Int64" Nullable="false" />
           <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Width" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="pricat">
           <Key>
@@ -3909,6 +3881,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <NavigationProperty Name="Pricelist" Relationship="Self.FK_Price_Pricelist" FromRole="Price" ToRole="Pricelist" />
           <NavigationProperty Name="Sizerun" Relationship="Self.FK_Price_Sizerun" FromRole="Price" ToRole="Sizerun" />
           <NavigationProperty Name="Color" Relationship="LIVINGKITZBUEHLModel.FK_Price_Color" FromRole="Price" ToRole="Color" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Price_Compare">
           <Key>
@@ -3942,6 +3915,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <NavigationProperty Name="Price" Relationship="Self.FK_Price_Pricelist" FromRole="Pricelist" ToRole="Price" />
           <NavigationProperty Name="UserPriceList" Relationship="Self.FK_UserPriceList_1" FromRole="Pricelist" ToRole="UserPriceList" />
           <NavigationProperty Name="Customer" Relationship="LIVINGKITZBUEHLModel.FK_Customer_Pricelist" FromRole="Pricelist" ToRole="Customer" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Pricelist_Compare">
           <Key>
@@ -3983,6 +3957,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="SeasonLongName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DeliveryDateStart" Type="DateTime" Precision="3" />
           <Property Name="DeliveryDateEnd" Type="DateTime" Precision="3" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Season_Compare">
           <Key>
@@ -4167,6 +4142,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="CustomerHeader10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="SeasonLongName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="AppVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="ShoppingCartItem">
           <Key>
@@ -4398,6 +4374,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="ColorHeader10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsSampleItem" Type="Boolean" />
           <Property Name="AppVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Sizerun">
           <Key>
@@ -4475,6 +4452,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="EAN28" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="EAN29" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="EAN30" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Sizerun_Compare">
           <Key>
@@ -4565,6 +4543,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <Property Name="SpecialDiscountClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Stock_Compare">
           <Key>
@@ -4617,6 +4596,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="TextSnippetText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -4655,6 +4635,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="UseTestData" Type="Boolean" />
           <NavigationProperty Name="UserAgents" Relationship="Self.FK_UserAgents_User" FromRole="User" ToRole="UserAgents" />
           <NavigationProperty Name="UserPriceList" Relationship="Self.FK_UserPriceList_0" FromRole="User" ToRole="UserPriceList" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="UserAgents">
           <Key>
@@ -4668,6 +4649,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="SyncDateTime" Type="DateTime" Precision="3" />
           <NavigationProperty Name="Agent" Relationship="Self.FK_UserAgents_Agent" FromRole="UserAgents" ToRole="Agent" />
           <NavigationProperty Name="User" Relationship="Self.FK_UserAgents_User" FromRole="UserAgents" ToRole="User" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="UserClient">
           <Key>
@@ -4680,6 +4662,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="UserClientClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="UserPriceList">
           <Key>
@@ -4743,7 +4726,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="ArticleCategory2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ArticleCategory3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ArticleImage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="ArticleInfoText1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ArticleInfoText1" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
           <Property Name="ArticleInfoText2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="BauerfeindMaterial" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsTestData" Type="Boolean" />
@@ -4900,85 +4883,6 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="CustomerHeader07" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CustomerHeader08" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CustomerHeader09" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="Stock">
-          <Key>
-            <PropertyRef Name="StockID" />
-            <PropertyRef Name="StockAssortmentID" />
-            <PropertyRef Name="StockQty01" />
-            <PropertyRef Name="StockQty02" />
-            <PropertyRef Name="StockQty03" />
-            <PropertyRef Name="StockQty04" />
-            <PropertyRef Name="StockQty05" />
-            <PropertyRef Name="StockQty06" />
-            <PropertyRef Name="StockQty07" />
-            <PropertyRef Name="StockQty08" />
-            <PropertyRef Name="StockQty09" />
-            <PropertyRef Name="StockQty10" />
-            <PropertyRef Name="StockQty11" />
-            <PropertyRef Name="StockQty12" />
-            <PropertyRef Name="StockQty13" />
-            <PropertyRef Name="StockQty14" />
-            <PropertyRef Name="StockQty15" />
-            <PropertyRef Name="StockQty16" />
-            <PropertyRef Name="StockQty17" />
-            <PropertyRef Name="StockQty18" />
-            <PropertyRef Name="StockQty19" />
-            <PropertyRef Name="StockQty20" />
-            <PropertyRef Name="StockQty21" />
-            <PropertyRef Name="StockQty22" />
-            <PropertyRef Name="StockQty23" />
-            <PropertyRef Name="StockQty24" />
-            <PropertyRef Name="StockQty25" />
-            <PropertyRef Name="StockQty26" />
-            <PropertyRef Name="StockQty27" />
-            <PropertyRef Name="StockQty28" />
-            <PropertyRef Name="StockQty29" />
-            <PropertyRef Name="StockQty30" />
-            <PropertyRef Name="SyncDateTime" />
-            <PropertyRef Name="IsDeleted" />
-            <PropertyRef Name="StockClientID" />
-            <PropertyRef Name="IsFreeDisposition" />
-            <PropertyRef Name="StockQtyAssortment" />
-          </Key>
-          <Property Name="StockID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="StockAssortmentID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="StockQty01" Type="Int32" Nullable="false" />
-          <Property Name="StockQty02" Type="Int32" Nullable="false" />
-          <Property Name="StockQty03" Type="Int32" Nullable="false" />
-          <Property Name="StockQty04" Type="Int32" Nullable="false" />
-          <Property Name="StockQty05" Type="Int32" Nullable="false" />
-          <Property Name="StockQty06" Type="Int32" Nullable="false" />
-          <Property Name="StockQty07" Type="Int32" Nullable="false" />
-          <Property Name="StockQty08" Type="Int32" Nullable="false" />
-          <Property Name="StockQty09" Type="Int32" Nullable="false" />
-          <Property Name="StockQty10" Type="Int32" Nullable="false" />
-          <Property Name="StockQty11" Type="Int32" Nullable="false" />
-          <Property Name="StockQty12" Type="Int32" Nullable="false" />
-          <Property Name="StockQty13" Type="Int32" Nullable="false" />
-          <Property Name="StockQty14" Type="Int32" Nullable="false" />
-          <Property Name="StockQty15" Type="Int32" Nullable="false" />
-          <Property Name="StockQty16" Type="Int32" Nullable="false" />
-          <Property Name="StockQty17" Type="Int32" Nullable="false" />
-          <Property Name="StockQty18" Type="Int32" Nullable="false" />
-          <Property Name="StockQty19" Type="Int32" Nullable="false" />
-          <Property Name="StockQty20" Type="Int32" Nullable="false" />
-          <Property Name="StockQty21" Type="Int32" Nullable="false" />
-          <Property Name="StockQty22" Type="Int32" Nullable="false" />
-          <Property Name="StockQty23" Type="Int32" Nullable="false" />
-          <Property Name="StockQty24" Type="Int32" Nullable="false" />
-          <Property Name="StockQty25" Type="Int32" Nullable="false" />
-          <Property Name="StockQty26" Type="Int32" Nullable="false" />
-          <Property Name="StockQty27" Type="Int32" Nullable="false" />
-          <Property Name="StockQty28" Type="Int32" Nullable="false" />
-          <Property Name="StockQty29" Type="Int32" Nullable="false" />
-          <Property Name="StockQty30" Type="Int32" Nullable="false" />
-          <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
-          <Property Name="StockClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="IsFreeDisposition" Type="Boolean" Nullable="false" />
-          <Property Name="StockQtyAssortment" Type="Int32" Nullable="false" />
-          <Property Name="IsTestData" Type="Boolean" />
         </EntityType>
         <Association Name="FK_Agent_Client">
           <End Role="Client" Type="Self.Client" Multiplicity="1" />
@@ -5156,7 +5060,6 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySet Name="Article_Compare" EntityType="Self.Article_Compare" />
           <EntitySet Name="Color_Compare" EntityType="Self.Color_Compare" />
           <EntitySet Name="Customer_Compare" EntityType="Self.Customer_Compare" />
-          <EntitySet Name="Stock" EntityType="Self.Stock" />
           <AssociationSet Name="FK_Agent_Client" Association="Self.FK_Agent_Client">
             <End Role="Client" EntitySet="Client" />
             <End Role="Agent" EntitySet="Agent" />
@@ -5243,6 +5146,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           </AssociationSet>
           <EntitySet Name="SeasonValue" EntityType="LIVINGKITZBUEHLModel.SeasonValue" />
           <EntitySet Name="source_Saisonumsatz" EntityType="LIVINGKITZBUEHLModel.source_Saisonumsatz" />
+          <EntitySet Name="Stock" EntityType="LIVINGKITZBUEHLModel.Stock" />
         </EntityContainer>
         <EntityType Name="source_Artikel">
           <Key>
@@ -5501,6 +5405,8 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="Lagernr" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="EAN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Freilagerbestand" Type="Int32" Nullable="false" />
+          <Property Name="Artikelsaison" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FreiVerfuegbarerBestand" Type="Int32" />
         </EntityType>
         <EntityType Name="source_tempStock">
           <Key>
@@ -5580,6 +5486,8 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="ImageDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DownloadUri" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="ProductImage_Compare">
           <Key>
@@ -5695,6 +5603,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="ColorHeader10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Article" Relationship="LIVINGKITZBUEHLModel.FK_Color_0" FromRole="Color" ToRole="Article" />
           <NavigationProperty Name="Price" Relationship="LIVINGKITZBUEHLModel.FK_Price_Color" FromRole="Color" ToRole="Price" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Customer">
           <Key>
@@ -5759,6 +5668,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <NavigationProperty Name="Pricelist" Relationship="LIVINGKITZBUEHLModel.FK_Customer_Pricelist" FromRole="Customer" ToRole="Pricelist" />
           <NavigationProperty Name="DeliveryAddress" Relationship="LIVINGKITZBUEHLModel.FK_DeliveryAddress_Customer" FromRole="Customer" ToRole="DeliveryAddress" />
           <NavigationProperty Name="InvoiceAddress" Relationship="LIVINGKITZBUEHLModel.FK_InvoiceAddress_Customer" FromRole="Customer" ToRole="InvoiceAddress" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <Association Name="FK_Customer_Agent">
           <End Type="LIVINGKITZBUEHLModel.Agent" Role="Agent" Multiplicity="1" />
@@ -5859,6 +5769,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="Value" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
           <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="source_Saisonumsatz">
           <Key>
@@ -5872,6 +5783,50 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <Property Name="MengeGesamt" Type="Int32" Nullable="false" />
           <Property Name="UmsatzGesamt" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
         </EntityType>
+        <EntityType Name="Stock">
+          <Key>
+            <PropertyRef Name="StockID" />
+          </Key>
+          <Property Name="StockID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StockAssortmentID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StockQty01" Type="Int32" Nullable="false" />
+          <Property Name="StockQty02" Type="Int32" Nullable="false" />
+          <Property Name="StockQty03" Type="Int32" Nullable="false" />
+          <Property Name="StockQty04" Type="Int32" Nullable="false" />
+          <Property Name="StockQty05" Type="Int32" Nullable="false" />
+          <Property Name="StockQty06" Type="Int32" Nullable="false" />
+          <Property Name="StockQty07" Type="Int32" Nullable="false" />
+          <Property Name="StockQty08" Type="Int32" Nullable="false" />
+          <Property Name="StockQty09" Type="Int32" Nullable="false" />
+          <Property Name="StockQty10" Type="Int32" Nullable="false" />
+          <Property Name="StockQty11" Type="Int32" Nullable="false" />
+          <Property Name="StockQty12" Type="Int32" Nullable="false" />
+          <Property Name="StockQty13" Type="Int32" Nullable="false" />
+          <Property Name="StockQty14" Type="Int32" Nullable="false" />
+          <Property Name="StockQty15" Type="Int32" Nullable="false" />
+          <Property Name="StockQty16" Type="Int32" Nullable="false" />
+          <Property Name="StockQty17" Type="Int32" Nullable="false" />
+          <Property Name="StockQty18" Type="Int32" Nullable="false" />
+          <Property Name="StockQty19" Type="Int32" Nullable="false" />
+          <Property Name="StockQty20" Type="Int32" Nullable="false" />
+          <Property Name="StockQty21" Type="Int32" Nullable="false" />
+          <Property Name="StockQty22" Type="Int32" Nullable="false" />
+          <Property Name="StockQty23" Type="Int32" Nullable="false" />
+          <Property Name="StockQty24" Type="Int32" Nullable="false" />
+          <Property Name="StockQty25" Type="Int32" Nullable="false" />
+          <Property Name="StockQty26" Type="Int32" Nullable="false" />
+          <Property Name="StockQty27" Type="Int32" Nullable="false" />
+          <Property Name="StockQty28" Type="Int32" Nullable="false" />
+          <Property Name="StockQty29" Type="Int32" Nullable="false" />
+          <Property Name="StockQty30" Type="Int32" Nullable="false" />
+          <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="StockClientID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsFreeDisposition" Type="Boolean" Nullable="false" />
+          <Property Name="StockQtyAssortment" Type="Int32" Nullable="false" />
+          <Property Name="IsTestData" Type="Boolean" />
+          <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -5881,6 +5836,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Agent">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Agent">
               <MappingFragment StoreEntitySet="Agent">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="AgentID" ColumnName="AgentID" />
                 <ScalarProperty Name="AgentNumber" ColumnName="AgentNumber" />
                 <ScalarProperty Name="AgentConfirmFax" ColumnName="AgentConfirmFax" />
@@ -5935,6 +5891,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Article">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Article">
               <MappingFragment StoreEntitySet="Article">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
                 <ScalarProperty Name="ModelID" ColumnName="ModelID" />
                 <ScalarProperty Name="ArticleName" ColumnName="ArticleName" />
@@ -5970,6 +5927,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Association">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Association">
               <MappingFragment StoreEntitySet="Association">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="AssociationID" ColumnName="AssociationID" />
                 <ScalarProperty Name="AssociationName1" ColumnName="AssociationName1" />
                 <ScalarProperty Name="AssociationName2" ColumnName="AssociationName2" />
@@ -6016,6 +5974,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="AssociationMember">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.AssociationMember">
               <MappingFragment StoreEntitySet="AssociationMember">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="AssociationMemberID" ColumnName="AssociationMemberID" />
                 <ScalarProperty Name="AssociationMemberNumber" ColumnName="AssociationMemberNumber" />
                 <ScalarProperty Name="AssociationMemberCustomerID" ColumnName="AssociationMemberCustomerID" />
@@ -6044,6 +6003,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Assortment">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Assortment">
               <MappingFragment StoreEntitySet="Assortment">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="AssortmentID" ColumnName="AssortmentID" />
                 <ScalarProperty Name="AssortmentName" ColumnName="AssortmentName" />
                 <ScalarProperty Name="AssortmentSizerunID" ColumnName="AssortmentSizerunID" />
@@ -6134,6 +6094,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Client">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Client">
               <MappingFragment StoreEntitySet="Client">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="ClientID" ColumnName="ClientID" />
                 <ScalarProperty Name="ClientName" ColumnName="ClientName" />
                 <ScalarProperty Name="AccentColor" ColumnName="AccentColor" />
@@ -6166,6 +6127,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="ContactPerson">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ContactPerson">
               <MappingFragment StoreEntitySet="ContactPerson">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="ContactPersonID" ColumnName="ContactPersonID" />
                 <ScalarProperty Name="ContactPersonCustomerID" ColumnName="ContactPersonCustomerID" />
                 <ScalarProperty Name="ContactPersonName1" ColumnName="ContactPersonName1" />
@@ -6208,6 +6170,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Country">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Country">
               <MappingFragment StoreEntitySet="Country">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="CountryID" ColumnName="CountryID" />
                 <ScalarProperty Name="CountryName" ColumnName="CountryName" />
                 <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
@@ -6221,6 +6184,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="CustomerFavorite">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.CustomerFavorite">
               <MappingFragment StoreEntitySet="CustomerFavorite">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="CustomerFavoriteID" ColumnName="CustomerFavoriteID" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
@@ -6233,6 +6197,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="CustomerNote">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.CustomerNote">
               <MappingFragment StoreEntitySet="CustomerNote">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="CustomerNoteID" ColumnName="CustomerNoteID" />
                 <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
                 <ScalarProperty Name="Created" ColumnName="Created" />
@@ -6247,6 +6212,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="DeliveryAddress">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.DeliveryAddress">
               <MappingFragment StoreEntitySet="DeliveryAddress">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="DeliveryAddressID" ColumnName="DeliveryAddressID" />
                 <ScalarProperty Name="DeliveryAddressCustomerID" ColumnName="DeliveryAddressCustomerID" />
                 <ScalarProperty Name="DeliveryAddressName1" ColumnName="DeliveryAddressName1" />
@@ -6295,6 +6261,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="InvoiceAddress">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.InvoiceAddress">
               <MappingFragment StoreEntitySet="InvoiceAddress">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="InvoiceAddressID" ColumnName="InvoiceAddressID" />
                 <ScalarProperty Name="InvoiceAddressCustomerID" ColumnName="InvoiceAddressCustomerID" />
                 <ScalarProperty Name="InvoiceAddressName1" ColumnName="InvoiceAddressName1" />
@@ -6343,6 +6310,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Label">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Label">
               <MappingFragment StoreEntitySet="Label">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="LabelID" ColumnName="LabelID" />
                 <ScalarProperty Name="LabelName" ColumnName="LabelName" />
                 <ScalarProperty Name="LabelNumber" ColumnName="LabelNumber" />
@@ -6369,6 +6337,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Model">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Model">
               <MappingFragment StoreEntitySet="Model">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="ModelID" ColumnName="ModelID" />
                 <ScalarProperty Name="ModelName" ColumnName="ModelName" />
                 <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
@@ -6409,6 +6378,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Order">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Order">
               <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="OrderID" ColumnName="OrderID" />
                 <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
                 <ScalarProperty Name="ShoppingCartTitle" ColumnName="ShoppingCartTitle" />
@@ -6540,6 +6510,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="OrderItem">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.OrderItem">
               <MappingFragment StoreEntitySet="OrderItem">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="OrderItemID" ColumnName="OrderItemID" />
                 <ScalarProperty Name="ArticleCategory1" ColumnName="ArticleCategory1" />
                 <ScalarProperty Name="ArticleCategory2" ColumnName="ArticleCategory2" />
@@ -6726,6 +6697,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Price">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Price">
               <MappingFragment StoreEntitySet="Price">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="PriceID" ColumnName="PriceID" />
                 <ScalarProperty Name="PriceArticleID" ColumnName="PriceArticleID" />
                 <ScalarProperty Name="PriceSizerunID" ColumnName="PriceSizerunID" />
@@ -6760,6 +6732,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Pricelist">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Pricelist">
               <MappingFragment StoreEntitySet="Pricelist">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="PricelistID" ColumnName="PricelistID" />
                 <ScalarProperty Name="PricelistName" ColumnName="PricelistName" />
                 <ScalarProperty Name="PricelistNumber" ColumnName="PricelistNumber" />
@@ -6799,6 +6772,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Season">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Season">
               <MappingFragment StoreEntitySet="Season">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="DeliveryDateEnd" ColumnName="DeliveryDateEnd" />
                 <ScalarProperty Name="DeliveryDateStart" ColumnName="DeliveryDateStart" />
                 <ScalarProperty Name="SeasonLongName" ColumnName="SeasonLongName" />
@@ -6833,6 +6807,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="ShoppingCart">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ShoppingCart">
               <MappingFragment StoreEntitySet="ShoppingCart">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="AppVersion" ColumnName="AppVersion" />
                 <ScalarProperty Name="SeasonLongName" ColumnName="SeasonLongName" />
                 <ScalarProperty Name="CustomerHeader10" ColumnName="CustomerHeader10" />
@@ -7003,6 +6978,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="ShoppingCartItem">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ShoppingCartItem">
               <MappingFragment StoreEntitySet="ShoppingCartItem">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="AppVersion" ColumnName="AppVersion" />
                 <ScalarProperty Name="IsSampleItem" ColumnName="IsSampleItem" />
                 <ScalarProperty Name="ColorHeader10" ColumnName="ColorHeader10" />
@@ -7235,6 +7211,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Sizerun">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Sizerun">
               <MappingFragment StoreEntitySet="Sizerun">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="EAN30" ColumnName="EAN30" />
                 <ScalarProperty Name="EAN29" ColumnName="EAN29" />
                 <ScalarProperty Name="EAN28" ColumnName="EAN28" />
@@ -7389,6 +7366,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="SpecialDiscount">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.SpecialDiscount">
               <MappingFragment StoreEntitySet="SpecialDiscount">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="SpecialDiscountID" ColumnName="SpecialDiscountID" />
                 <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
                 <ScalarProperty Name="StartDate" ColumnName="StartDate" />
@@ -7448,6 +7426,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="TextSnippet">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.TextSnippet">
               <MappingFragment StoreEntitySet="TextSnippet">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="TextSnippetID" ColumnName="TextSnippetID" />
                 <ScalarProperty Name="TextSnippetText" ColumnName="TextSnippetText" />
                 <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
@@ -7458,6 +7437,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="User">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.User">
               <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="UserNumber" ColumnName="UserNumber" />
                 <ScalarProperty Name="Name1" ColumnName="Name1" />
@@ -7495,6 +7475,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="UserAgents">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.UserAgents">
               <MappingFragment StoreEntitySet="UserAgents">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="UserAgentsID" ColumnName="UserAgentsID" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="AgentID" ColumnName="AgentID" />
@@ -7507,6 +7488,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="UserClient">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.UserClient">
               <MappingFragment StoreEntitySet="UserClient">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="UserMandantID" ColumnName="UserMandantID" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="UserClientClientID" ColumnName="UserClientClientID" />
@@ -7668,50 +7650,6 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
                 <ScalarProperty Name="lon" ColumnName="lon" />
                 <ScalarProperty Name="CustomerClientID" ColumnName="CustomerClientID" />
                 <ScalarProperty Name="CustomerBarrier" ColumnName="CustomerBarrier" />
-                <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Stock">
-            <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Stock">
-              <MappingFragment StoreEntitySet="Stock">
-                <ScalarProperty Name="StockID" ColumnName="StockID" />
-                <ScalarProperty Name="StockAssortmentID" ColumnName="StockAssortmentID" />
-                <ScalarProperty Name="StockQty01" ColumnName="StockQty01" />
-                <ScalarProperty Name="StockQty02" ColumnName="StockQty02" />
-                <ScalarProperty Name="StockQty03" ColumnName="StockQty03" />
-                <ScalarProperty Name="StockQty04" ColumnName="StockQty04" />
-                <ScalarProperty Name="StockQty05" ColumnName="StockQty05" />
-                <ScalarProperty Name="StockQty06" ColumnName="StockQty06" />
-                <ScalarProperty Name="StockQty07" ColumnName="StockQty07" />
-                <ScalarProperty Name="StockQty08" ColumnName="StockQty08" />
-                <ScalarProperty Name="StockQty09" ColumnName="StockQty09" />
-                <ScalarProperty Name="StockQty10" ColumnName="StockQty10" />
-                <ScalarProperty Name="StockQty11" ColumnName="StockQty11" />
-                <ScalarProperty Name="StockQty12" ColumnName="StockQty12" />
-                <ScalarProperty Name="StockQty13" ColumnName="StockQty13" />
-                <ScalarProperty Name="StockQty14" ColumnName="StockQty14" />
-                <ScalarProperty Name="StockQty15" ColumnName="StockQty15" />
-                <ScalarProperty Name="StockQty16" ColumnName="StockQty16" />
-                <ScalarProperty Name="StockQty17" ColumnName="StockQty17" />
-                <ScalarProperty Name="StockQty18" ColumnName="StockQty18" />
-                <ScalarProperty Name="StockQty19" ColumnName="StockQty19" />
-                <ScalarProperty Name="StockQty20" ColumnName="StockQty20" />
-                <ScalarProperty Name="StockQty21" ColumnName="StockQty21" />
-                <ScalarProperty Name="StockQty22" ColumnName="StockQty22" />
-                <ScalarProperty Name="StockQty23" ColumnName="StockQty23" />
-                <ScalarProperty Name="StockQty24" ColumnName="StockQty24" />
-                <ScalarProperty Name="StockQty25" ColumnName="StockQty25" />
-                <ScalarProperty Name="StockQty26" ColumnName="StockQty26" />
-                <ScalarProperty Name="StockQty27" ColumnName="StockQty27" />
-                <ScalarProperty Name="StockQty28" ColumnName="StockQty28" />
-                <ScalarProperty Name="StockQty29" ColumnName="StockQty29" />
-                <ScalarProperty Name="StockQty30" ColumnName="StockQty30" />
-                <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
-                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
-                <ScalarProperty Name="StockClientID" ColumnName="StockClientID" />
-                <ScalarProperty Name="IsFreeDisposition" ColumnName="IsFreeDisposition" />
-                <ScalarProperty Name="StockQtyAssortment" ColumnName="StockQtyAssortment" />
                 <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -7944,6 +7882,8 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="source_Stock">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.source_Stock">
               <MappingFragment StoreEntitySet="source_Stock">
+                <ScalarProperty Name="FreiVerfuegbarerBestand" ColumnName="FreiVerfuegbarerBestand" />
+                <ScalarProperty Name="Artikelsaison" ColumnName="Artikelsaison" />
                 <ScalarProperty Name="Freilagerbestand" ColumnName="Freilagerbestand" />
                 <ScalarProperty Name="EAN" ColumnName="EAN" />
                 <ScalarProperty Name="Lagernr" ColumnName="Lagernr" />
@@ -7992,6 +7932,8 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="ProductImage">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.ProductImage">
               <MappingFragment StoreEntitySet="ProductImage">
+                <ScalarProperty Name="DownloadUri" ColumnName="DownloadUri" />
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="ImageDateTime" ColumnName="ImageDateTime" />
                 <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
@@ -8066,6 +8008,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Color">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Color">
               <MappingFragment StoreEntitySet="Color">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="ColorHeader10" ColumnName="ColorHeader10" />
                 <ScalarProperty Name="ColorHeader09" ColumnName="ColorHeader09" />
                 <ScalarProperty Name="ColorHeader08" ColumnName="ColorHeader08" />
@@ -8116,6 +8059,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="Customer">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Customer">
               <MappingFragment StoreEntitySet="Customer">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="CustomerHeader09" ColumnName="CustomerHeader09" />
                 <ScalarProperty Name="CustomerHeader08" ColumnName="CustomerHeader08" />
                 <ScalarProperty Name="CustomerHeader07" ColumnName="CustomerHeader07" />
@@ -8176,6 +8120,7 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
           <EntitySetMapping Name="SeasonValue">
             <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.SeasonValue">
               <MappingFragment StoreEntitySet="SeasonValue">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
                 <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
                 <ScalarProperty Name="Value" ColumnName="Value" />
@@ -8198,6 +8143,51 @@ FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
                 <ScalarProperty Name="Kundennr" ColumnName="Kundennr" />
                 <ScalarProperty Name="Saison" ColumnName="Saison" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stock">
+            <EntityTypeMapping TypeName="LIVINGKITZBUEHLModel.Stock">
+              <MappingFragment StoreEntitySet="Stock">
+                <ScalarProperty Name="SyncDateTimeSort" ColumnName="SyncDateTimeSort" />
+                <ScalarProperty Name="IsTestData" ColumnName="IsTestData" />
+                <ScalarProperty Name="StockQtyAssortment" ColumnName="StockQtyAssortment" />
+                <ScalarProperty Name="IsFreeDisposition" ColumnName="IsFreeDisposition" />
+                <ScalarProperty Name="StockClientID" ColumnName="StockClientID" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="SyncDateTime" ColumnName="SyncDateTime" />
+                <ScalarProperty Name="StockQty30" ColumnName="StockQty30" />
+                <ScalarProperty Name="StockQty29" ColumnName="StockQty29" />
+                <ScalarProperty Name="StockQty28" ColumnName="StockQty28" />
+                <ScalarProperty Name="StockQty27" ColumnName="StockQty27" />
+                <ScalarProperty Name="StockQty26" ColumnName="StockQty26" />
+                <ScalarProperty Name="StockQty25" ColumnName="StockQty25" />
+                <ScalarProperty Name="StockQty24" ColumnName="StockQty24" />
+                <ScalarProperty Name="StockQty23" ColumnName="StockQty23" />
+                <ScalarProperty Name="StockQty22" ColumnName="StockQty22" />
+                <ScalarProperty Name="StockQty21" ColumnName="StockQty21" />
+                <ScalarProperty Name="StockQty20" ColumnName="StockQty20" />
+                <ScalarProperty Name="StockQty19" ColumnName="StockQty19" />
+                <ScalarProperty Name="StockQty18" ColumnName="StockQty18" />
+                <ScalarProperty Name="StockQty17" ColumnName="StockQty17" />
+                <ScalarProperty Name="StockQty16" ColumnName="StockQty16" />
+                <ScalarProperty Name="StockQty15" ColumnName="StockQty15" />
+                <ScalarProperty Name="StockQty14" ColumnName="StockQty14" />
+                <ScalarProperty Name="StockQty13" ColumnName="StockQty13" />
+                <ScalarProperty Name="StockQty12" ColumnName="StockQty12" />
+                <ScalarProperty Name="StockQty11" ColumnName="StockQty11" />
+                <ScalarProperty Name="StockQty10" ColumnName="StockQty10" />
+                <ScalarProperty Name="StockQty09" ColumnName="StockQty09" />
+                <ScalarProperty Name="StockQty08" ColumnName="StockQty08" />
+                <ScalarProperty Name="StockQty07" ColumnName="StockQty07" />
+                <ScalarProperty Name="StockQty06" ColumnName="StockQty06" />
+                <ScalarProperty Name="StockQty05" ColumnName="StockQty05" />
+                <ScalarProperty Name="StockQty04" ColumnName="StockQty04" />
+                <ScalarProperty Name="StockQty03" ColumnName="StockQty03" />
+                <ScalarProperty Name="StockQty02" ColumnName="StockQty02" />
+                <ScalarProperty Name="StockQty01" ColumnName="StockQty01" />
+                <ScalarProperty Name="StockAssortmentID" ColumnName="StockAssortmentID" />
+                <ScalarProperty Name="StockID" ColumnName="StockID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

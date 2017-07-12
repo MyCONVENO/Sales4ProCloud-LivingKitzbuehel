@@ -26,7 +26,7 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="D:\Meine Projekte\MyCONVENO\LivingKitzbuehl\LVCloudService\LVCloudService\rcf\Release\CloudDataServiceContent\" />
+        <SourceDirectory path="C:\Users\email\Source\Repos\MyCONVENO\Sales4ProCloud-LivingKitzbuehel\LVCloudService\LVCloudService\rcf\Release\CloudDataServiceContent\" />
       </Content>
     </Contents>
   </WebRole>

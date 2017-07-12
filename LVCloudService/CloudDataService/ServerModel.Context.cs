@@ -72,7 +72,6 @@ namespace CloudDataService
         public DbSet<Article_Compare> Article_Compare { get; set; }
         public DbSet<Color_Compare> Color_Compare { get; set; }
         public DbSet<Customer_Compare> Customer_Compare { get; set; }
-        public DbSet<Stock> Stock { get; set; }
         public DbSet<source_Artikel> source_Artikel { get; set; }
         public DbSet<source_Artikelbeschreibung> source_Artikelbeschreibung { get; set; }
         public DbSet<source_Kunde> source_Kunde { get; set; }
@@ -91,5 +90,6 @@ namespace CloudDataService
         public DbSet<Customer> Customer { get; set; }
         public DbSet<SeasonValue> SeasonValue { get; set; }
         public DbSet<source_Saisonumsatz> source_Saisonumsatz { get; set; }
+        public DbSet<Stock> Stock { get; set; }
     }
 }

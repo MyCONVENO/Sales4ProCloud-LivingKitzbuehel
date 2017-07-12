@@ -5,6 +5,7 @@ using System.Web;
 using System.IO;
 using ICSharpCode.SharpZipLib.Zip;
 using System.IO.Compression;
+using System.Text;
 
 namespace CloudDataService.Helper
 {
@@ -72,15 +73,31 @@ namespace CloudDataService.Helper
 
             using (ZipArchive archive = new ZipArchive(zipStream, ZipArchiveMode.Create))
             {
-                
+
                 ZipArchiveEntry readmeEntry = archive.CreateEntry("data.txt");
                 using (StreamWriter writer = new StreamWriter(readmeEntry.Open()))
                 {
-                    writer.WriteLine(InString);                    
+                    writer.WriteLine(InString);
                 }
             }
 
             return zipStream.ToArray();
-        }        
+        }
+        public static byte[] ZipStringV2(string InString)
+        {
+            byte[] data = Encoding.UTF8.GetBytes(InString);
+
+            using (MemoryStream OutStream = new MemoryStream())
+            {
+                using (ZipOutputStream zipstream = new ZipOutputStream(OutStream))
+                {
+                    ZipEntry entry = new ZipEntry("data.txt");
+                    zipstream.PutNextEntry(entry);
+                    zipstream.Write(data, 0, Convert.ToInt32(data.Length));
+                    zipstream.Close();
+                }
+                return OutStream.ToArray();
+            }
+        }
     }
 }

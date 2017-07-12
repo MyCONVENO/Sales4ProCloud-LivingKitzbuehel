@@ -32,6 +32,7 @@ namespace CloudDataService
         public string InvoiceAddressClientID { get; set; }
         public string InvoiceNumber { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual Customer Customer { get; set; }
     }

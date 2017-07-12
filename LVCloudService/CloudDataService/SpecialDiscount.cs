@@ -23,5 +23,6 @@ namespace CloudDataService
         public System.DateTime SyncDateTime { get; set; }
         public bool IsDeleted { get; set; }
         public string SpecialDiscountClientID { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

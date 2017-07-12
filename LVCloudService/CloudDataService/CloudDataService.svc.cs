@@ -2255,7 +2255,7 @@ namespace CloudDataService
             catch (Exception ex)
             {
 
-                SendMail("sascha.weber@myconveno.de", ex.Message, "LvKB-Upload Error ShoppingCart", null);
+                SendMail("sascha.weber@myconveno.de", "Message:"+ ex.Message+"\n\nInner:"+ex.InnerException.ToString(), "LvKB-Upload Error ShoppingCart", null);
                 ex.ToString();
                 return false;
             }

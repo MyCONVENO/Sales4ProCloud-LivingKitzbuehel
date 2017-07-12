@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="CloudDataService.CloudDataServiceV2" CodeBehind="CloudDataServiceV2.svc.cs" %>

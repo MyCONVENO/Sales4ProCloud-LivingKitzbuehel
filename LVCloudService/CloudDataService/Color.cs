@@ -63,6 +63,7 @@ namespace CloudDataService
         public string ColorHeader08 { get; set; }
         public string ColorHeader09 { get; set; }
         public string ColorHeader10 { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual Article Article { get; set; }
         public virtual ICollection<Price> Price { get; set; }

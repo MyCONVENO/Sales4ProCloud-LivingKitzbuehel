@@ -25,6 +25,7 @@ namespace CloudDataService
         public string PriceClientID { get; set; }
         public string PriceColorID { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual Pricelist Pricelist { get; set; }
         public virtual Sizerun Sizerun { get; set; }

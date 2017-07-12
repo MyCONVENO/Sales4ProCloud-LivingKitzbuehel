@@ -162,5 +162,6 @@ namespace CloudDataService
         public long StockSum { get; set; }
         public System.DateTime SyncDateTime { get; set; }
         public string Width { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

@@ -18,5 +18,6 @@ namespace CloudDataService
         public string TextSnippetText { get; set; }
         public System.DateTime SyncDateTime { get; set; }
         public bool IsDeleted { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

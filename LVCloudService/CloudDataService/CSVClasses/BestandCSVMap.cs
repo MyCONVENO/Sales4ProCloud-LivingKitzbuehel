@@ -11,8 +11,10 @@ namespace CloudDataService.CSVClasses
         public BestandCSVMap()
         {
             Map(m => m.Lagernr).Index(0);
-            Map(m => m.EAN).Index(1);
-            Map(m => m.Freilagerbestand).Index(2);           
+            Map(m => m.Artikelsaison).Index(1);
+            Map(m => m.EAN).Index(2);
+            Map(m => m.Freilagerbestand).Index(3);
+            Map(m => m.FreiVerfuegbarerBestand).Index(4);
         }
     }
 }

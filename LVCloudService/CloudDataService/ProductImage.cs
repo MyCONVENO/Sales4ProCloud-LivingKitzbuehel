@@ -20,5 +20,7 @@ namespace CloudDataService
         public bool IsDeleted { get; set; }
         public System.DateTime SyncDateTime { get; set; }
         public System.DateTime ImageDateTime { get; set; }
+        public long SyncDateTimeSort { get; set; }
+        public string DownloadUri { get; set; }
     }
 }

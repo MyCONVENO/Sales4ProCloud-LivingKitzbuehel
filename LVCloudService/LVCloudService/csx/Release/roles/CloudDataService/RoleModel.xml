@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CloudDataService" version="2.9.8599.18" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+<RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CloudDataService" version="2.9.8699.20" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
   <Runtime>
     <EntryPoint>
       <NetFxEntryPoint assemblyName="CloudDataService.dll" targetFrameworkVersion="v4.0" />
@@ -15,14 +15,14 @@
     <Property name="SetConfiguration" value="Configuration=Release" />
     <Property name="SetPlatform" value="Platform=AnyCPU" />
     <Property name="RoleTargetFramework" value="v4.5.1" />
-    <Property name="OutputDir" value="D:\Meine Projekte\MyCONVENO\LivingKitzbuehl\LVCloudService\LVCloudService\obj\Release\CloudDataService\" />
+    <Property name="OutputDir" value="C:\Users\email\Source\Repos\MyCONVENO\Sales4ProCloud-LivingKitzbuehel\LVCloudService\LVCloudService\obj\Release\CloudDataService\" />
     <Property name="EntryPoint" value="CloudDataService.dll" />
-    <Property name="SourceDir" value="D:\Meine Projekte\MyCONVENO\LivingKitzbuehl\LVCloudService\CloudDataService\" />
-    <Property name="SitePhysicalPath" value="D:\Meine Projekte\MyCONVENO\LivingKitzbuehl\LVCloudService\LVCloudService\obj\Release\CloudDataService\" />
+    <Property name="SourceDir" value="C:\Users\email\Source\Repos\MyCONVENO\Sales4ProCloud-LivingKitzbuehel\LVCloudService\CloudDataService\" />
+    <Property name="SitePhysicalPath" value="C:\Users\email\Source\Repos\MyCONVENO\Sales4ProCloud-LivingKitzbuehel\LVCloudService\LVCloudService\obj\Release\CloudDataService\" />
     <Property name="TargetRuntimeVersion" value="v4.0" />
   </Properties>
   <Sites>
-    <Site name="Web" physicalDirectory="D:\Meine Projekte\MyCONVENO\LivingKitzbuehl\LVCloudService\LVCloudService\obj\Release\CloudDataService\">
+    <Site name="Web" physicalDirectory="C:\Users\email\Source\Repos\MyCONVENO\Sales4ProCloud-LivingKitzbuehel\LVCloudService\LVCloudService\obj\Release\CloudDataService\">
       <Bindings>
         <Binding name="Endpoint1" endpointName="Endpoint1" />
       </Bindings>

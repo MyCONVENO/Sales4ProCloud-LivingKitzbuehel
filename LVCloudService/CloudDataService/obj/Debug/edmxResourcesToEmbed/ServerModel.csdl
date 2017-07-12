@@ -28,6 +28,7 @@
     <NavigationProperty Name="Client" Relationship="Self.FK_Agent_Client" FromRole="Agent" ToRole="Client" />
     <NavigationProperty Name="UserAgents" Relationship="Self.FK_UserAgents_Agent" FromRole="Agent" ToRole="UserAgents" />
     <NavigationProperty Name="Customer" Relationship="LIVINGKITZBUEHLModel.FK_Customer_Agent" FromRole="Agent" ToRole="Customer" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Agent_Compare">
     <Key>
@@ -84,12 +85,13 @@
     <Property Name="ArticleCategory2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ArticleCategory3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ArticleImage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="ArticleInfoText1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ArticleInfoText1" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
     <Property Name="ArticleInfoText2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="BauerfeindMaterial" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IsTestData" Type="Boolean" />
     <NavigationProperty Name="Model" Relationship="Self.FK_Article_0" FromRole="Article" ToRole="Model" />
     <NavigationProperty Name="Color" Relationship="LIVINGKITZBUEHLModel.FK_Color_0" FromRole="Article" ToRole="Color" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Association">
     <Key>
@@ -112,6 +114,7 @@
     <Property Name="AssociationCountryCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="AssociationClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IsTestData" Type="Boolean" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Association_Compare">
     <Key>
@@ -147,6 +150,7 @@
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
     <Property Name="AssociationMemberClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IsTestData" Type="Boolean" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="AssociationMember_Compare">
     <Key>
@@ -204,6 +208,7 @@
     <Property Name="SizerunRangeText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="IsFreeDisposition" Type="Boolean" Nullable="false" />
     <Property Name="IsTestData" Type="Boolean" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Assortment_Compare">
     <Key>
@@ -280,6 +285,7 @@
     <Property Name="FooterRightLine3" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Name="FooterRightLine4" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Agent" Relationship="Self.FK_Agent_Client" FromRole="Client" ToRole="Agent" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="ContactPerson">
     <Key>
@@ -301,6 +307,7 @@
     <Property Name="ContactPersonNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IsTestData" Type="Boolean" />
     <NavigationProperty Name="Customer" Relationship="LIVINGKITZBUEHLModel.FK_ContactPerson_Customer" FromRole="ContactPerson" ToRole="Customer" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="ContactPerson_Compare">
     <Key>
@@ -333,6 +340,7 @@
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
     <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="IsTestData" Type="Boolean" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="CustomerFavorite">
     <Key>
@@ -344,6 +352,7 @@
     <Property Name="IsFavorite" Type="Boolean" Nullable="false" />
     <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="IsTestData" Type="Boolean" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="CustomerNote">
     <Key>
@@ -357,6 +366,7 @@
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
     <Property Name="CustomerNoteClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="DeliveryAddress">
     <Key>
@@ -381,6 +391,7 @@
     <Property Name="DeliveryAddressClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IsTestData" Type="Boolean" />
     <NavigationProperty Name="Customer" Relationship="LIVINGKITZBUEHLModel.FK_DeliveryAddress_Customer" FromRole="DeliveryAddress" ToRole="Customer" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="DeliveryAddress_Compare">
     <Key>
@@ -428,6 +439,7 @@
     <Property Name="InvoiceNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IsTestData" Type="Boolean" />
     <NavigationProperty Name="Customer" Relationship="LIVINGKITZBUEHLModel.FK_InvoiceAddress_Customer" FromRole="InvoiceAddress" ToRole="Customer" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="InvoiceAddress_Compare">
     <Key>
@@ -464,6 +476,7 @@
     <Property Name="LabelClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IsTestData" Type="Boolean" />
     <NavigationProperty Name="Season" Relationship="Self.FK_Season_0" FromRole="Label" ToRole="Season" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Label_Compare">
     <Key>
@@ -497,6 +510,7 @@
     <Property Name="IsTestData" Type="Boolean" />
     <NavigationProperty Name="Article" Relationship="Self.FK_Article_0" FromRole="Model" ToRole="Article" />
     <NavigationProperty Name="Season" Relationship="Self.FK_Model_0" FromRole="Model" ToRole="Season" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Model_Compare">
     <Key>
@@ -646,6 +660,7 @@
     <Property Name="IsDeleted" Type="Int64" Nullable="false" />
     <Property Name="IsModified" Type="Int64" Nullable="false" />
     <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="OrderItem">
     <Key>
@@ -799,6 +814,7 @@
     <Property Name="StockSum" Type="Int64" Nullable="false" />
     <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Width" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="pricat">
     <Key>
@@ -850,6 +866,7 @@
     <NavigationProperty Name="Pricelist" Relationship="Self.FK_Price_Pricelist" FromRole="Price" ToRole="Pricelist" />
     <NavigationProperty Name="Sizerun" Relationship="Self.FK_Price_Sizerun" FromRole="Price" ToRole="Sizerun" />
     <NavigationProperty Name="Color" Relationship="LIVINGKITZBUEHLModel.FK_Price_Color" FromRole="Price" ToRole="Color" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Price_Compare">
     <Key>
@@ -883,6 +900,7 @@
     <NavigationProperty Name="Price" Relationship="Self.FK_Price_Pricelist" FromRole="Pricelist" ToRole="Price" />
     <NavigationProperty Name="UserPriceList" Relationship="Self.FK_UserPriceList_1" FromRole="Pricelist" ToRole="UserPriceList" />
     <NavigationProperty Name="Customer" Relationship="LIVINGKITZBUEHLModel.FK_Customer_Pricelist" FromRole="Pricelist" ToRole="Customer" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Pricelist_Compare">
     <Key>
@@ -924,6 +942,7 @@
     <Property Name="SeasonLongName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="DeliveryDateStart" Type="DateTime" Precision="3" />
     <Property Name="DeliveryDateEnd" Type="DateTime" Precision="3" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Season_Compare">
     <Key>
@@ -1108,6 +1127,7 @@
     <Property Name="CustomerHeader10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="SeasonLongName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="AppVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="ShoppingCartItem">
     <Key>
@@ -1339,6 +1359,7 @@
     <Property Name="ColorHeader10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IsSampleItem" Type="Boolean" />
     <Property Name="AppVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Sizerun">
     <Key>
@@ -1416,6 +1437,7 @@
     <Property Name="EAN28" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="EAN29" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="EAN30" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Sizerun_Compare">
     <Key>
@@ -1506,6 +1528,7 @@
     <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
     <Property Name="SpecialDiscountClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Stock_Compare">
     <Key>
@@ -1558,6 +1581,7 @@
     <Property Name="TextSnippetText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="User">
     <Key>
@@ -1596,6 +1620,7 @@
     <Property Name="UseTestData" Type="Boolean" />
     <NavigationProperty Name="UserAgents" Relationship="Self.FK_UserAgents_User" FromRole="User" ToRole="UserAgents" />
     <NavigationProperty Name="UserPriceList" Relationship="Self.FK_UserPriceList_0" FromRole="User" ToRole="UserPriceList" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="UserAgents">
     <Key>
@@ -1609,6 +1634,7 @@
     <Property Name="SyncDateTime" Type="DateTime" Precision="3" />
     <NavigationProperty Name="Agent" Relationship="Self.FK_UserAgents_Agent" FromRole="UserAgents" ToRole="Agent" />
     <NavigationProperty Name="User" Relationship="Self.FK_UserAgents_User" FromRole="UserAgents" ToRole="User" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="UserClient">
     <Key>
@@ -1621,6 +1647,7 @@
     <Property Name="UserClientClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="UserPriceList">
     <Key>
@@ -1684,7 +1711,7 @@
     <Property Name="ArticleCategory2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ArticleCategory3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ArticleImage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="ArticleInfoText1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ArticleInfoText1" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
     <Property Name="ArticleInfoText2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="BauerfeindMaterial" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IsTestData" Type="Boolean" />
@@ -1841,85 +1868,6 @@
     <Property Name="CustomerHeader07" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="CustomerHeader08" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="CustomerHeader09" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-  </EntityType>
-  <EntityType Name="Stock">
-    <Key>
-      <PropertyRef Name="StockID" />
-      <PropertyRef Name="StockAssortmentID" />
-      <PropertyRef Name="StockQty01" />
-      <PropertyRef Name="StockQty02" />
-      <PropertyRef Name="StockQty03" />
-      <PropertyRef Name="StockQty04" />
-      <PropertyRef Name="StockQty05" />
-      <PropertyRef Name="StockQty06" />
-      <PropertyRef Name="StockQty07" />
-      <PropertyRef Name="StockQty08" />
-      <PropertyRef Name="StockQty09" />
-      <PropertyRef Name="StockQty10" />
-      <PropertyRef Name="StockQty11" />
-      <PropertyRef Name="StockQty12" />
-      <PropertyRef Name="StockQty13" />
-      <PropertyRef Name="StockQty14" />
-      <PropertyRef Name="StockQty15" />
-      <PropertyRef Name="StockQty16" />
-      <PropertyRef Name="StockQty17" />
-      <PropertyRef Name="StockQty18" />
-      <PropertyRef Name="StockQty19" />
-      <PropertyRef Name="StockQty20" />
-      <PropertyRef Name="StockQty21" />
-      <PropertyRef Name="StockQty22" />
-      <PropertyRef Name="StockQty23" />
-      <PropertyRef Name="StockQty24" />
-      <PropertyRef Name="StockQty25" />
-      <PropertyRef Name="StockQty26" />
-      <PropertyRef Name="StockQty27" />
-      <PropertyRef Name="StockQty28" />
-      <PropertyRef Name="StockQty29" />
-      <PropertyRef Name="StockQty30" />
-      <PropertyRef Name="SyncDateTime" />
-      <PropertyRef Name="IsDeleted" />
-      <PropertyRef Name="StockClientID" />
-      <PropertyRef Name="IsFreeDisposition" />
-      <PropertyRef Name="StockQtyAssortment" />
-    </Key>
-    <Property Name="StockID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="StockAssortmentID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="StockQty01" Type="Int32" Nullable="false" />
-    <Property Name="StockQty02" Type="Int32" Nullable="false" />
-    <Property Name="StockQty03" Type="Int32" Nullable="false" />
-    <Property Name="StockQty04" Type="Int32" Nullable="false" />
-    <Property Name="StockQty05" Type="Int32" Nullable="false" />
-    <Property Name="StockQty06" Type="Int32" Nullable="false" />
-    <Property Name="StockQty07" Type="Int32" Nullable="false" />
-    <Property Name="StockQty08" Type="Int32" Nullable="false" />
-    <Property Name="StockQty09" Type="Int32" Nullable="false" />
-    <Property Name="StockQty10" Type="Int32" Nullable="false" />
-    <Property Name="StockQty11" Type="Int32" Nullable="false" />
-    <Property Name="StockQty12" Type="Int32" Nullable="false" />
-    <Property Name="StockQty13" Type="Int32" Nullable="false" />
-    <Property Name="StockQty14" Type="Int32" Nullable="false" />
-    <Property Name="StockQty15" Type="Int32" Nullable="false" />
-    <Property Name="StockQty16" Type="Int32" Nullable="false" />
-    <Property Name="StockQty17" Type="Int32" Nullable="false" />
-    <Property Name="StockQty18" Type="Int32" Nullable="false" />
-    <Property Name="StockQty19" Type="Int32" Nullable="false" />
-    <Property Name="StockQty20" Type="Int32" Nullable="false" />
-    <Property Name="StockQty21" Type="Int32" Nullable="false" />
-    <Property Name="StockQty22" Type="Int32" Nullable="false" />
-    <Property Name="StockQty23" Type="Int32" Nullable="false" />
-    <Property Name="StockQty24" Type="Int32" Nullable="false" />
-    <Property Name="StockQty25" Type="Int32" Nullable="false" />
-    <Property Name="StockQty26" Type="Int32" Nullable="false" />
-    <Property Name="StockQty27" Type="Int32" Nullable="false" />
-    <Property Name="StockQty28" Type="Int32" Nullable="false" />
-    <Property Name="StockQty29" Type="Int32" Nullable="false" />
-    <Property Name="StockQty30" Type="Int32" Nullable="false" />
-    <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
-    <Property Name="StockClientID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="IsFreeDisposition" Type="Boolean" Nullable="false" />
-    <Property Name="StockQtyAssortment" Type="Int32" Nullable="false" />
-    <Property Name="IsTestData" Type="Boolean" />
   </EntityType>
   <Association Name="FK_Agent_Client">
     <End Role="Client" Type="Self.Client" Multiplicity="1" />
@@ -2097,7 +2045,6 @@
     <EntitySet Name="Article_Compare" EntityType="Self.Article_Compare" />
     <EntitySet Name="Color_Compare" EntityType="Self.Color_Compare" />
     <EntitySet Name="Customer_Compare" EntityType="Self.Customer_Compare" />
-    <EntitySet Name="Stock" EntityType="Self.Stock" />
     <AssociationSet Name="FK_Agent_Client" Association="Self.FK_Agent_Client">
       <End Role="Client" EntitySet="Client" />
       <End Role="Agent" EntitySet="Agent" />
@@ -2184,6 +2131,7 @@
     </AssociationSet>
     <EntitySet Name="SeasonValue" EntityType="LIVINGKITZBUEHLModel.SeasonValue" />
     <EntitySet Name="source_Saisonumsatz" EntityType="LIVINGKITZBUEHLModel.source_Saisonumsatz" />
+    <EntitySet Name="Stock" EntityType="LIVINGKITZBUEHLModel.Stock" />
   </EntityContainer>
   <EntityType Name="source_Artikel">
     <Key>
@@ -2442,6 +2390,8 @@
     <Property Name="Lagernr" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="EAN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Freilagerbestand" Type="Int32" Nullable="false" />
+    <Property Name="Artikelsaison" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FreiVerfuegbarerBestand" Type="Int32" />
   </EntityType>
   <EntityType Name="source_tempStock">
     <Key>
@@ -2521,6 +2471,8 @@
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
     <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="ImageDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DownloadUri" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="ProductImage_Compare">
     <Key>
@@ -2636,6 +2588,7 @@
     <Property Name="ColorHeader10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Article" Relationship="LIVINGKITZBUEHLModel.FK_Color_0" FromRole="Color" ToRole="Article" />
     <NavigationProperty Name="Price" Relationship="LIVINGKITZBUEHLModel.FK_Price_Color" FromRole="Color" ToRole="Price" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="Customer">
     <Key>
@@ -2700,6 +2653,7 @@
     <NavigationProperty Name="Pricelist" Relationship="LIVINGKITZBUEHLModel.FK_Customer_Pricelist" FromRole="Customer" ToRole="Pricelist" />
     <NavigationProperty Name="DeliveryAddress" Relationship="LIVINGKITZBUEHLModel.FK_DeliveryAddress_Customer" FromRole="Customer" ToRole="DeliveryAddress" />
     <NavigationProperty Name="InvoiceAddress" Relationship="LIVINGKITZBUEHLModel.FK_InvoiceAddress_Customer" FromRole="Customer" ToRole="InvoiceAddress" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <Association Name="FK_Customer_Agent">
     <End Type="LIVINGKITZBUEHLModel.Agent" Role="Agent" Multiplicity="1" />
@@ -2800,6 +2754,7 @@
     <Property Name="Value" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
     <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="source_Saisonumsatz">
     <Key>
@@ -2812,5 +2767,49 @@
     <Property Name="UmsatzVO" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
     <Property Name="MengeGesamt" Type="Int32" Nullable="false" />
     <Property Name="UmsatzGesamt" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Stock">
+    <Key>
+      <PropertyRef Name="StockID" />
+    </Key>
+    <Property Name="StockID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StockAssortmentID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StockQty01" Type="Int32" Nullable="false" />
+    <Property Name="StockQty02" Type="Int32" Nullable="false" />
+    <Property Name="StockQty03" Type="Int32" Nullable="false" />
+    <Property Name="StockQty04" Type="Int32" Nullable="false" />
+    <Property Name="StockQty05" Type="Int32" Nullable="false" />
+    <Property Name="StockQty06" Type="Int32" Nullable="false" />
+    <Property Name="StockQty07" Type="Int32" Nullable="false" />
+    <Property Name="StockQty08" Type="Int32" Nullable="false" />
+    <Property Name="StockQty09" Type="Int32" Nullable="false" />
+    <Property Name="StockQty10" Type="Int32" Nullable="false" />
+    <Property Name="StockQty11" Type="Int32" Nullable="false" />
+    <Property Name="StockQty12" Type="Int32" Nullable="false" />
+    <Property Name="StockQty13" Type="Int32" Nullable="false" />
+    <Property Name="StockQty14" Type="Int32" Nullable="false" />
+    <Property Name="StockQty15" Type="Int32" Nullable="false" />
+    <Property Name="StockQty16" Type="Int32" Nullable="false" />
+    <Property Name="StockQty17" Type="Int32" Nullable="false" />
+    <Property Name="StockQty18" Type="Int32" Nullable="false" />
+    <Property Name="StockQty19" Type="Int32" Nullable="false" />
+    <Property Name="StockQty20" Type="Int32" Nullable="false" />
+    <Property Name="StockQty21" Type="Int32" Nullable="false" />
+    <Property Name="StockQty22" Type="Int32" Nullable="false" />
+    <Property Name="StockQty23" Type="Int32" Nullable="false" />
+    <Property Name="StockQty24" Type="Int32" Nullable="false" />
+    <Property Name="StockQty25" Type="Int32" Nullable="false" />
+    <Property Name="StockQty26" Type="Int32" Nullable="false" />
+    <Property Name="StockQty27" Type="Int32" Nullable="false" />
+    <Property Name="StockQty28" Type="Int32" Nullable="false" />
+    <Property Name="StockQty29" Type="Int32" Nullable="false" />
+    <Property Name="StockQty30" Type="Int32" Nullable="false" />
+    <Property Name="SyncDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="StockClientID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsFreeDisposition" Type="Boolean" Nullable="false" />
+    <Property Name="StockQtyAssortment" Type="Int32" Nullable="false" />
+    <Property Name="IsTestData" Type="Boolean" />
+    <Property Name="SyncDateTimeSort" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
 </Schema>

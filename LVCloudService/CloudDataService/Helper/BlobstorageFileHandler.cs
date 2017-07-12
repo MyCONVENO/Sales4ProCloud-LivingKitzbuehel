@@ -177,5 +177,17 @@ namespace CloudDataService.Helper
             CloudBlob blob = Container.GetBlobReference(filename);
             blob.UploadFile(filepath);
         }
+
+        public void UploadText(string text, string filename)
+        {
+            CloudBlob blob = Container.GetBlobReference(filename);
+            blob.UploadText(text);
+        }
+
+        public void DeleteFile(string filename)
+        {
+            CloudBlob blob = Container.GetBlobReference(filename);
+            blob.Delete();
+        }
     }
 }

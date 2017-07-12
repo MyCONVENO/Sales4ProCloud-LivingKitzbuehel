@@ -31,5 +31,6 @@ namespace CloudDataService
         public string AssociationCountryCode { get; set; }
         public string AssociationClientID { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

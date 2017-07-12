@@ -20,5 +20,6 @@ namespace CloudDataService
         public bool IsFavorite { get; set; }
         public System.DateTime SyncDateTime { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

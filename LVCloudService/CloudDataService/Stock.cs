@@ -52,5 +52,6 @@ namespace CloudDataService
         public bool IsFreeDisposition { get; set; }
         public int StockQtyAssortment { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

@@ -30,6 +30,7 @@ namespace CloudDataService
         public bool IsDeleted { get; set; }
         public string PricelistClientID { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual ICollection<Price> Price { get; set; }
         public virtual ICollection<UserPriceList> UserPriceList { get; set; }

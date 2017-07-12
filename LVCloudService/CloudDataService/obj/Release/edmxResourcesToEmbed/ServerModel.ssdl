@@ -25,6 +25,7 @@
     <Property Name="AgentCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="AgentClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Agent_Compare">
     <Key>
@@ -81,10 +82,11 @@
     <Property Name="ArticleCategory2" Type="nvarchar" MaxLength="50" />
     <Property Name="ArticleCategory3" Type="nvarchar" MaxLength="50" />
     <Property Name="ArticleImage" Type="nvarchar" MaxLength="50" />
-    <Property Name="ArticleInfoText1" Type="nvarchar" MaxLength="500" />
+    <Property Name="ArticleInfoText1" Type="nvarchar" MaxLength="4000" />
     <Property Name="ArticleInfoText2" Type="nvarchar" MaxLength="50" />
     <Property Name="BauerfeindMaterial" Type="nvarchar" MaxLength="50" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -137,7 +139,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
     <Property Name="ArticleCategory2" Type="nvarchar" MaxLength="50" />
     <Property Name="ArticleCategory3" Type="nvarchar" MaxLength="50" />
     <Property Name="ArticleImage" Type="nvarchar" MaxLength="50" />
-    <Property Name="ArticleInfoText1" Type="nvarchar" MaxLength="500" />
+    <Property Name="ArticleInfoText1" Type="nvarchar" MaxLength="4000" />
     <Property Name="ArticleInfoText2" Type="nvarchar" MaxLength="50" />
     <Property Name="BauerfeindMaterial" Type="nvarchar" MaxLength="50" />
     <Property Name="IsTestData" Type="bit" />
@@ -163,6 +165,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
     <Property Name="AssociationCountryCode" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="AssociationClientID" Type="nvarchar" MaxLength="50" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Association_Compare">
     <Key>
@@ -198,6 +201,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
     <Property Name="AssociationMemberClientID" Type="nvarchar" MaxLength="50" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="AssociationMember_Compare">
     <Key>
@@ -255,6 +259,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
     <Property Name="SizerunRangeText" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="IsFreeDisposition" Type="bit" Nullable="false" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Assortment_Compare">
     <Key>
@@ -330,6 +335,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
     <Property Name="FooterRightLine2" Type="nvarchar" MaxLength="200" />
     <Property Name="FooterRightLine3" Type="nvarchar" MaxLength="200" />
     <Property Name="FooterRightLine4" Type="nvarchar" MaxLength="200" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Color">
     <Key>
@@ -379,6 +385,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Article_Compare' does not have
     <Property Name="ColorHeader08" Type="nvarchar" MaxLength="50" />
     <Property Name="ColorHeader09" Type="nvarchar" MaxLength="50" />
     <Property Name="ColorHeader10" Type="nvarchar" MaxLength="50" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Color_Compare' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -462,6 +469,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Color_Compare' does not have a
     <Property Name="ContactPersonFax" Type="nvarchar" MaxLength="500" />
     <Property Name="ContactPersonNumber" Type="nvarchar" MaxLength="50" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="ContactPerson_Compare">
     <Key>
@@ -494,6 +502,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Color_Compare' does not have a
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
     <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Customer">
     <Key>
@@ -553,6 +562,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Color_Compare' does not have a
     <Property Name="CustomerHeader07" Type="nvarchar" MaxLength="50" />
     <Property Name="CustomerHeader08" Type="nvarchar" MaxLength="50" />
     <Property Name="CustomerHeader09" Type="nvarchar" MaxLength="50" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -658,6 +668,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
     <Property Name="IsFavorite" Type="bit" Nullable="false" />
     <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="CustomerNote">
     <Key>
@@ -671,6 +682,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
     <Property Name="CustomerNoteClientID" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Image" Type="image" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="DeliveryAddress">
     <Key>
@@ -694,6 +706,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
     <Property Name="DeliveryNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="DeliveryAddressClientID" Type="nvarchar" MaxLength="50" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="DeliveryAddress_Compare">
     <Key>
@@ -740,6 +753,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
     <Property Name="InvoiceAddressClientID" Type="nvarchar" MaxLength="50" />
     <Property Name="InvoiceNumber" Type="nvarchar" MaxLength="50" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="InvoiceAddress_Compare">
     <Key>
@@ -775,6 +789,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
     <Property Name="LabelClientID" Type="nvarchar" MaxLength="50" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Label_Compare">
     <Key>
@@ -806,6 +821,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
     <Property Name="Width" Type="nvarchar" MaxLength="50" />
     <Property Name="SoleTypeName" Type="nvarchar" MaxLength="50" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Model_Compare">
     <Key>
@@ -955,6 +971,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
     <Property Name="IsDeleted" Type="bigint" Nullable="false" />
     <Property Name="IsModified" Type="bigint" Nullable="false" />
     <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="OrderItem">
     <Key>
@@ -1108,6 +1125,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
     <Property Name="StockSum" Type="bigint" Nullable="false" />
     <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
     <Property Name="Width" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="pricat">
     <Key>
@@ -1156,6 +1174,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
     <Property Name="PriceClientID" Type="nvarchar" MaxLength="50" />
     <Property Name="PriceColorID" Type="nvarchar" MaxLength="50" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Price_Compare">
     <Key>
@@ -1186,6 +1205,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
     <Property Name="PricelistClientID" Type="nvarchar" MaxLength="50" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Pricelist_Compare">
     <Key>
@@ -1211,6 +1231,8 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Customer_Compare' does not hav
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
     <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
     <Property Name="ImageDateTime" Type="datetime" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DownloadUri" Type="nvarchar" MaxLength="2000" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -1254,6 +1276,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
     <Property Name="IsTestData" Type="bit" />
     <Property Name="DeliveryDateStart" Type="datetime" />
     <Property Name="DeliveryDateEnd" Type="datetime" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Season_Compare">
     <Key>
@@ -1283,6 +1306,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
     <Property Name="Value" Type="decimal" Precision="18" Scale="2" Nullable="false" />
     <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="ShoppingCart">
     <Key>
@@ -1452,6 +1476,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
     <Property Name="CustomerHeader10" Type="nvarchar" MaxLength="50" />
     <Property Name="SeasonLongName" Type="nvarchar" MaxLength="50" />
     <Property Name="AppVersion" Type="nvarchar" MaxLength="50" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="ShoppingCartItem">
     <Key>
@@ -1683,6 +1708,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
     <Property Name="ColorHeader10" Type="nvarchar" MaxLength="50" />
     <Property Name="IsSampleItem" Type="bit" />
     <Property Name="AppVersion" Type="nvarchar" MaxLength="50" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Sizerun">
     <Key>
@@ -1759,6 +1785,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
     <Property Name="EAN28" Type="nvarchar" MaxLength="50" />
     <Property Name="EAN29" Type="nvarchar" MaxLength="50" />
     <Property Name="EAN30" Type="nvarchar" MaxLength="50" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Sizerun_Compare">
     <Key>
@@ -1990,6 +2017,8 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.ProductImage_Compare' does not
     <Property Name="Lagernr" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="EAN" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Freilagerbestand" Type="int" Nullable="false" />
+    <Property Name="Artikelsaison" Type="nvarchar" MaxLength="50" />
+    <Property Name="FreiVerfuegbarerBestand" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.source_TempSizerun' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -2239,48 +2268,11 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.source_tempStock' does not hav
     <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
     <Property Name="SpecialDiscountClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="Stock">
     <Key>
       <PropertyRef Name="StockID" />
-      <PropertyRef Name="StockAssortmentID" />
-      <PropertyRef Name="StockQty01" />
-      <PropertyRef Name="StockQty02" />
-      <PropertyRef Name="StockQty03" />
-      <PropertyRef Name="StockQty04" />
-      <PropertyRef Name="StockQty05" />
-      <PropertyRef Name="StockQty06" />
-      <PropertyRef Name="StockQty07" />
-      <PropertyRef Name="StockQty08" />
-      <PropertyRef Name="StockQty09" />
-      <PropertyRef Name="StockQty10" />
-      <PropertyRef Name="StockQty11" />
-      <PropertyRef Name="StockQty12" />
-      <PropertyRef Name="StockQty13" />
-      <PropertyRef Name="StockQty14" />
-      <PropertyRef Name="StockQty15" />
-      <PropertyRef Name="StockQty16" />
-      <PropertyRef Name="StockQty17" />
-      <PropertyRef Name="StockQty18" />
-      <PropertyRef Name="StockQty19" />
-      <PropertyRef Name="StockQty20" />
-      <PropertyRef Name="StockQty21" />
-      <PropertyRef Name="StockQty22" />
-      <PropertyRef Name="StockQty23" />
-      <PropertyRef Name="StockQty24" />
-      <PropertyRef Name="StockQty25" />
-      <PropertyRef Name="StockQty26" />
-      <PropertyRef Name="StockQty27" />
-      <PropertyRef Name="StockQty28" />
-      <PropertyRef Name="StockQty29" />
-      <PropertyRef Name="StockQty30" />
-      <PropertyRef Name="SyncDateTime" />
-      <PropertyRef Name="IsDeleted" />
-      <PropertyRef Name="StockClientID" />
-      <PropertyRef Name="IsFreeDisposition" />
-      <PropertyRef Name="StockQtyAssortment" />
     </Key>
     <Property Name="StockID" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="StockAssortmentID" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -2320,6 +2312,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
     <Property Name="IsFreeDisposition" Type="bit" Nullable="false" />
     <Property Name="StockQtyAssortment" Type="int" Nullable="false" />
     <Property Name="IsTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Stock_Compare">
     <Key>
@@ -2372,6 +2365,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
     <Property Name="TextSnippetText" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="User">
     <Key>
@@ -2408,6 +2402,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
     <Property Name="DefaultPricelist" Type="nvarchar" MaxLength="50" />
     <Property Name="UserClientID" Type="nvarchar" MaxLength="50" />
     <Property Name="UseTestData" Type="bit" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="UserAgents">
     <Key>
@@ -2419,6 +2414,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
     <Property Name="UserAgentClientID" Type="nvarchar" MaxLength="50" />
     <Property Name="IsDeleted" Type="bit" />
     <Property Name="SyncDateTime" Type="datetime" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="UserClient">
     <Key>
@@ -2431,6 +2427,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
     <Property Name="UserClientClientID" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="SyncDateTime" Type="datetime" Nullable="false" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SyncDateTimeSort" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="UserPriceList">
     <Key>
@@ -2711,6 +2708,7 @@ warning 6002: The table/view 'LIVINGKITZBUEHL.dbo.Stock' does not have a primary
     <EntitySet Name="source_TempSizerunPrice" EntityType="Self.source_TempSizerunPrice" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="source_Vertreter" EntityType="Self.source_Vertreter" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SpecialDiscount" EntityType="Self.SpecialDiscount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stock" EntityType="Self.Stock" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Stock_Compare" EntityType="Self.Stock_Compare" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TextSnippet" EntityType="Self.TextSnippet" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
@@ -2938,48 +2936,6 @@ FROM [dbo].[source_TempSizerun] AS [source_TempSizerun]</DefiningQuery>
 [source_tempStock].[Qty30] AS [Qty30], 
 [source_tempStock].[AssortmentID] AS [AssortmentID]
 FROM [dbo].[source_tempStock] AS [source_tempStock]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="Stock" EntityType="Self.Stock" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-[Stock].[StockID] AS [StockID], 
-[Stock].[StockAssortmentID] AS [StockAssortmentID], 
-[Stock].[StockQty01] AS [StockQty01], 
-[Stock].[StockQty02] AS [StockQty02], 
-[Stock].[StockQty03] AS [StockQty03], 
-[Stock].[StockQty04] AS [StockQty04], 
-[Stock].[StockQty05] AS [StockQty05], 
-[Stock].[StockQty06] AS [StockQty06], 
-[Stock].[StockQty07] AS [StockQty07], 
-[Stock].[StockQty08] AS [StockQty08], 
-[Stock].[StockQty09] AS [StockQty09], 
-[Stock].[StockQty10] AS [StockQty10], 
-[Stock].[StockQty11] AS [StockQty11], 
-[Stock].[StockQty12] AS [StockQty12], 
-[Stock].[StockQty13] AS [StockQty13], 
-[Stock].[StockQty14] AS [StockQty14], 
-[Stock].[StockQty15] AS [StockQty15], 
-[Stock].[StockQty16] AS [StockQty16], 
-[Stock].[StockQty17] AS [StockQty17], 
-[Stock].[StockQty18] AS [StockQty18], 
-[Stock].[StockQty19] AS [StockQty19], 
-[Stock].[StockQty20] AS [StockQty20], 
-[Stock].[StockQty21] AS [StockQty21], 
-[Stock].[StockQty22] AS [StockQty22], 
-[Stock].[StockQty23] AS [StockQty23], 
-[Stock].[StockQty24] AS [StockQty24], 
-[Stock].[StockQty25] AS [StockQty25], 
-[Stock].[StockQty26] AS [StockQty26], 
-[Stock].[StockQty27] AS [StockQty27], 
-[Stock].[StockQty28] AS [StockQty28], 
-[Stock].[StockQty29] AS [StockQty29], 
-[Stock].[StockQty30] AS [StockQty30], 
-[Stock].[SyncDateTime] AS [SyncDateTime], 
-[Stock].[IsDeleted] AS [IsDeleted], 
-[Stock].[StockClientID] AS [StockClientID], 
-[Stock].[IsFreeDisposition] AS [IsFreeDisposition], 
-[Stock].[StockQtyAssortment] AS [StockQtyAssortment], 
-[Stock].[IsTestData] AS [IsTestData]
-FROM [dbo].[Stock] AS [Stock]</DefiningQuery>
     </EntitySet>
     <AssociationSet Name="FK_Agent_Client" Association="Self.FK_Agent_Client">
       <End Role="Client" EntitySet="Client" />

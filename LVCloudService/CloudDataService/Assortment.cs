@@ -53,5 +53,6 @@ namespace CloudDataService
         public string SizerunRangeText { get; set; }
         public bool IsFreeDisposition { get; set; }
         public Nullable<bool> IsTestData { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

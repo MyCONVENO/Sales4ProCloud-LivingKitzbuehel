@@ -90,6 +90,7 @@ namespace CloudDataService
         public string EAN28 { get; set; }
         public string EAN29 { get; set; }
         public string EAN30 { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual ICollection<Price> Price { get; set; }
     }

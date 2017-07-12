@@ -178,5 +178,6 @@ namespace CloudDataService
         public string CustomerHeader10 { get; set; }
         public string SeasonLongName { get; set; }
         public string AppVersion { get; set; }
+        public long SyncDateTimeSort { get; set; }
     }
 }

@@ -75,6 +75,7 @@ namespace CloudDataService
         public string CustomerHeader07 { get; set; }
         public string CustomerHeader08 { get; set; }
         public string CustomerHeader09 { get; set; }
+        public long SyncDateTimeSort { get; set; }
     
         public virtual Agent Agent { get; set; }
         public virtual ICollection<ContactPerson> ContactPerson { get; set; }
