@@ -17,7 +17,7 @@ namespace CloudDataService.Helper
             {
                 if (validType(sourceprop))
                 {
-                    if (sourceprop.Name != "SyncDateTime" && sourceprop.Name != idname)
+                    if (sourceprop.Name != "SyncDateTime" && sourceprop.Name != idname && sourceprop.Name != "SyncDateTimeSort")
                     {
                         if (sourceprop.CanWrite)
                         {

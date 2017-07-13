@@ -2243,7 +2243,7 @@ namespace CloudDataService
                 }
                 else
                 {
-                    uploadShoppingCart.SyncDateTime = DateTime.UtcNow;
+                    uploadShoppingCart.SyncDateTime = DateTime.UtcNow;                    
                     currentData.ShoppingCart.Add(uploadShoppingCart);
                 }
 
