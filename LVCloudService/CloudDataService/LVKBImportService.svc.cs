@@ -42,7 +42,6 @@ namespace CloudDataService
             try
             {
 
-
                 ////##############
                 ////###Artikel###
                 ////##############
@@ -545,6 +544,12 @@ namespace CloudDataService
                 newColor.ColorImage = dbitem.Artikelnr + "-" + dbitem.Farbnr.TrimStart('0') + ".jpg";
 
                 newColor.ColorText01 = dbitem.GroesseVon != dbitem.GroesseBis ? dbitem.GroesseVon + "-" + dbitem.GroesseBis : dbitem.GroesseVon;
+
+                newColor.ColorText05 = newColor.ColorNumberText;
+                newColor.ColorText06 = newColor.ColorName;
+                newColor.ColorText07 = newColor.ColorText01;
+
+                newColor.ColorHeader05 = "Artikel";
 
                 if (dbitem.ColorID != null)
                 {

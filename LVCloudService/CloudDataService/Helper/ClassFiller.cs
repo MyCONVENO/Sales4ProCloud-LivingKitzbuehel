@@ -50,7 +50,7 @@ namespace CloudDataService.Helper
         {
             foreach (var sourceprop in sourceObj.GetType().GetProperties())
             {
-                if (sourceprop.CanWrite)
+                if (sourceprop.CanWrite && sourceprop.Name != "SyncDateTimeSort")
                 {
                     var destprop = destObj.GetType().GetProperty(sourceprop.Name);
                     if (destprop != null && destprop.CanWrite)

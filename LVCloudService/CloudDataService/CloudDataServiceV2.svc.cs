@@ -1639,6 +1639,7 @@ namespace CloudDataService
             IQueryable<T> items = dbresult(0, SyncDateTime, UserID);
             int dbresultCount = items.Count();
             long taken = 0;
+            long lastsort = 0;
             List<T> part = new List<T>();
             List<string> files = new List<string>();
             string fileName = string.Empty;
@@ -1647,16 +1648,15 @@ namespace CloudDataService
             {
                 fileName = Guid.NewGuid().ToString() + ".data";
 
-                items = dbresult(taken, SyncDateTime, UserID).Take(itemscount);
+                items = dbresult(lastsort, SyncDateTime, UserID).Take(itemscount);
 
                 part.AddRange(items);
                 blobhandler.UploadText(Convert.ToBase64String(ZipHelper.ZipStringV2(getJson(part))), fileName);
                 files.Add(fileName);
 
                 dynamic lastÍtem = part.Last();
-                taken = lastÍtem.SyncDateTimeSort;
-                if (taken == 0)
-                    taken = part.Count;
+                lastsort = lastÍtem.SyncDateTimeSort;
+                taken += part.Count;
                 part.Clear();
             }
 
