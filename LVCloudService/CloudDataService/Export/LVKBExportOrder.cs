@@ -10,9 +10,11 @@ namespace CloudDataService.Export
 {
     public class LVKBExportOrder
     {
-        public static byte[] GetOrderStream(ShoppingCart cart, IEnumerable<ShoppingCartItem> Items)
+        public static byte[] GetOrderStream(ShoppingCart cart, IEnumerable<ShoppingCartItem> Items, string seasonName)
         {
             EDI exportorder = new EDI();
+
+           
 
             EDIHEADER header = new EDIHEADER();
             ClassFiller.FillDefaultValues(header);
@@ -34,7 +36,7 @@ namespace CloudDataService.Export
             body.KundenOrderNr = cart.CustomerOrderNumber;
             body.OrderDatum = cart.OrderDate.ToString("yyyy.MM.dd");
             body.AuftragsDatum = cart.OrderDate.ToString("yyyy.MM.dd");
-            body.Saison = cart.SeasonName;
+            body.Saison = seasonName;
             body.Auftragstyp = cart.OrderTypeID == "0" ? "0" : "1";
             body.Auftragsart = "5";
             body.Terminart = cart.OrderTypeID == "0" ? "2" : "0"; // OrderTypeID == 0 => Terminauftrag / OrderTypeID == 1 => Sofortauftrag 

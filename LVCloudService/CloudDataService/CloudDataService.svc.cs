@@ -2243,7 +2243,7 @@ namespace CloudDataService
                 }
                 else
                 {
-                    uploadShoppingCart.SyncDateTime = DateTime.UtcNow;                    
+                    uploadShoppingCart.SyncDateTime = DateTime.UtcNow;
                     currentData.ShoppingCart.Add(uploadShoppingCart);
                 }
 
@@ -2255,7 +2255,7 @@ namespace CloudDataService
             catch (Exception ex)
             {
 
-                SendMail("sascha.weber@myconveno.de", "Message:"+ ex.Message+"\n\nInner:"+ex.InnerException.ToString(), "LvKB-Upload Error ShoppingCart", null);
+                SendMail("sascha.weber@myconveno.de", "Message:" + ex.Message + "\n\nInner:" + ex.InnerException.ToString(), "LvKB-Upload Error ShoppingCart", null);
                 ex.ToString();
                 return false;
             }
@@ -2446,7 +2446,9 @@ namespace CloudDataService
                                  orderby pos.ShoppingCartItemSort
                                  select pos).ToList();
 
-                    var result = LVKBExportOrder.GetOrderStream(order, items);
+                    Season season = currentData.Season.First(s => s.SeasonID == items.First().ModelSeasonID);
+
+                    var result = LVKBExportOrder.GetOrderStream(order, items, season.SeasonName);
 
                     if (result != null)
                     {
