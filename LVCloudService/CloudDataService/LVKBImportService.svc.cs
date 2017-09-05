@@ -405,7 +405,7 @@ namespace CloudDataService
 
             importAssortment();
 
-            importImages();
+            ImportImages();
             return "OK";
         }
 
@@ -414,13 +414,18 @@ namespace CloudDataService
 
             string sourceImportSeasonQuery = "SELECT DISTINCT source_Artikel.Artikelsaison, Season.SeasonID FROM source_Artikel LEFT OUTER JOIN Season ON source_Artikel.Artikelsaison = Season.SeasonName";
 
-            var models_source = dataModel.Database.SqlQuery<ImportSeason>(sourceImportSeasonQuery).ToList();
+            IEnumerable<ImportSeason> models_source = dataModel.Database.SqlQuery<ImportSeason>(sourceImportSeasonQuery).ToList();
 
 
             List<Season> seasons = new List<Season>();
 
+            models_source = from s in models_source orderby s.Artikelsaison.Substring(1), s.Artikelsaison.Substring(0, 1)
+                            select s;
+
+            int counter = 0;
             foreach (var m in models_source)
             {
+                counter++;
                 Season newModel = new Season();
                 ClassFiller.FillDefaultValues(newModel);
 
@@ -431,6 +436,7 @@ namespace CloudDataService
                 newModel.SeasonName = m.Artikelsaison;
                 newModel.SeasonLongName = (m.Artikelsaison.StartsWith("1") ? "Frühjahr/Sommer 20" : "Herbst/Winter 20") + m.Artikelsaison.Substring(1);
                 newModel.SyncDateTime = DateTime.Now;
+                newModel.SeasonSort = counter;
 
 
                 if (m.SeasonID != null)
@@ -565,12 +571,12 @@ namespace CloudDataService
 
         void importSizerun()
         {
-            string sourceTempSizerunQuery = "SELECT        Groesse, Preislistenr, ArtikelnrFarbnr, Saison, HEK, EmpfVK, EAN FROM source_Preis ORDER BY Saison, ArtikelnrFarbnr, Groesse";
+            string sourceTempSizerunQuery = "SELECT Groesse, Preislistenr, ArtikelnrFarbnr, Saison, HEK, EmpfVK, EAN FROM source_Preis ORDER BY Saison, ArtikelnrFarbnr, Preislistenr, Groesse";
             var singleSizeruns = dataModel.Database.SqlQuery<ImportTempPriceSizerun>(sourceTempSizerunQuery).ToList();
 
             List<List<object>> newdbitems = new List<List<object>>();
 
-            var sizerungroup = singleSizeruns.GroupBy(s => new { Mat = s.ArtikelnrFarbnr, Pricelist = s.Saison });
+            var sizerungroup = singleSizeruns.GroupBy(s => new { Mat = s.ArtikelnrFarbnr, Pricelist = s.Preislistenr, Saison = s.Saison });
 
             foreach (var sr in sizerungroup)
             {
@@ -807,7 +813,7 @@ namespace CloudDataService
 
         }
 
-        void importImages()
+        public string ImportImages()
         {
             BlobstorageFileHandler imageBlobHandler = new BlobstorageFileHandler("myconvenopicstorage", "astJJYrwS/JGBjpVTli5aHKUM0aL+MrI3z9XzDW99F+3BbR3ayXMPKPWGLDx5vJpFxWTEv/aWkgRsnVUCHolog==", "livingkbpics");
 
@@ -832,7 +838,29 @@ namespace CloudDataService
                              on i.ImageName equals c.ColorImage
                              select i.ColorID = c.ColorID).ToList();
 
-            DatabaseModelHelper.ImportData<ProductImage>(dataModel, images, dataModel.ProductImage.Where(s => s.IsDeleted == false).ToList());
+            var existingImages = dataModel.ProductImage.Where(s => s.IsDeleted == false).ToList();
+
+            foreach (var existingImg in existingImages)
+            {
+                var dubli = images.FirstOrDefault(c => c.ColorID == existingImg.ColorID && c.ImageName == existingImg.ImageName);
+
+                if (dubli != null)
+                {
+                    images.Remove(dubli);
+                }
+            }
+            List<List<object>> newdbitems = new List<List<object>>();
+
+            foreach (var a in images.Where(i => i.ColorID != null))
+            {
+                newdbitems.Add(ClassToListObjectItem.ToList(a));
+            }
+
+            SqlBulkInsertHelper.InsertBigData<ProductImage>(newdbitems);
+
+            // DatabaseModelHelper.ImportData<ProductImage>(dataModel, images, dataModel.ProductImage.Where(s => s.IsDeleted == false).ToList());
+
+            return "ok";
         }
 
         public string ImportPrice()
@@ -944,7 +972,7 @@ namespace CloudDataService
         void importCustomer()
         {
             string sourceImportCustomerQuery = "SELECT        source_Kunde.Kundennr, source_Kunde.Name1, source_Kunde.Name2, source_Kunde.Name3, source_Kunde.Strasse, source_Kunde.Plz, source_Kunde.Ort, source_Kunde.Land, source_Kunde.Zahlungsbed, source_Kunde.Zahlungsart, source_Kunde.Tel, source_Kunde.Email, source_Kunde.Fax, source_Kunde.homepage, source_Kunde.Bonitaetsstufe, source_Kunde.Kundentyp, source_Kunde.Vertrerternr, source_Kunde.UID_Nummer, source_Kunde.Preislistennr, source_Kunde.Mwst_KZ, source_Kunde.Steuerschluessel, source_Kunde.Rechnungsempfaenger, source_Kunde.Bonitaet, Customer.CustomerID, Pricelist.PricelistID, Agent.AgentID, SUM(source_Rabatt.Wert) AS GrundRabatt, source_Kunde.Forderungen, Agent.AgentName1 FROM            source_Kunde INNER JOIN Pricelist ON source_Kunde.Preislistennr = Pricelist.PricelistNumber INNER JOIN Agent ON source_Kunde.Vertrerternr = Agent.AgentNumber LEFT OUTER JOIN source_Rabatt ON source_Kunde.Kundennr = source_Rabatt.Kundennr LEFT OUTER JOIN Customer ON source_Kunde.Kundennr = Customer.CustomerNumber GROUP BY source_Kunde.Kundennr, source_Kunde.Name1, source_Kunde.Name2, source_Kunde.Name3, source_Kunde.Strasse, source_Kunde.Plz, source_Kunde.Ort, source_Kunde.Land, source_Kunde.Zahlungsbed, source_Kunde.Zahlungsart, source_Kunde.Tel, source_Kunde.Email, source_Kunde.Fax, source_Kunde.homepage, source_Kunde.Bonitaetsstufe, source_Kunde.Kundentyp, source_Kunde.Vertrerternr, source_Kunde.Preislistennr, source_Kunde.UID_Nummer, source_Kunde.Mwst_KZ, source_Kunde.Steuerschluessel, source_Kunde.Rechnungsempfaenger, source_Kunde.Bonitaet, Customer.CustomerID, Pricelist.PricelistID, Agent.AgentID, source_Kunde.Forderungen, Agent.AgentName1";
-           
+
             var customers_source = dataModel.Database.SqlQuery<ImportCustomer>(sourceImportCustomerQuery).ToList();
 
             List<Customer> Customers = new List<Customer>();
@@ -1012,7 +1040,7 @@ namespace CloudDataService
         void importDeleiveryAddresses()
         {
             string sourceImportDeleiveryAddressQuery = "SELECT        source_Lieferadresse.Kundennr, source_Lieferadresse.Name1, source_Lieferadresse.Name2, source_Lieferadresse.Name3, source_Lieferadresse.Strasse, source_Lieferadresse.Plz, source_Lieferadresse.Ort, source_Lieferadresse.Land, source_Lieferadresse.Telefon, source_Lieferadresse.Email, source_Lieferadresse.Fax, source_Lieferadresse.Bemerkung, Customer.CustomerID, source_Lieferadresse.Lieferort as Warenempfaengernr, DeliveryAddress.DeliveryAddressID FROM            source_Lieferadresse INNER JOIN Customer ON source_Lieferadresse.Kundennr = Customer.CustomerNumber LEFT OUTER JOIN DeliveryAddress ON Customer.CustomerID = DeliveryAddress.DeliveryAddressCustomerID AND source_Lieferadresse.Lieferort = DeliveryAddress.DeliveryNumber";
-         
+
             var deliveryAddresses_source = dataModel.Database.SqlQuery<ImportDeliveryAddress>(sourceImportDeleiveryAddressQuery);
 
             List<DeliveryAddress> DeliveryAddresses = new List<DeliveryAddress>();
@@ -1097,8 +1125,8 @@ namespace CloudDataService
 
         void importAssociations()
         {
-            string sourceImportAssociationQuery = "SELECT DISTINCT source_Kunde.EKV AS Name, Association.AssociationID FROM source_Kunde LEFT OUTER JOIN Association ON source_Kunde.EKV = Association.AssociationName1 WHERE(source_Kunde.EKV <> N'')";
-          
+            string sourceImportAssociationQuery = "SELECT DISTINCT source_Kunde.EKV AS Name, Association.AssociationID, Association.IsDeleted FROM source_Kunde LEFT OUTER JOIN Association ON source_Kunde.EKV = Association.AssociationName1 AND Association.IsDeleted = 0 WHERE(source_Kunde.EKV <> N'')";
+
             var associationMembers_source = dataModel.Database.SqlQuery<ImportAssociation>(sourceImportAssociationQuery);
 
             List<Association> Associations = new List<Association>();
@@ -1162,7 +1190,7 @@ namespace CloudDataService
         void importContactPerson()
         {
             string sourceImportContactPersonQuery = "SELECT        source_Ansprechpartner.Kundennr, source_Ansprechpartner.ASP_Nr, source_Ansprechpartner.ASP_Bereich, source_Ansprechpartner.ASP_Vorname, source_Ansprechpartner.ASP_Name1, source_Ansprechpartner.ASP_Name2, source_Ansprechpartner.ASP_Telefon, source_Ansprechpartner.ASP_Mobiltelefon, source_Ansprechpartner.ASP_Fax, source_Ansprechpartner.ASP_Bemerkung, source_Ansprechpartner.ASP_Email, Customer.CustomerID, ContactPerson.ContactPersonID FROM            source_Ansprechpartner INNER JOIN Customer ON source_Ansprechpartner.Kundennr = Customer.CustomerNumber LEFT OUTER JOIN ContactPerson ON Customer.CustomerID = ContactPerson.ContactPersonCustomerID AND source_Ansprechpartner.ASP_Nr = ContactPerson.ContactPersonNumber";
-          
+
             var contactPersons_source = dataModel.Database.SqlQuery<ImportContactPerson>(sourceImportContactPersonQuery);
 
             List<ContactPerson> ContactPersons = new List<ContactPerson>();
@@ -1269,7 +1297,7 @@ namespace CloudDataService
 
                     int bestand = s.Freilagerbestand;
 
-                    if(s.Artikelsaison == "217")
+                    if (s.Artikelsaison == "217")
                     {
                         bestand = s.FreiVerfuegbarerBestand;
                     }

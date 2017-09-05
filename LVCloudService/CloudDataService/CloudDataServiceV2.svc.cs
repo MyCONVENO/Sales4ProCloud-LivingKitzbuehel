@@ -2210,7 +2210,7 @@ namespace CloudDataService
 
                 mail.IsBodyHtml = false;
 
-                mail.From = new System.Net.Mail.MailAddress("service@myconveno.de", "BAUERFEIND Data Service");
+                mail.From = new System.Net.Mail.MailAddress("service@myconveno.de", "LKB Data Service");
 
                 SmtpClient client = new SmtpClient("smtp.office365.com");
                 client.Credentials = new NetworkCredential("service@myconveno.de", "Fisch6633");

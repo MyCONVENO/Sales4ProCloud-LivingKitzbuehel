@@ -14,6 +14,9 @@
                 </asp:DropDownList>
             </td>
             <td>
+                <asp:TextBox ID="tbFilter" runat="server"></asp:TextBox>
+            </td>
+            <td>
                 <asp:Button runat="server" ID="FilterButton" Text="Filtern" OnClick="FilterButton_Click" /></td>
         </tr>
     </table>
@@ -43,18 +46,26 @@
             Font-Bold="true" />
     </asp:GridView>
 
+    <asp:Panel runat="server" ID="editOrder" Visible="false">
+        <asp:Button Text="Preise neu ermittln" runat="server" ID="reCalcButton" OnClick="reCalcButton_Click" OnClientClick="return confirm('Sollen die Preise wirklich neu werden?');" />
+        <asp:Button Text="neu übertragen" runat="server" ID="tranferOrderButton" OnClick="tranferOrderButton_Click" OnClientClick="return confirm('Soll der Auftrag wirklich nochmal übertragen werden?');" />
+    </asp:Panel>
+
     <h4>Positionen:</h4>
     <asp:GridView runat="server" ID="GridViewShoppingCartItem"
         ItemType="SALESCenterLivingKB.Models.ShoppingCartItem" DataKeyNames="ShoppingCartItemID"
         AutoGenerateColumns="false"
         CssClass="table table-striped table-bordered table-hover"
-        ShowHeaderWhenEmpty="false">
+        AutoGenerateEditButton="true" UpdateMethod="GridViewShoppingCartItem_UpdateItem"
+        ShowHeaderWhenEmpty="false" SelectMethod="GridViewShoppingCartItem_GetData">
         <Columns>
-            <asp:DynamicField DataField="ArticleNumber" HeaderText="Artikelnummer" />
-            <asp:DynamicField DataField="ColorNumber" HeaderText="Farbnummer" />
-            <asp:DynamicField DataField="ColorName" HeaderText="Farbname" />
-            <asp:DynamicField DataField="TotalQty" HeaderText="Paarzahl" />
-            <asp:DynamicField DataField="DeliveryDecadeText" HeaderText="Liefertermin" />
+            <asp:DynamicField DataField="ArticleNumber" HeaderText="Artikelnummer" ReadOnly="true" />
+            <asp:DynamicField DataField="ColorNumber" HeaderText="Farbnummer" ReadOnly="true" />
+            <asp:DynamicField DataField="ColorName" HeaderText="Farbname" ReadOnly="true"/>
+            <asp:DynamicField DataField="TotalQty" HeaderText="Paarzahl" ReadOnly="true" />
+            <asp:DynamicField DataField="DeliveryDecadeText" HeaderText="Liefertermin" ReadOnly="true" />
+            <asp:DynamicField DataField="BuyingPrice" HeaderText="EK" DataFormatString="{0:n2}"/>
+            <asp:DynamicField DataField="SalesPrice" HeaderText="VK" DataFormatString="{0:n2}"/>
         </Columns>
         <SelectedRowStyle BackColor="LightCyan"
             ForeColor="DarkBlue"

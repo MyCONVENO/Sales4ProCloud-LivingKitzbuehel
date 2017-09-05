@@ -42,5 +42,8 @@ namespace CloudDataService
 
         [OperationContract]
         string ImportSeasonValue();
+
+        [OperationContract]
+        string ImportImages();
     }
 }

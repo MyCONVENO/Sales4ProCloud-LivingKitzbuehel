@@ -24,10 +24,5 @@
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
-    <Contents>
-      <Content destination=".\">
-        <SourceDirectory path="D:\Meine Projekte\MyCONVENO\LivingKitzbuehl\LVCloudService\LVCloudService\rcf\Debug\CloudDataServiceContent\" />
-      </Content>
-    </Contents>
   </WebRole>
 </ServiceDefinition>

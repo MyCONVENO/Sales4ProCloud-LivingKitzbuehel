@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LVCloudService" generation="1" functional="0" release="0" Id="3386b96b-f404-403a-ad17-f7cabf5cd4aa" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LVCloudService" generation="1" functional="0" release="0" Id="1da9cc57-daf9-4107-a7b8-06dcacd6d4e3" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="LVCloudServiceGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -81,9 +81,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="a3d99f7a-21c9-4a2e-9bb1-3de8cdf0965a" ref="Microsoft.RedDog.Contract\ServiceContract\LVCloudServiceContract@ServiceDefinition">
+    <implementation Id="d85d478c-0fd0-43c0-8937-28325fc072fa" ref="Microsoft.RedDog.Contract\ServiceContract\LVCloudServiceContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="60b9eea0-cd44-41d6-9bf2-fe047d1ffdd8" ref="Microsoft.RedDog.Contract\Interface\CloudDataService:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="48e179db-3e79-4e3b-a337-cc20e0752fc2" ref="Microsoft.RedDog.Contract\Interface\CloudDataService:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/LVCloudService/LVCloudServiceGroup/CloudDataService:Endpoint1" />
           </inPort>

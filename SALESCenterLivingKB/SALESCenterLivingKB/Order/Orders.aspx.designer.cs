@@ -22,6 +22,15 @@ namespace SALESCenterLivingKB.Order {
         protected global::System.Web.UI.WebControls.DropDownList ddOrderStatus;
         
         /// <summary>
+        /// tbFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbFilter;
+        
+        /// <summary>
         /// FilterButton control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,33 @@ namespace SALESCenterLivingKB.Order {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewShoppingCart;
+        
+        /// <summary>
+        /// editOrder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel editOrder;
+        
+        /// <summary>
+        /// reCalcButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button reCalcButton;
+        
+        /// <summary>
+        /// tranferOrderButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button tranferOrderButton;
         
         /// <summary>
         /// GridViewShoppingCartItem control.

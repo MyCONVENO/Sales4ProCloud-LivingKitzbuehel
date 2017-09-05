@@ -4,6 +4,7 @@ using CloudDataService.Report;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Data.SqlClient;
 using System.Globalization;
 using System.IO;
@@ -34,6 +35,7 @@ namespace CloudDataService
         {
             var datasource = new LIVINGKITZBUEHLEntities();
             datasource.Configuration.LazyLoadingEnabled = false;
+            ((IObjectContextAdapter)datasource).ObjectContext.CommandTimeout = 12000;
             return datasource;
         }
 
@@ -2443,10 +2445,11 @@ namespace CloudDataService
                 {
                     var items = (from pos in this.currentData.ShoppingCartItem
                                  where pos.ShoppingCartID == ShoppingCartID && pos.IsDeleted == false
-                                 orderby pos.ShoppingCartItemSort
-                                 select pos).ToList();
+                                 select pos).ToList().OrderBy(p=>p.ShoppingCartItemSort);
 
-                    Season season = currentData.Season.First(s => s.SeasonID == items.First().ModelSeasonID);
+                    string seasonID = items.First().ModelSeasonID;
+
+                    Season season = currentData.Season.First(s => s.SeasonID == seasonID);
 
                     var result = LVKBExportOrder.GetOrderStream(order, items, season.SeasonName);
 
